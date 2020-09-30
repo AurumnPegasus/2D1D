@@ -17,10 +17,7 @@
 
 --
 -- Table structure for table `ABILITY`
-
-DROP DATABASE IF EXISTS POKEBASE;
-CREATE SCHEMA POKEBASE;
-USE POKEBASE;
+--
 
 DROP TABLE IF EXISTS `ABILITY`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -99,6 +96,7 @@ CREATE TABLE `IMMUNITIES` (
 
 LOCK TABLES `IMMUNITIES` WRITE;
 /*!40000 ALTER TABLE `IMMUNITIES` DISABLE KEYS */;
+INSERT INTO `IMMUNITIES` VALUES ('Dark','Psychic'),('Fairy','Dragon'),('Flying','Ground'),('Ghost','Fighting'),('Ghost','Normal'),('Ground','Electric'),('Normal','Ghost'),('Steel','Poison');
 /*!40000 ALTER TABLE `IMMUNITIES` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -272,8 +270,8 @@ DROP TABLE IF EXISTS `RESISTANCES`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `RESISTANCES` (
   `Name` varchar(20) NOT NULL,
-  `Strength` varchar(20) NOT NULL,
-  PRIMARY KEY (`Name`,`Strength`),
+  `Resistance` varchar(20) NOT NULL,
+  PRIMARY KEY (`Name`,`Resistance`),
   CONSTRAINT `RESISTANCES_ibfk_1` FOREIGN KEY (`Name`) REFERENCES `TYPE` (`Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -284,6 +282,7 @@ CREATE TABLE `RESISTANCES` (
 
 LOCK TABLES `RESISTANCES` WRITE;
 /*!40000 ALTER TABLE `RESISTANCES` DISABLE KEYS */;
+INSERT INTO `RESISTANCES` VALUES ('Bug','Fighting'),('Bug','Grass'),('Bug','Ground'),('Dark','Dark'),('Dark','Ghost'),('Dragon','Electric'),('Dragon','Fire'),('Dragon','Grass'),('Dragon','Water'),('Electric','Electric'),('Electric','Flying'),('Electric','Steel'),('Fairy','Bug'),('Fairy','Dark'),('Fairy','Fighting'),('Fighting','Bug'),('Fighting','Dark'),('Fighting','Rock'),('Fire','Bug'),('Fire','Fairy'),('Fire','Fire'),('Fire','Grass'),('Fire','Ice'),('Fire','Steel'),('Flying','Bug'),('Flying','Fighting'),('Flying','Grass'),('Ghost','Bug'),('Ghost','Poison'),('Grass','Electric'),('Grass','Grass'),('Grass','Ground'),('Grass','Water'),('Ground','Poison'),('Ground','Rock'),('Ice','Ice'),('Poison','Bug'),('Poison','Fairy'),('Poison','Fighting'),('Poison','Grass'),('Poison','Poison'),('Psychic','Fighting'),('Psychic','Psychic'),('Rock','Fire'),('Rock','Flying'),('Rock','Normal'),('Rock','Poison'),('Steel','Bug'),('Steel','Dragon'),('Steel','Fairy'),('Steel','Flying'),('Steel','Grass'),('Steel','Ice'),('Steel','Normal'),('Steel','Psychic'),('Steel','Rock'),('Steel','Steel'),('Water','Fire'),('Water','Ice'),('Water','Steel'),('Water','Water');
 /*!40000 ALTER TABLE `RESISTANCES` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -335,6 +334,7 @@ CREATE TABLE `TYPE` (
 
 LOCK TABLES `TYPE` WRITE;
 /*!40000 ALTER TABLE `TYPE` DISABLE KEYS */;
+INSERT INTO `TYPE` VALUES ('Bug'),('Dark'),('Dragon'),('Electric'),('Fairy'),('Fighting'),('Fire'),('Flying'),('Ghost'),('Grass'),('Ground'),('Ice'),('Normal'),('Poison'),('Psychic'),('Rock'),('Steel'),('Water');
 /*!40000 ALTER TABLE `TYPE` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -359,6 +359,7 @@ CREATE TABLE `WEAKNESSES` (
 
 LOCK TABLES `WEAKNESSES` WRITE;
 /*!40000 ALTER TABLE `WEAKNESSES` DISABLE KEYS */;
+INSERT INTO `WEAKNESSES` VALUES ('Bug','Fire'),('Bug','Flying'),('Bug','Rock'),('Dark','Bug'),('Dark','Fairy'),('Dark','Fighting'),('Dragon','Dragon'),('Dragon','Fairy'),('Dragon','Ice'),('Electric','Ground'),('Fairy','Poison'),('Fairy','Steel'),('Fighting','Fairy'),('Fighting','Flying'),('Fighting','Psychic'),('Fire','Ground'),('Fire','Rock'),('Fire','Water'),('Flying','Electric'),('Flying','Ice'),('Flying','Rock'),('Ghost','Dark'),('Ghost','Ghost'),('Grass','Bug'),('Grass','Fire'),('Grass','Flying'),('Grass','Ice'),('Grass','Poison'),('Ground','Grass'),('Ground','Ice'),('Ground','Water'),('Ice','Fighting'),('Ice','Fire'),('Ice','Rock'),('Ice','Steel'),('Normal','Fighting'),('Poison','Ground'),('Poison','Psychic'),('Psychic','Bug'),('Psychic','Dark'),('Psychic','Ghost'),('Rock','Fighting'),('Rock','Grass'),('Rock','Ground'),('Rock','Steel'),('Rock','Water'),('Steel','Fighting'),('Steel','Fire'),('Steel','Ground'),('Water','Electric'),('Water','Grass');
 /*!40000 ALTER TABLE `WEAKNESSES` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -371,4 +372,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-29 21:38:19
+-- Dump completed on 2020-09-30 21:03:28
