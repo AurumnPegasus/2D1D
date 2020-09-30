@@ -1,4 +1,8 @@
-def DispPokemon():
+import subprocess as sp
+import pymysql
+import pymysql.cursors
+
+"""def DispPokemon():
 	tmp = sp.call('clear', shell=True)
 	print("Select display condition: ")
 	print("1. Type")
@@ -8,7 +12,7 @@ def DispPokemon():
 	print("5. Single stat and type")
 	ch = int(input("Enter your choice : "))
 	if ch == 1:
-		#
+    	#
 	elif ch == 2:
 		#
 	elif ch == 3:
@@ -20,6 +24,7 @@ def DispPokemon():
 		print("Invalid option")
 
 	getch = input("Press ENTER to return")
+
 
 def SearchPokemon():
 	tmp = sp.call('clear', shell=True)
@@ -47,6 +52,7 @@ def SearchMoves():
 		print("Invalid option")
 
 	getch = input("Press ENTER to return")
+
 
 # Returns the weaknesses, resistances and immunities of the type/pokemon
 def CheckEffect():
@@ -77,7 +83,7 @@ def RemoveChampion():
 
 def DispLegendary():
 	getch = input("Press ENTER to return")
-
+"""
 
 # Main loop
 while(1):
@@ -122,29 +128,29 @@ while(1):
                 print("10. Exit")
                 ch = int(input("Enter your choice : "))
                 tmp = sp.call('clear', shell=True)
-                if ch == 1:
-                	DispPokemon()
-                elif ch == 2:
-                	SearchPokemon()
-                elif ch == 3:
-                	SearchMoves()
-                elif ch == 4:
-                	CheckEffect()
-                elif ch == 5:
-                    DispChampion()
-                elif ch == 6:
-                	AddChampion()
-                elif ch == 7:
-                	EditChampion()
-                elif ch == 8:
-                	RemoveChampion()
-                elif ch == 9:
-                	DispLegendary()
-               	elif ch == 10:
-               		break
-                else:
-                    tmp = input("Enter any key to CONTINUE>")
-
+				#if ch == 1:
+                #	DispPokemon()
+                #elif ch == 2:
+                #	SearchPokemon()
+                #elif ch == 3:
+               	# 	SearchMoves()
+                #elif ch == 4:
+                #	CheckEffect()
+                #elif ch == 5:
+                #    DispChampion()
+                #elif ch == 6:
+                #	AddChampion()
+            	#elif ch == 7:
+                #	EditChampion()
+                #elif ch == 8:
+                #	RemoveChampion()
+                #elif ch == 9:
+                #	DispLegendary()
+               	#elif ch == 10:
+               	#	break
+                #else:
+                #    tmp = input("Enter any key to CONTINUE>")
+				
     except:
         tmp = sp.call('clear', shell=True)
         print("Connection Refused: Either username or password is incorrect or user doesn't have access to database")
