@@ -23,7 +23,7 @@ def getTable(tr_elements):
     
     for j in range(1,len(tr_elements)): 
         T=tr_elements[j]
-        if len(T)!=4:
+        if len(T)!=9:
             break    
         i=0
         for t in T.iterchildren():
@@ -37,8 +37,8 @@ def getTable(tr_elements):
             i+=1
     Dict={title:column for (title,column) in col}
     df=pd.DataFrame(Dict)
-    df.to_csv('ability.csv')
+    df.to_csv('moveme.csv')
 
-URL = "https://pokemondb.net/ability"
+URL = "https://pokemondb.net/move/all"
 tr_elements = extract(URL)
 getTable(tr_elements)

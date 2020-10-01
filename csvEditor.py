@@ -1,65 +1,33 @@
 import pandas as pd
 import random
 
-def textFile():
-    f = open('evolution.txt', 'r+')
-    lines = f.readlines()
-    Line = []
-    for line in lines:
-        Line.append(line)
-    return Line
+df = pd.read_csv('pokemon.csv')
+ids = df.ID.to_list()
+typeing = df.Type.to_list()
+data = []
+for i in range(0, len(ids)):
+    data.append([ids[i], typeing[i]])
 
-def getDict(df):
-    ids = df.ID.to_list()
-    name = df.Name.to_list()
-    remove_pokemon = {}
-    for i in range(0, len(name)):
-        if ids[i] not in remove_pokemon:
-            remove_pokemon[ids[i]] = name[i]
-    pokemon = dict(map(reversed, remove_pokemon.items())) 
-    return pokemon
+sorted(data)
 
-def getPokemonFamily(line):
-    evolutionFam = []
-    for i in range(1, len(line), 2):
-        l = line[i]
-        evolutionFam.append(l)
-    df = pd.read_csv('pokemon.csv')
-    pokemon = getDict(df)
-    c = 0
-    evolve = {}
-    for i in evolutionFam:
-        fam = []
-        sent = i.split()
-        for word in sent:
-            fam.append(word)
-        if fam[0] not in pokemon:
-            ev = pokemon[fam[1]]
-        else:
-            ev = pokemon[fam[0]]
-        for pok in fam:
-            try:
-                pokemon[pok]
-                if pok not in evolve:
-                    evolve[pok] = ev
-                    ev = pokemon[pok]
-            except:
-                pass
-    return evolve, pokemon
+data2 = []
+for i in range(0, len(ids)):
+    if i == 0:
+        data2.append(data[i])
+        pass
+    if data[i][0] == data2[int(len(data2))-1][0]:
+        pass
+    else:
+        data2.append(data[i])
 
-def writeStuff(evolve, pokemon):
-    gen = [1, 2, 3, 4, 5, 6, 7, 8]
-    tier = ['OU', 'UU', 'AU']
-    final = []
-    for pok in pokemon:
-        if pok not in evolve:
-            final.append([pokemon[pok], random.choice(gen), random.choice(tier), pokemon[pok]])
-        else:
-            final.append([pokemon[pok], random.choice(gen), random.choice(tier), evolve[pok]])
-    
-    df = pd.DataFrame(final)
-    df.to_csv('POKEMON.csv', index=False, header=False)
+final = []
+for i in data2:
+    t = i[1]
+    t = t.split()
+    if len(t) == 1:
+        final.append([i[0], t[0], 'NULL'])
+    else:
+        final.append([i[0], t[0], t[1]])
 
-lines = textFile()
-evolve, pokemon = getPokemonFamily(lines)
-writeStuff(evolve, pokemon)
+df = pd.DataFrame(final)
+df.to_csv('POKETYPE.csv')

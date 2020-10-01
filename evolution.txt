@@ -12,8 +12,6 @@ Pidgey family
 Pidgey	Pidgey	Level 18 →	Pidgeotto	Pidgeotto	Level 36 →	Pidgeot	Pidgeot
 Rattata family
 Rattata	Rattata	Level 20 →	Raticate	Raticate	 
-Alolan Rattata family
-Rattata	Rattata	Level 20 (night) →	Raticate	Raticate	 
 Spearow family
 Spearow	Spearow	Level 20 →	Fearow	Fearow	 
 Ekans family
