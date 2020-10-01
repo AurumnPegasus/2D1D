@@ -1,830 +1,803 @@
-,Name,Type,Cat.,Power,Acc.,PP,TM,Effect,Prob. (%)
-0,"10,000,000 Volt Thunderbolt",Electric,,195,—,1,,Pikachu-exclusive Z-Move. High critical hit ratio.,—
-1,Absorb,Grass,,20,100,25,,User recovers half the HP inflicted on opponent.,—
-2,Accelerock,Rock,,40,100,20,,User attacks first.,—
-3,Acid,Poison,,40,100,30,,May lower opponent's Special Defense.,10
-4,Acid Armor,Poison,,—,—,20,,Sharply raises user's Defense.,—
-5,Acid Downpour,Poison,—,—,—,1,,Poison type Z-Move.,—
-6,Acid Spray,Poison,,40,100,20,,Sharply lowers opponent's Special Defense.,100
-7,Acrobatics,Flying,,55,100,15,TM78,Stronger when the user does not have a held item.,—
-8,Acupressure,Normal,,—,—,30,,Sharply raises a random stat.,—
-9,Aerial Ace,Flying,,60,∞,20,,Ignores Accuracy and Evasiveness.,—
-10,Aeroblast,Flying,,100,95,5,,High critical hit ratio.,—
-11,After You,Normal,,—,—,15,,Gives target priority in the next turn.,—
-12,Agility,Psychic,,—,—,30,,Sharply raises user's Speed.,—
-13,Air Cutter,Flying,,60,95,25,,High critical hit ratio.,—
-14,Air Slash,Flying,,75,95,15,TM95,May cause flinching.,30
-15,All-Out Pummeling,Fighting,—,—,—,1,,Fighting type Z-Move.,—
-16,Ally Switch,Psychic,,—,—,15,,User switches with opposite teammate.,—
-17,Amnesia,Psychic,,—,—,20,,Sharply raises user's Special Defense.,—
-18,Anchor Shot,Steel,,80,100,20,,The user entangles the target with its anchor chain while attacking. The target becomes unable to flee.,—
-19,Ancient Power,Rock,,60,100,5,,May raise all user's stats at once.,10
-20,Apple Acid,Grass,,80,100,10,,Lowers target's Special Defense.,100
-21,Aqua Jet,Water,,40,100,20,,User attacks first.,—
-22,Aqua Ring,Water,,—,—,20,,Restores a little HP each turn.,—
-23,Aqua Tail,Water,,90,90,10,,,—
-24,Arm Thrust,Fighting,,15,100,20,,Hits 2-5 times in one turn.,—
-25,Aromatherapy,Grass,,—,—,5,,Cures all status problems in your party.,—
-26,Aromatic Mist,Fairy,,—,—,20,,Raises Special Defense of an ally.,—
-27,Assist,Normal,,—,—,20,,User performs a move known by its allies at random.,—
-28,Assurance,Dark,,60,100,10,TM58,Power doubles if opponent already took damage in the same turn.,—
-29,Astonish,Ghost,,30,100,15,,May cause flinching.,30
-30,Attack Order,Bug,,90,100,15,,High critical hit ratio.,—
-31,Attract,Normal,,—,100,15,TM31,"If opponent is the opposite gender, it's less likely to attack.",—
-32,Aura Sphere,Fighting,,80,∞,20,,Ignores Accuracy and Evasiveness.,—
-33,Aura Wheel,Electric,,110,100,10,,Changes type based on Morpeko's Mode.,100
-34,Aurora Beam,Ice,,65,100,20,,May lower opponent's Attack.,10
-35,Aurora Veil,Ice,,—,—,20,,Halves damage from Physical and Special attacks for five turns.,—
-36,Autotomize,Steel,,—,—,15,,Reduces weight and sharply raises Speed.,—
-37,Avalanche,Ice,,60,100,10,TM64,Power doubles if user took damage first.,—
-38,Baby-Doll Eyes,Fairy,,—,100,30,,Always goes first. Lowers the target's attack.,—
-39,Baddy Bad,Dark,,90,100,15,,Reduces damage from Physical attacks.,—
-40,Baneful Bunker,Poison,,—,—,10,,Protects the user and poisons opponent on contact.,—
-41,Barrage,Normal,,15,85,20,,Hits 2-5 times in one turn.,—
-42,Barrier,Psychic,,—,—,20,,Sharply raises user's Defense.,—
-43,Baton Pass,Normal,,—,—,40,,User switches out and gives stat changes to the incoming Pokémon.,—
-44,Beak Blast,Flying,,100,100,15,,"The user first heats up its beak, and then it attacks the target. Making direct contact with the Pokémon while it's heating up its beak results in a burn.",—
-45,Beat Up,Dark,,—,100,10,TM37,Each Pokémon in your party attacks.,—
-46,Behemoth Bash,Steel,,100,100,5,,Damage doubles if user is Dynamaxed.,—
-47,Behemoth Blade,Steel,,100,100,5,,Damage doubles if user is Dynamaxed.,—
-48,Belch,Poison,,120,90,10,,User must have consumed a Berry.,—
-49,Belly Drum,Normal,,—,—,10,,"User loses 50% of its max HP, but Attack raises to maximum.",—
-50,Bestow,Normal,,—,—,15,,Gives the user's held item to the target.,—
-51,Bide,Normal,,—,—,10,,User takes damage for two turns then strikes back double.,—
-52,Bind,Normal,,15,85,20,,"Traps opponent, damaging them for 4-5 turns.",100
-53,Bite,Dark,,60,100,25,,May cause flinching.,30
-54,Black Hole Eclipse,Dark,—,—,—,1,,Dark type Z-Move.,—
-55,Blast Burn,Fire,,150,90,5,,User must recharge next turn.,—
-56,Blaze Kick,Fire,,85,90,10,,High critical hit ratio. May burn opponent.,10
-57,Blizzard,Ice,,110,70,5,,May freeze opponent.,10
-58,Block,Normal,,—,—,5,,Opponent cannot flee or switch.,—
-59,Bloom Doom,Grass,—,—,—,1,,Grass type Z-Move.,—
-60,Blue Flare,Fire,,130,85,5,,May burn opponent.,20
-61,Body Press,Fighting,,80,100,10,,"The higher the user's Defense, the stronger the attack.",—
-62,Body Slam,Normal,,85,100,15,,May paralyze opponent.,30
-63,Bolt Beak,Electric,,85,100,10,,"If the user attacks before the target, the power of this move is doubled.",—
-64,Bolt Strike,Electric,,130,85,5,,May paralyze opponent.,20
-65,Bone Club,Ground,,65,85,20,,May cause flinching.,10
-66,Bone Rush,Ground,,25,90,10,,Hits 2-5 times in one turn.,—
-67,Bonemerang,Ground,,50,90,10,,Hits twice in one turn.,—
-68,Boomburst,Normal,,140,100,10,,Hits all adjacent Pokémon.,—
-69,Bounce,Flying,,85,85,5,TM52,"Springs up on first turn, attacks on second. May paralyze opponent.",30
-70,Bouncy Bubble,Water,,90,100,15,,User recovers half the HP inflicted on opponent.,—
-71,Branch Poke,Grass,,40,100,40,,,—
-72,Brave Bird,Flying,,120,100,15,,User receives recoil damage.,—
-73,Breaking Swipe,Dragon,,60,100,15,TM99,Hits multiple opponents and lowers their attack.,100
-74,Breakneck Blitz,Normal,—,—,—,1,,Normal type Z-Move.,—
-75,Brick Break,Fighting,,75,100,15,TM43,Breaks through Reflect and Light Screen barriers.,—
-76,Brine,Water,,65,100,10,TM55,Power doubles if opponent's HP is less than 50%.,—
-77,Brutal Swing,Dark,,60,100,20,TM97,The user swings its body around violently to inflict damage on everything in its vicinity.,—
-78,Bubble,Water,,40,100,30,,May lower opponent's Speed.,10
-79,Bubble Beam,Water,,65,100,20,,May lower opponent's Speed.,10
-80,Bug Bite,Bug,,60,100,20,,Receives the effect from the opponent's held berry.,—
-81,Bug Buzz,Bug,,90,100,10,,May lower opponent's Special Defense.,10
-82,Bulk Up,Fighting,,—,—,20,,Raises user's Attack and Defense.,—
-83,Bulldoze,Ground,,60,100,20,TM81,Lowers opponent's Speed.,100
-84,Bullet Punch,Steel,,40,100,30,,User attacks first.,—
-85,Bullet Seed,Grass,,25,100,30,TM50,Hits 2-5 times in one turn.,—
-86,Burn Up,Fire,,130,100,5,,"To inflict massive damage, the user burns itself out. After using this move, the user will no longer be Fire type.",—
-87,Burning Jealousy,Fire,—,—,—,—,,"Hits all opponents, and burns any that have had their stats boosted.",—
-88,Buzzy Buzz,Electric,,90,100,15,,Paralyzes the opponent.,100
-89,Calm Mind,Psychic,,—,—,20,,Raises user's Special Attack and Special Defense.,—
-90,Camouflage,Normal,,—,—,20,,Changes user's type according to the location.,—
-91,Captivate,Normal,,—,100,20,,Sharply lowers opponent's Special Attack if opposite gender.,—
-92,Catastropika,Electric,,210,—,1,,Pikachu-exclusive Z-Move.,—
-93,Celebrate,Normal,,—,—,40,,The Pokémon congratulates you on your special day. No battle effect.,—
-94,Charge,Electric,,—,—,20,,Raises user's Special Defense and next Electric move's power increases.,—
-95,Charge Beam,Electric,,50,90,10,,May raise user's Special Attack.,70
-96,Charm,Fairy,,—,100,20,TM29,Sharply lowers opponent's Attack.,—
-97,Chatter,Flying,,65,100,20,,Confuses opponent.,100
-98,Chip Away,Normal,,70,100,20,,Ignores opponent's stat changes.,—
-99,Circle Throw,Fighting,,60,90,10,,"In battles, the opponent switches. In the wild, the Pokémon runs.",—
-100,Clamp,Water,,35,85,15,,"Traps opponent, damaging them for 4-5 turns.",100
-101,Clanging Scales,Dragon,,110,100,5,,Lowers user's Defense.,100
-102,Clangorous Soul,Dragon,,—,100,5,,Raises all user's stats but loses HP.,100
-103,Clangorous Soulblaze,Dragon,,185,—,1,,Kommo-o exclusive Z-Move.,—
-104,Clear Smog,Poison,,50,—,15,,Removes all of the target's stat changes.,—
-105,Close Combat,Fighting,,120,100,5,,Lowers user's Defense and Special Defense.,100
-106,Coaching,Fighting,,—,—,10,,Boosts Attack and Defense of a teammate.,—
-107,Coil,Poison,,—,—,20,,"Raises user's Attack, Defense and Accuracy.",—
-108,Comet Punch,Normal,,18,85,15,,Hits 2-5 times in one turn.,—
-109,Confide,Normal,,—,—,20,,Lowers opponent's Special Attack.,100
-110,Confuse Ray,Ghost,,—,100,10,,Confuses opponent.,—
-111,Confusion,Psychic,,50,100,25,,May confuse opponent.,10
-112,Constrict,Normal,,10,100,35,,May lower opponent's Speed by one stage.,10
-113,Continental Crush,Rock,—,—,—,1,,Rock type Z-Move.,—
-114,Conversion,Normal,,—,—,30,,Changes user's type to that of its first move.,—
-115,Conversion 2,Normal,,—,—,30,,User changes type to become resistant to opponent's last move.,—
-116,Copycat,Normal,,—,—,20,,Copies opponent's last move.,—
-117,Core Enforcer,Dragon,,100,100,10,,Scorches a 'Z' pattern on the ground.,—
-118,Corkscrew Crash,Steel,—,—,—,1,,Steel type Z-Move.,—
-119,Corrosive Gas,Poison,,—,100,40,,Removes opponent's items.,—
-120,Cosmic Power,Psychic,,—,—,20,,Raises user's Defense and Special Defense.,—
-121,Cotton Guard,Grass,,—,—,10,,Drastically raises user's Defense.,—
-122,Cotton Spore,Grass,,—,100,40,,Sharply lowers opponent's Speed.,—
-123,Counter,Fighting,,—,100,20,,"When hit by a Physical Attack, user strikes back with 2x power.",—
-124,Court Change,Normal,,—,100,10,,Swaps the effects on either side of the field.,—
-125,Covet,Normal,,60,100,25,,Opponent's item is stolen by the user.,—
-126,Crabhammer,Water,,100,90,10,,High critical hit ratio.,—
-127,Crafty Shield,Fairy,,—,—,10,,Protects the Pokémon from status moves.,—
-128,Cross Chop,Fighting,,100,80,5,,High critical hit ratio.,—
-129,Cross Poison,Poison,,70,100,20,TM73,High critical hit ratio. May poison opponent.,10
-130,Crunch,Dark,,80,100,15,,May lower opponent's Defense.,20
-131,Crush Claw,Normal,,75,95,10,,May lower opponent's Defense.,50
-132,Crush Grip,Normal,,—,100,5,,More powerful when opponent has higher HP.,—
-133,Curse,Ghost,,—,—,10,,"Ghosts lose 50% of max HP and curse the opponent; Non-Ghosts raise Attack, Defense and lower Speed.",—
-134,Cut,Normal,,50,95,30,,,—
-135,Dark Pulse,Dark,,80,100,15,,May cause flinching.,20
-136,Dark Void,Dark,,—,50,10,,Puts all adjacent opponents to sleep.,—
-137,Darkest Lariat,Dark,,85,100,10,,Ignores opponent's stat changes.,—
-138,Dazzling Gleam,Fairy,,80,100,10,,Hits all adjacent opponents.,—
-139,Decorate,Fairy,,—,—,15,,Sharply raises target's Attack and Special Attack.,100
-140,Defend Order,Bug,,—,—,10,,Raises user's Defense and Special Defense.,—
-141,Defense Curl,Normal,,—,—,40,,Raises user's Defense.,—
-142,Defog,Flying,,—,—,15,,Lowers opponent's Evasiveness and clears fog.,—
-143,Destiny Bond,Ghost,,—,—,5,,"If the user faints, the opponent also faints.",—
-144,Detect,Fighting,,—,—,5,,"Protects the user, but may fail if used consecutively.",—
-145,Devastating Drake,Dragon,—,—,—,1,,Dragon type Z-Move.,—
-146,Diamond Storm,Rock,,100,95,5,,May sharply raise user's Defense.,50
-147,Dig,Ground,,80,100,10,TM15,"Digs underground on first turn, attacks on second. Can also escape from caves.",—
-148,Disable,Normal,,—,100,20,,Opponent can't use its last attack for a few turns.,—
-149,Disarming Voice,Fairy,,40,∞,15,,Ignores Accuracy and Evasiveness.,—
-150,Discharge,Electric,,80,100,15,,May paralyze opponent.,30
-151,Dive,Water,,80,100,10,TM45,"Dives underwater on first turn, attacks on second turn.",—
-152,Dizzy Punch,Normal,,70,100,10,,May confuse opponent.,20
-153,Doom Desire,Steel,,140,100,5,,Damage occurs 2 turns later.,—
-154,Double Hit,Normal,,35,90,10,,Hits twice in one turn.,—
-155,Double Iron Bash,Steel,,60,100,5,,Hits twice in one turn; may cause flinching.,30
-156,Double Kick,Fighting,,30,100,30,,Hits twice in one turn.,—
-157,Double Slap,Normal,,15,85,10,,Hits 2-5 times in one turn.,—
-158,Double Team,Normal,,—,—,15,,Raises user's Evasiveness.,—
-159,Double-Edge,Normal,,120,100,15,,User receives recoil damage.,—
-160,Draco Meteor,Dragon,,130,90,5,,Sharply lowers user's Special Attack.,100
-161,Dragon Ascent,Flying,,120,100,5,,Lowers user's Defense and Special Defense.,100
-162,Dragon Breath,Dragon,,60,100,20,,May paralyze opponent.,30
-163,Dragon Claw,Dragon,,80,100,15,,,—
-164,Dragon Dance,Dragon,,—,—,20,,Raises user's Attack and Speed.,—
-165,Dragon Darts,Dragon,,50,100,10,,User attacks twice.,—
-166,Dragon Hammer,Dragon,,90,100,15,,The user uses its body like a hammer to attack the target and inflict damage.,—
-167,Dragon Pulse,Dragon,,85,100,10,,,—
-168,Dragon Rage,Dragon,,—,100,10,,Always inflicts 40 HP.,—
-169,Dragon Rush,Dragon,,100,75,10,,May cause flinching.,20
-170,Dragon Tail,Dragon,,60,90,10,,"In battles, the opponent switches. In the wild, the Pokémon runs.",—
-171,Drain Punch,Fighting,,75,100,10,TM63,User recovers half the HP inflicted on opponent.,—
-172,Draining Kiss,Fairy,,50,100,10,TM87,User recovers most the HP inflicted on opponent.,—
-173,Dream Eater,Psychic,,100,100,15,,User recovers half the HP inflicted on a sleeping opponent.,—
-174,Drill Peck,Flying,,80,100,20,,,—
-175,Drill Run,Ground,,80,95,10,,High critical hit ratio.,—
-176,Drum Beating,Grass,,80,100,10,,Lowers opponent's Speed.,100
-177,Dual Chop,Dragon,,40,90,15,,Hits twice in one turn.,—
-178,Dual Wingbeat,Flying,,40,90,10,,The user slams the target with its wings. The target is hit twice in a row.,—
-179,Dynamax Cannon,Dragon,,100,100,5,,Damage doubles if opponent is Dynamaxed.,—
-180,Dynamic Punch,Fighting,,100,50,5,,Confuses opponent.,100
-181,Earth Power,Ground,,90,100,10,,May lower opponent's Special Defense.,10
-182,Earthquake,Ground,,100,100,10,,Power is doubled if opponent is underground from using Dig.,—
-183,Echoed Voice,Normal,,40,100,15,,Power increases each turn.,—
-184,Eerie Impulse,Electric,,—,100,15,TM93,Sharply lowers opponent's Special Attack.,—
-185,Egg Bomb,Normal,,100,75,10,,,—
-186,Electric Terrain,Electric,,—,—,10,TM90,Prevents all Pokémon from falling asleep for 5 turns.,—
-187,Electrify,Electric,,—,—,20,,Changes the target's move to Electric type.,—
-188,Electro Ball,Electric,,—,100,10,,"The faster the user, the stronger the attack.",—
-189,Electroweb,Electric,,55,95,15,TM82,Lowers opponent's Speed.,100
-190,Embargo,Dark,,—,100,15,,Opponent cannot use items.,—
-191,Ember,Fire,,40,100,25,,May burn opponent.,10
-192,Encore,Normal,,—,100,5,,Forces opponent to keep using its last move for 3 turns.,—
-193,Endeavor,Normal,,—,100,5,,Reduces opponent's HP to same as user's.,—
-194,Endure,Normal,,—,—,10,,"Always left with at least 1 HP, but may fail if used consecutively.",—
-195,Energy Ball,Grass,,90,100,10,,May lower opponent's Special Defense.,10
-196,Entrainment,Normal,,—,100,15,,Makes target's ability same as user's.,—
-197,Eruption,Fire,,150,100,5,,Stronger when the user's HP is higher.,—
-198,Eternabeam,Dragon,,160,90,5,,User can't move on the next turn.,—
-199,Expanding Force,Psychic,,80,100,10,,Increases power and hits all opponents on Psychic Terrain.,—
-200,Explosion,Normal,,250,100,5,,User faints.,—
-201,Extrasensory,Psychic,,80,100,20,,May cause flinching.,10
-202,Extreme Evoboost,Normal,,—,—,1,,Eevee-exclusive Z-Move. Sharply raises all stats.,100
-203,Extreme Speed,Normal,,80,100,5,,User attacks first.,—
-204,Facade,Normal,,70,100,20,TM39,"Power doubles if user is burned, poisoned, or paralyzed.",—
-205,Fairy Lock,Fairy,,—,—,10,,Prevents fleeing in the next turn.,—
-206,Fairy Wind,Fairy,,40,100,30,,,—
-207,Fake Out,Normal,,40,100,10,,"User attacks first, foe flinches. Only usable on first turn.",100
-208,Fake Tears,Dark,,—,100,20,TM47,Sharply lowers opponent's Special Defense.,—
-209,False Surrender,Dark,,80,∞,10,,Ignores Accuracy and Evasiveness.,—
-210,False Swipe,Normal,,40,100,40,TM94,Always leaves opponent with at least 1 HP.,—
-211,Feather Dance,Flying,,—,100,15,,Sharply lowers opponent's Attack.,—
-212,Feint,Normal,,30,100,10,,Only hits if opponent uses Protect or Detect in the same turn.,—
-213,Feint Attack,Dark,,60,∞,20,,Ignores Accuracy and Evasiveness.,—
-214,Fell Stinger,Bug,,50,100,25,,Drastically raises user's Attack if target is KO'd.,—
-215,Fiery Dance,Fire,,80,100,10,,May raise user's Special Attack.,50
-216,Final Gambit,Fighting,,—,100,5,,Inflicts damage equal to the user's remaining HP. User faints.,—
-217,Fire Blast,Fire,,110,85,5,,May burn opponent.,10
-218,Fire Fang,Fire,,65,95,15,TM68,May cause flinching and/or burn opponent.,10
-219,Fire Lash,Fire,,80,100,15,,The user strikes the target with a burning lash. This also lowers the target's Defense stat.,100
-220,Fire Pledge,Fire,,80,100,10,,Added effects appear if combined with Grass Pledge or Water Pledge.,—
-221,Fire Punch,Fire,,75,100,15,TM03,May burn opponent.,10
-222,Fire Spin,Fire,,35,85,15,TM13,"Traps opponent, damaging them for 4-5 turns.",100
-223,First Impression,Bug,,90,100,10,,"Although this move has great power, it only works the first turn the user is in battle.",—
-224,Fishious Rend,Water,,85,100,10,,"If the user attacks before the target, the power of this move is doubled.",—
-225,Fissure,Ground,,—,30,5,,"One-Hit-KO, if it hits.",—
-226,Flail,Normal,,—,100,15,,"The lower the user's HP, the higher the power.",—
-227,Flame Burst,Fire,,70,100,15,,May also injure nearby Pokémon.,—
-228,Flame Charge,Fire,,50,100,20,,Raises user's Speed.,100
-229,Flame Wheel,Fire,,60,100,25,,May burn opponent.,10
-230,Flamethrower,Fire,,90,100,15,,May burn opponent.,10
-231,Flare Blitz,Fire,,120,100,15,,User receives recoil damage. May burn opponent.,10
-232,Flash,Normal,,—,100,20,,Lowers opponent's Accuracy.,—
-233,Flash Cannon,Steel,,80,100,10,,May lower opponent's Special Defense.,10
-234,Flatter,Dark,,—,100,15,,"Confuses opponent, but raises its Special Attack by two stages.",—
-235,Fleur Cannon,Fairy,,130,90,5,,Sharply lowers user's Special Attack.,100
-236,Fling,Dark,,—,100,10,TM59,Power depends on held item.,—
-237,Flip Turn,Water,,60,100,20,,"After making its attack, the user rushes back to switch places with a party Pokémon in waiting.",—
-238,Floaty Fall,Flying,,90,95,15,,May cause flinching.,30
-239,Floral Healing,Fairy,,—,—,10,,The user restores the target's HP by up to half of its max HP. It restores more HP when the terrain is grass.,—
-240,Flower Shield,Fairy,,—,—,10,,Sharply raises Defense of all Grass-type Pokémon on the field.,100
-241,Fly,Flying,,90,95,15,TM06,"Flies up on first turn, attacks on second turn.",—
-242,Flying Press,Fighting,,100,95,10,,Deals Fighting and Flying type damage.,—
-243,Focus Blast,Fighting,,120,70,5,,May lower opponent's Special Defense.,10
-244,Focus Energy,Normal,,—,—,30,,Increases critical hit ratio.,—
-245,Focus Punch,Fighting,,150,100,20,,"If the user is hit before attacking, it flinches instead.",—
-246,Follow Me,Normal,,—,—,20,,"In Double Battle, the user takes all the attacks.",—
-247,Force Palm,Fighting,,60,100,10,,May paralyze opponent.,30
-248,Foresight,Normal,,—,—,40,,"Resets opponent's Evasiveness, Normal-type and Fighting-type attacks can now hit Ghosts, and Ghost-type attacks hit Normal.",—
-249,Forest's Curse,Grass,,—,100,20,,Adds Grass type to opponent.,—
-250,Foul Play,Dark,,95,100,15,,Uses the opponent's Attack stat.,—
-251,Freeze Shock,Ice,,140,90,5,,"Charges on first turn, attacks on second. May paralyze opponent.",30
-252,Freeze-Dry,Ice,,70,100,20,,May freeze opponent. Super-effective against Water types.,10
-253,Freezy Frost,Ice,,90,100,15,,Resets all stat changes.,—
-254,Frenzy Plant,Grass,,150,90,5,,User must recharge next turn.,—
-255,Frost Breath,Ice,,60,90,10,,Always results in a critical hit.,100
-256,Frustration,Normal,,—,100,20,,Power decreases with higher Friendship.,—
-257,Fury Attack,Normal,,15,85,20,,Hits 2-5 times in one turn.,—
-258,Fury Cutter,Bug,,40,95,20,,Power increases each turn.,—
-259,Fury Swipes,Normal,,18,80,15,,Hits 2-5 times in one turn.,—
-260,Fusion Bolt,Electric,,100,100,5,,Power increases if Fusion Flare is used in the same turn.,—
-261,Fusion Flare,Fire,,100,100,5,,Power increases if Fusion Bolt is used in the same turn.,—
-262,Future Sight,Psychic,,120,100,10,,Damage occurs 2 turns later.,—
-263,G-Max Befuddle,Bug,—,—,—,—,,"Butterfree-exclusive G-Max Move. Poisons, paralyzes, or puts opponent to sleep.",100
-264,G-Max Centiferno,Fire,—,—,—,—,,Centiskorch-exclusive G-Max Move. Traps opponents for 4-5 turns.,100
-265,G-Max Chi Strike,Fighting,—,—,—,—,,Machamp-exclusive G-Max Move. Increases critical hit ratio.,—
-266,G-Max Cuddle,Normal,—,—,—,—,,Eevee-exclusive G-Max Move. Infatuates opponents.,100
-267,G-Max Depletion,Dragon,—,—,—,—,,Duraludon-exclusive G-Max Move. Reduces opponent's PP.,—
-268,G-Max Drum Solo,Grass,—,—,—,—,,Rillaboom-exclusive G-Max Move. Ignores target's ability.,—
-269,G-Max Finale,Fairy,—,—,—,—,,Alcremie-exclusive G-Max Move. Heals the user's team.,—
-270,G-Max Fireball,Fire,—,—,—,—,,Cinderace-exclusive G-Max Move. Ignores target's ability.,—
-271,G-Max Foam Burst,Water,—,—,—,—,,Kingler-exclusive G-Max Move. Harshly lowers opponents' Speed.,100
-272,G-Max Gold Rush,Normal,—,—,—,—,,Meowth-exclusive G-Max Move. Confuses opponents and earns more money.,100
-273,G-Max Gravitas,Psychic,—,—,—,—,,Orbeetle-exclusive G-Max Move. Summons Gravity for 5 turns.,—
-274,G-Max Hydrosnipe,Water,—,—,—,—,,Inteleon-exclusive G-Max Move. Ignores target's ability.,—
-275,G-Max Malodor,Poison,—,—,—,—,,Garbodor-exclusive G-Max Move. Poisons opponents.,100
-276,G-Max Meltdown,Steel,—,—,—,—,,Melmetal-exclusive G-Max Move. Prevents opponents using the same move twice in a row.,—
-277,G-Max Replenish,Normal,—,—,—,—,,Snorlax-exclusive G-Max Move. Recycles Berries.,—
-278,G-Max Resonance,Ice,—,—,—,—,,Lapras-exclusive G-Max Move. Reduces damage for 5 turns.,—
-279,G-Max Sandblast,Ground,—,—,—,—,,Sandaconda-exclusive G-Max Move. Traps opponents for 4-5 turns.,100
-280,G-Max Smite,Fairy,—,—,—,—,,Hatterene-exclusive G-Max Move. Confuses opponents.,100
-281,G-Max Snooze,Dark,—,—,—,—,,Grimmsnarl-exclusive G-Max Move. Makes opponents drowsy.,—
-282,G-Max Steelsurge,Steel,—,—,—,—,,Copperajah-exclusive G-Max Move. Sets up Spikes on the field.,—
-283,G-Max Stonesurge,Water,—,—,—,—,,Drednaw-exclusive G-Max Move. Sets up Stealth Rock.,—
-284,G-Max Stun Shock,Electric,—,—,—,—,,Toxtricity-exclusive G-Max Move. Poisons or paralyzes opponents.,100
-285,G-Max Sweetness,Grass,—,—,—,—,,Appletun-exclusive G-Max Move. Heals status conditions of user's team.,—
-286,G-Max Tartness,Grass,—,—,—,—,,Flapple-exclusive G-Max Move. Reduces opponents' evasiveness.,100
-287,G-Max Terror,Ghost,—,—,—,—,,Gengar-exclusive G-Max Move. Prevents opponent from switching out.,—
-288,G-Max Volcalith,Rock,—,—,—,—,,Coalossal-exclusive G-Max Move. Deals damage for 4 turns.,100
-289,G-Max Volt Crash,Electric,—,—,—,—,,Pikachu-exclusive G-Max Move. Paralyzes opponents.,100
-290,G-Max Wildfire,Fire,—,—,—,—,,Charizard-exclusive G-Max Move. Damages non-Fire types for 4 turns.,100
-291,G-Max Wind Rage,Flying,—,—,—,—,,Corviknight-exclusive G-Max Move. Removes battlefield hazards.,—
-292,Gastro Acid,Poison,,—,100,10,,Cancels out the effect of the opponent's Ability.,—
-293,Gear Grind,Steel,,50,85,15,,Hits twice in one turn.,—
-294,Gear Up,Steel,,—,—,20,,The user engages its gears to raise the Attack and Sp. Atk stats of ally Pokémon with the Plus or Minus Ability.,—
-295,Genesis Supernova,Psychic,,185,—,1,,Mew-exclusive Z-Move.,—
-296,Geomancy,Fairy,,—,—,10,,"Charges on first turn, sharply raises user's Sp. Attack, Sp. Defense and Speed on the second.",—
-297,Giga Drain,Grass,,75,100,10,TM28,User recovers half the HP inflicted on opponent.,—
-298,Giga Impact,Normal,,150,90,5,TM09,User must recharge next turn.,—
-299,Gigavolt Havoc,Electric,—,—,—,1,,Electric type Z-Move.,—
-300,Glaciate,Ice,,65,95,10,,Lowers opponent's Speed.,100
-301,Glare,Normal,,—,100,30,,Paralyzes opponent.,—
-302,Glitzy Glow,Psychic,,90,100,15,,Reduces damage from Special attacks.,—
-303,Grass Knot,Grass,,—,100,20,,"The heavier the opponent, the stronger the attack.",—
-304,Grass Pledge,Grass,,80,100,10,,Added effects appear if preceded by Water Pledge or succeeded by Fire Pledge.,—
-305,Grass Whistle,Grass,,—,55,15,,Puts opponent to sleep.,—
-306,Grassy Glide,Grass,—,—,—,—,,High priority during Grassy Terrain.,—
-307,Grassy Terrain,Grass,,—,—,10,TM88,Restores a little HP of all Pokémon for 5 turns. ,—
-308,Grav Apple,Grass,,80,100,10,,Lowers the opponent's Defense stat.,100
-309,Gravity,Psychic,,—,—,5,,Prevents moves like Fly and Bounce and the Ability Levitate for 5 turns.,—
-310,Growl,Normal,,—,100,40,,Lowers opponent's Attack.,—
-311,Growth,Normal,,—,—,20,,Raises user's Attack and Special Attack.,—
-312,Grudge,Ghost,,—,—,5,,"If the users faints after using this move, the PP for the opponent's last move is depleted.",—
-313,Guard Split,Psychic,,—,—,10,,Averages Defense and Special Defense with the target.,—
-314,Guard Swap,Psychic,,—,—,10,TM61,User and opponent swap Defense and Special Defense.,—
-315,Guardian of Alola,Fairy,,—,—,1,,Tapu-exclusive Z-move. Cuts opponent's HP by 75%.,—
-316,Guillotine,Normal,,—,30,5,,"One-Hit-KO, if it hits.",—
-317,Gunk Shot,Poison,,120,80,5,,May poison opponent.,30
-318,Gust,Flying,,40,100,35,,Hits Pokémon using Fly/Bounce with double power.,—
-319,Gyro Ball,Steel,,—,100,5,,"The slower the user, the stronger the attack.",—
-320,Hail,Ice,,—,—,10,TM35,Non-Ice types are damaged for 5 turns.,—
-321,Hammer Arm,Fighting,,100,90,10,,Lowers user's Speed.,100
-322,Happy Hour,Normal,,—,—,30,,Doubles prize money from trainer battles.,—
-323,Harden,Normal,,—,—,30,,Raises user's Defense.,—
-324,Haze,Ice,,—,—,30,,Resets all stat changes.,—
-325,Head Charge,Normal,,120,100,15,,User receives recoil damage.,—
-326,Head Smash,Rock,,150,80,5,,User receives recoil damage.,—
-327,Headbutt,Normal,,70,100,15,,May cause flinching.,30
-328,Heal Bell,Normal,,—,—,5,,Heals the user's party's status conditions.,—
-329,Heal Block,Psychic,,—,100,15,,Prevents the opponent from restoring HP for 5 turns.,—
-330,Heal Order,Bug,,—,—,10,,User recovers half its max HP.,—
-331,Heal Pulse,Psychic,,—,—,10,,Restores half the target's max HP.,—
-332,Healing Wish,Psychic,,—,—,10,,The user faints and the next Pokémon released is fully healed.,—
-333,Heart Stamp,Psychic,,60,100,25,,May cause flinching.,30
-334,Heart Swap,Psychic,,—,—,10,,Stat changes are swapped with the opponent.,—
-335,Heat Crash,Fire,,—,100,10,,"The heavier the user, the stronger the attack.",—
-336,Heat Wave,Fire,,95,90,10,,May burn opponent.,10
-337,Heavy Slam,Steel,,—,100,10,,"The heavier the user, the stronger the attack.",—
-338,Helping Hand,Normal,,—,—,20,TM41,"In Double Battles, boosts the power of the partner's move.",—
-339,Hex,Ghost,,65,100,10,TM77,Inflicts more damage if the target has a status condition.,—
-340,Hidden Power,Normal,,60,100,15,,Type and power depends on user's IVs.,—
-341,High Horsepower,Ground,,95,95,10,,The user fiercely attacks the target using its entire body.,—
-342,High Jump Kick,Fighting,,130,90,10,,"If it misses, the user loses half their HP.",—
-343,Hold Back,Normal,,40,100,40,,Always leaves opponent with at least 1 HP.,—
-344,Hold Hands,Normal,,—,—,40,,Makes the user and an ally very happy.,—
-345,Hone Claws,Dark,,—,—,15,,Raises user's Attack and Accuracy.,—
-346,Horn Attack,Normal,,65,100,25,,,—
-347,Horn Drill,Normal,,—,30,5,,"One-Hit-KO, if it hits.",—
-348,Horn Leech,Grass,,75,100,10,,User recovers half the HP inflicted on opponent.,—
-349,Howl,Normal,,—,—,40,,Raises Attack of allies.,—
-350,Hurricane,Flying,,110,70,10,,May confuse opponent.,30
-351,Hydro Cannon,Water,,150,90,5,,User must recharge next turn.,—
-352,Hydro Pump,Water,,110,80,5,,,—
-353,Hydro Vortex,Water,—,—,—,1,,Water type Z-Move.,—
-354,Hyper Beam,Normal,,150,90,5,TM08,User must recharge next turn.,—
-355,Hyper Fang,Normal,,80,90,15,,May cause flinching.,10
-356,Hyper Voice,Normal,,90,100,10,,,—
-357,Hyperspace Fury,Dark,,100,∞,5,,Lowers user's Defense. Can strike through Protect/Detect.,100
-358,Hyperspace Hole,Psychic,,80,∞,5,,Can strike through Protect/Detect.,—
-359,Hypnosis,Psychic,,—,60,20,,Puts opponent to sleep.,—
-360,Ice Ball,Ice,,30,90,20,,Doubles in power each turn for 5 turns.,—
-361,Ice Beam,Ice,,90,100,10,,May freeze opponent.,10
-362,Ice Burn,Ice,,140,90,5,,"Charges on first turn, attacks on second. May burn opponent.",30
-363,Ice Fang,Ice,,65,95,15,TM67,May cause flinching and/or freeze opponent.,10
-364,Ice Hammer,Ice,,100,90,10,,"The user swings and hits with its strong, heavy fist. It lowers the user's Speed, however.",100
-365,Ice Punch,Ice,,75,100,15,TM04,May freeze opponent.,10
-366,Ice Shard,Ice,,40,100,30,,User attacks first.,—
-367,Icicle Crash,Ice,,85,90,10,,May cause flinching.,30
-368,Icicle Spear,Ice,,25,100,30,TM51,Hits 2-5 times in one turn.,—
-369,Icy Wind,Ice,,55,95,15,TM27,Lowers opponent's Speed.,100
-370,Imprison,Psychic,,—,—,10,TM44,Opponent is unable to use moves that the user also knows.,—
-371,Incinerate,Fire,,60,100,15,,Destroys the target's held berry.,—
-372,Inferno,Fire,,100,50,5,,Burns opponent.,100
-373,Inferno Overdrive,Fire,—,—,—,1,,Fire type Z-Move.,—
-374,Infestation,Bug,,20,100,20,,"Traps opponent, damaging them for 4-5 turns.",100
-375,Ingrain,Grass,,—,—,20,,User restores HP each turn. User cannot escape/switch.,—
-376,Instruct,Psychic,,—,—,15,,Allows an ally to use a move instead.,—
-377,Ion Deluge,Electric,,—,—,25,,Changes Normal-type moves to Electric-type.,—
-378,Iron Defense,Steel,,—,—,15,,Sharply raises user's Defense.,—
-379,Iron Head,Steel,,80,100,15,,May cause flinching.,30
-380,Iron Tail,Steel,,100,75,15,,May lower opponent's Defense.,30
-381,Jaw Lock,Dark,,80,100,10,,Prevents user and opponent from switching out.,—
-382,Judgment,Normal,,100,100,10,,Type depends on the Arceus Plate being held.,—
-383,Jump Kick,Fighting,,100,95,10,,"If it misses, the user loses half their HP.",—
-384,Jungle Healing,Grass,,—,—,—,,Restores team's HP and cures status conditions.,—
-385,Karate Chop,Fighting,,50,100,25,,High critical hit ratio.,—
-386,Kinesis,Psychic,,—,80,15,,Lowers opponent's Accuracy.,—
-387,King's Shield,Steel,,—,—,10,,Protects the user and lowers opponent's Attack on contact.,—
-388,Knock Off,Dark,,65,100,20,,Removes opponent's held item for the rest of the battle.,—
-389,Land's Wrath,Ground,,90,100,10,,,—
-390,Laser Focus,Normal,,—,—,30,,User's next attack is guaranteed to result in a critical hit.,—
-391,Lash Out,Dark,,75,100,5,,Double power if stats were lowered during the turn.,—
-392,Last Resort,Normal,,140,100,5,,Can only be used after all other moves are used.,—
-393,Lava Plume,Fire,,80,100,15,,May burn opponent.,30
-394,Leaf Blade,Grass,,90,100,15,,High critical hit ratio.,—
-395,Leaf Storm,Grass,,130,90,5,,Sharply lowers user's Special Attack.,100
-396,Leaf Tornado,Grass,,65,90,10,,May lower opponent's Accuracy.,50
-397,Leafage,Grass,,40,100,40,,Strikes opponent with leaves.,—
-398,Leech Life,Bug,,80,100,10,,User recovers half the HP inflicted on opponent.,—
-399,Leech Seed,Grass,,—,90,10,,Drains HP from opponent each turn.,—
-400,Leer,Normal,,—,100,30,,Lowers opponent's Defense.,100
-401,Let's Snuggle Forever,Fairy,,190,—,1,,Mimikyu-exclusive Z-Move.,—
-402,Lick,Ghost,,30,100,30,,May paralyze opponent.,30
-403,Life Dew,Water,,—,—,10,,User and teammates recover HP.,—
-404,Light of Ruin,Fairy,,140,90,5,,User receives recoil damage.,—
-405,Light Screen,Psychic,,—,—,30,TM17,Halves damage from Special attacks for 5 turns.,—
-406,Light That Burns the Sky,Psychic,,200,—,1,,Ultra Necrozma-exclusive Z-Move. Ignores target's ability; uses highest Attack stat.,—
-407,Liquidation,Water,,85,100,10,,May lower opponent's Defense.,20
-408,Lock-On,Normal,,—,—,5,,User's next attack is guaranteed to hit.,—
-409,Lovely Kiss,Normal,,—,75,10,,Puts opponent to sleep.,—
-410,Low Kick,Fighting,,—,100,20,,"The heavier the opponent, the stronger the attack.",—
-411,Low Sweep,Fighting,,65,100,20,TM75,Lowers opponent's Speed.,100
-412,Lucky Chant,Normal,,—,—,30,,Opponent cannot land critical hits for 5 turns.,—
-413,Lunar Dance,Psychic,,—,—,10,,The user faints but the next Pokémon released is fully healed.,—
-414,Lunge,Bug,,80,100,15,,"The user makes a lunge at the target, attacking with full force. This also lowers the target's Attack stat.",100
-415,Luster Purge,Psychic,,70,100,5,,May lower opponent's Special Defense.,50
-416,Mach Punch,Fighting,,40,100,30,,User attacks first.,—
-417,Magic Coat,Psychic,,—,—,15,,Reflects moves that cause status conditions back to the attacker.,—
-418,Magic Powder,Psychic,,—,100,20,,Changes target's type to Psychic.,—
-419,Magic Room,Psychic,,—,—,10,TM72,Suppresses the effects of held items for five turns.,—
-420,Magical Leaf,Grass,,60,∞,20,TM10,Ignores Accuracy and Evasiveness.,—
-421,Magma Storm,Fire,,100,75,5,,"Traps opponent, damaging them for 4-5 turns.",100
-422,Magnet Bomb,Steel,,60,∞,20,,Ignores Accuracy and Evasiveness.,—
-423,Magnet Rise,Electric,,—,—,10,,User becomes immune to Ground-type moves for 5 turns.,—
-424,Magnetic Flux,Electric,,—,—,20,,Raises Defense and Sp. Defense of Plus/Minus Pokémon.,—
-425,Magnitude,Ground,,—,100,30,,Hits with random power.,—
-426,Malicious Moonsault,Dark,,180,—,1,,Incineroar-exclusive Z-Move.,—
-427,Mat Block,Fighting,,—,—,10,,Protects teammates from damaging moves.,—
-428,Max Airstream,Flying,—,—,—,—,,Flying type Dynamax move. Raises the team's Speed.,100
-429,Max Darkness,Dark,—,—,—,—,,Dark type Dynamax move. Lowers the target's Special Defense.,100
-430,Max Flare,Fire,—,—,—,—,,Fire type Dynamax move. Summons harsh sunlight.,—
-431,Max Flutterby,Bug,—,—,—,—,,Bug type Dynamax move. Lowers the target's Special Attack.,100
-432,Max Geyser,Water,—,—,—,—,,Water type Dynamax move. Summons heavy rain.,—
-433,Max Guard,Normal,—,—,—,—,,Status category Dynamax move. Protects the user.,—
-434,Max Hailstorm,Ice,—,—,—,—,,Ice type Dynamax move. Summons hail.,—
-435,Max Knuckle,Fighting,—,—,—,—,,Fighting type Dynamax move. Increases the team's Attack.,100
-436,Max Lightning,Electric,—,—,—,—,,Electric type Dynamax move. Summons Electric Terrain.,—
-437,Max Mindstorm,Psychic,—,—,—,—,,Psychic type Dynamax move. Summons Psychic Terrain.,—
-438,Max Ooze,Poison,—,—,—,—,,Poison type Dynamax move. Increases the team's Special Attack.,100
-439,Max Overgrowth,Grass,—,—,—,—,,Grass type Dynamax move. Summons Grassy Terrain.,—
-440,Max Phantasm,Ghost,—,—,—,—,,Ghost type Dynamax move. Lowers the target's Defense.,100
-441,Max Quake,Ground,—,—,—,—,,Ground type Dynamax move. Increases the team's Special Defense.,100
-442,Max Rockfall,Rock,—,—,—,—,,Rock type Dynamax move. Summons a sandstorm.,—
-443,Max Starfall,Fairy,—,—,—,—,,Fairy type Dynamax move. Summons Misty Terrain.,—
-444,Max Steelspike,Steel,—,—,—,—,,Steel type Dynamax move. Raises the team's Defense.,100
-445,Max Strike,Normal,—,—,—,—,,Normal type Dynamax move. Lowers the target's Speed.,100
-446,Max Wyrmwind,Dragon,—,—,—,—,,Dragon type Dynamax move. Lowers the target's Attack.,100
-447,Me First,Normal,,—,—,20,,User copies the opponent's attack with 1.5× power.,—
-448,Mean Look,Normal,,—,—,5,,Opponent cannot flee or switch.,—
-449,Meditate,Psychic,,—,—,40,,Raises user's Attack.,—
-450,Mega Drain,Grass,,40,100,15,,User recovers half the HP inflicted on opponent.,—
-451,Mega Kick,Normal,,120,75,5,TM01,,—
-452,Mega Punch,Normal,,80,85,20,,,—
-453,Megahorn,Bug,,120,85,10,,,—
-454,Memento,Dark,,—,100,10,,"User faints, sharply lowers opponent's Attack and Special Attack.",—
-455,Menacing Moonraze Maelstrom,Ghost,,200,—,1,,Lunala-exclusive Z-Move.,—
-456,Metal Burst,Steel,,—,100,10,,Deals damage equal to 1.5x opponent's attack.,—
-457,Metal Claw,Steel,,50,95,35,,May raise user's Attack.,10
-458,Metal Sound,Steel,,—,85,40,,Sharply lowers opponent's Special Defense.,—
-459,Meteor Assault,Fighting,,150,100,5,,User must recharge next turn.,—
-460,Meteor Beam,Rock,,120,90,10,,"User gathers space power and boosts its Sp. Atk stat, then attacks the target on the next turn.",—
-461,Meteor Mash,Steel,,90,90,10,,May raise user's Attack.,20
-462,Metronome,Normal,,—,—,10,,User performs almost any move in the game at random.,—
-463,Milk Drink,Normal,,—,—,10,,User recovers half its max HP.,—
-464,Mimic,Normal,,—,—,10,,Copies the opponent's last move.,—
-465,Mind Blown,Fire,,150,100,5,,User receives recoil damage.,—
-466,Mind Reader,Normal,,—,—,5,,User's next attack is guaranteed to hit.,—
-467,Minimize,Normal,,—,—,10,,Sharply raises user's Evasiveness.,—
-468,Miracle Eye,Psychic,,—,—,40,,"Resets opponent's Evasiveness, removes Dark's Psychic immunity.",—
-469,Mirror Coat,Psychic,,—,100,20,,"When hit by a Special Attack, user strikes back with 2x power.",—
-470,Mirror Move,Flying,,—,—,20,,User performs the opponent's last move.,—
-471,Mirror Shot,Steel,,65,85,10,,May lower opponent's Accuracy.,30
-472,Mist,Ice,,—,—,30,,User's stats cannot be changed for a period of time.,—
-473,Mist Ball,Psychic,,70,100,5,,May lower opponent's Special Attack.,50
-474,Misty Explosion,Fairy,,100,100,5,,Power increases on Misty Terrain.,—
-475,Misty Terrain,Fairy,,—,—,10,TM89,Protects the field from status conditions for 5 turns.,—
-476,Moonblast,Fairy,,95,100,15,,May lower opponent's Special Attack.,30
-477,Moongeist Beam,Ghost,,100,100,5,,Ignores the target's ability.,—
-478,Moonlight,Fairy,,—,—,5,,User recovers HP. Amount varies with the weather.,—
-479,Morning Sun,Normal,,—,—,5,,User recovers HP. Amount varies with the weather.,—
-480,Mud Bomb,Ground,,65,85,10,,May lower opponent's Accuracy.,30
-481,Mud Shot,Ground,,55,95,15,TM53,Lowers opponent's Speed.,100
-482,Mud Sport,Ground,,—,—,15,,Weakens the power of Electric-type moves.,—
-483,Mud-Slap,Ground,,20,100,10,,Lowers opponent's Accuracy.,100
-484,Muddy Water,Water,,90,85,10,,May lower opponent's Accuracy.,30
-485,Multi-Attack,Normal,,120,100,10,,Type matches Memory item held.,—
-486,Mystical Fire,Fire,,75,100,10,TM92,Lowers opponent's Special Attack.,100
-487,Nasty Plot,Dark,,—,—,20,,Sharply raises user's Special Attack.,—
-488,Natural Gift,Normal,,—,100,15,,Power and type depend on the user's held berry.,—
-489,Nature Power,Normal,,—,—,20,,Uses a certain move based on the current terrain.,—
-490,Nature's Madness,Fairy,,—,90,10,,Halves the foe's HP.,—
-491,Needle Arm,Grass,,60,100,15,,May cause flinching.,30
-492,Never-Ending Nightmare,Ghost,—,—,—,1,,Ghost type Z-Move.,—
-493,Night Daze,Dark,,85,95,10,,May lower opponent's Accuracy.,40
-494,Night Shade,Ghost,,—,100,15,,Inflicts damage equal to user's level.,—
-495,Night Slash,Dark,,70,100,15,,High critical hit ratio.,—
-496,Nightmare,Ghost,,—,100,15,,The sleeping opponent loses 25% of its max HP each turn.,—
-497,No Retreat,Fighting,,—,—,5,,Raises all stats but user cannot switch out.,100
-498,Noble Roar,Normal,,—,100,30,,Lowers opponent's Attack and Special Attack.,100
-499,Nuzzle,Electric,,20,100,20,,Paralyzes opponent.,100
-500,Oblivion Wing,Flying,,80,100,10,,User recovers most of the HP inflicted on opponent.,—
-501,Obstruct,Dark,,—,100,10,,Protects the user and sharply lowers Defence on contact.,—
-502,Oceanic Operetta,Water,,195,—,1,,Primarina-exclusive Z-Move.,—
-503,Octazooka,Water,,65,85,10,,May lower opponent's Accuracy.,50
-504,Octolock,Fighting,,—,100,15,,"Lowers opponent's Defense and Special Defense every turn, and they cannot flee or switch out.",—
-505,Odor Sleuth,Normal,,—,—,40,,"Resets opponent's Evasiveness, Normal-type and Fighting-type attacks can now hit Ghosts, and Ghost-type attacks hit Normal.",—
-506,Ominous Wind,Ghost,,60,100,5,,May raise all user's stats at once.,10
-507,Origin Pulse,Water,,110,85,10,,Hits all adjacent opponents.,—
-508,Outrage,Dragon,,120,100,10,,User attacks for 2-3 turns but then becomes confused.,—
-509,Overdrive,Electric,,80,100,10,,,—
-510,Overheat,Fire,,130,90,5,,Sharply lowers user's Special Attack.,100
-511,Pain Split,Normal,,—,—,20,,The user's and opponent's HP becomes the average of both.,—
-512,Parabolic Charge,Electric,,65,100,20,,User recovers half the HP inflicted on opponent.,—
-513,Parting Shot,Dark,,—,100,20,,Lowers opponent's Attack and Special Attack then switches out. ,100
-514,Pay Day,Normal,,40,100,20,TM02,A small amount of money is gained after the battle resolves.,—
-515,Payback,Dark,,50,100,10,TM57,Power doubles if the user was attacked first.,—
-516,Peck,Flying,,35,100,35,,,—
-517,Perish Song,Normal,,—,—,5,,Any Pokémon in play when this attack is used faints in 3 turns.,—
-518,Petal Blizzard,Grass,,90,100,15,,Hits all adjacent Pokémon.,—
-519,Petal Dance,Grass,,120,100,10,,User attacks for 2-3 turns but then becomes confused.,—
-520,Phantom Force,Ghost,,90,100,10,TM86,"Disappears on first turn, attacks on second. Can strike through Protect/Detect.",—
-521,Photon Geyser,Psychic,,100,100,5,,"Uses Attack or Special Attack stat, whichever is higher.",—
-522,Pika Papow,Electric,,—,∞,20,,Power increases when player's bond is stronger.,—
-523,Pin Missile,Bug,,25,95,20,TM07,Hits 2-5 times in one turn.,—
-524,Plasma Fists,Electric,,100,100,15,,Changes Normal-type moves to Electric-type moves.,—
-525,Play Nice,Normal,,—,—,20,,Lowers opponent's Attack. Always hits.,100
-526,Play Rough,Fairy,,90,90,10,,May lower opponent's Attack.,10
-527,Pluck,Flying,,60,100,20,,"If the opponent is holding a berry, its effect is stolen by user.",—
-528,Poison Fang,Poison,,50,100,15,,May badly poison opponent.,50
-529,Poison Gas,Poison,,—,90,40,,Poisons opponent.,—
-530,Poison Jab,Poison,,80,100,20,,May poison the opponent.,30
-531,Poison Powder,Poison,,—,75,35,,Poisons opponent.,—
-532,Poison Sting,Poison,,15,100,35,,May poison the opponent.,30
-533,Poison Tail,Poison,,50,100,25,,High critical hit ratio. May poison opponent.,10
-534,Pollen Puff,Bug,,90,100,15,,Deals damage to opponent or restores HP of teammate.,—
-535,Poltergeist,Ghost,,110,90,5,,Fails if the target doesn’t have an item.,—
-536,Pound,Normal,,40,100,35,,,—
-537,Powder,Bug,,—,100,20,,Damages Pokémon using Fire type moves.,—
-538,Powder Snow,Ice,,40,100,25,,May freeze opponent.,10
-539,Power Gem,Rock,,80,100,20,,,—
-540,Power Split,Psychic,,—,—,10,,Averages Attack and Special Attack with the target.,—
-541,Power Swap,Psychic,,—,—,10,TM60,User and opponent swap Attack and Special Attack.,—
-542,Power Trick,Psychic,,—,—,10,,User's own Attack and Defense switch.,—
-543,Power Trip,Dark,,20,100,10,,"The user boasts its strength and attacks the target. The more the user's stats are raised, the greater the move's power.",—
-544,Power Whip,Grass,,120,85,10,,,—
-545,Power-Up Punch,Fighting,,40,100,20,,Raises Attack.,100
-546,Precipice Blades,Ground,,120,85,10,,Hits all adjacent opponents.,—
-547,Present,Normal,,—,90,15,,Either deals damage or heals.,—
-548,Prismatic Laser,Psychic,,160,100,10,,The user shoots powerful lasers using the power of a prism. The user can't move on the next turn.,—
-549,Protect,Normal,,—,—,10,TM25,"Protects the user, but may fail if used consecutively.",—
-550,Psybeam,Psychic,,65,100,20,,May confuse opponent.,10
-551,Psych Up,Normal,,—,—,10,,Copies the opponent's stat changes.,—
-552,Psychic,Psychic,,90,100,10,,May lower opponent's Special Defense.,10
-553,Psychic Fangs,Psychic,,85,100,10,,The user bites the target with its psychic capabilities. This can also destroy Light Screen and Reflect.,—
-554,Psychic Terrain,Psychic,,—,—,10,TM91,Prevents priority moves from being used for 5 turns.,—
-555,Psycho Boost,Psychic,,140,90,5,,Sharply lowers user's Special Attack.,100
-556,Psycho Cut,Psychic,,70,100,20,TM69,High critical hit ratio.,—
-557,Psycho Shift,Psychic,,—,100,10,,Transfers user's status condition to the opponent.,—
-558,Psyshock,Psychic,,80,100,10,,"Inflicts damage based on the target's Defense, not Special Defense.",—
-559,Psystrike,Psychic,,100,100,10,,"Inflicts damage based on the target's Defense, not Special Defense.",—
-560,Psywave,Psychic,,—,100,15,,Inflicts damage 50-150% of user's level.,—
-561,Pulverizing Pancake,Normal,,210,—,1,,Snorlax-exclusive Normal type Z-Move.,—
-562,Punishment,Dark,,—,100,5,,Power increases when opponent's stats have been raised.,—
-563,Purify,Poison,,—,—,20,,"The user heals the target's status condition. If the move succeeds, it also restores the user's own HP.",—
-564,Pursuit,Dark,,40,100,20,,Double power if the opponent is switching out.,—
-565,Pyro Ball,Fire,,120,90,5,,May burn opponent.,10
-566,Quash,Dark,,—,100,15,,Makes the target act last this turn.,—
-567,Quick Attack,Normal,,40,100,30,,User attacks first.,—
-568,Quick Guard,Fighting,,—,—,15,,Protects the user's team from high-priority moves.,—
-569,Quiver Dance,Bug,,—,—,20,,"Raises user's Special Attack, Special Defense and Speed.",—
-570,Rage,Normal,,20,100,20,,Raises user's Attack when hit.,—
-571,Rage Powder,Bug,,—,—,20,,"Forces attacks to hit user, not team-mates.",—
-572,Rain Dance,Water,,—,—,5,TM33,Makes it rain for 5 turns.,—
-573,Rapid Spin,Normal,,50,100,40,,Raises user's Speed and removes entry hazards and trap move effects.,100
-574,Razor Leaf,Grass,,55,95,25,,High critical hit ratio.,—
-575,Razor Shell,Water,,75,95,10,TM83,May lower opponent's Defense.,50
-576,Razor Wind,Normal,,80,100,10,,"Charges on first turn, attacks on second. High critical hit ratio.",—
-577,Recover,Normal,,—,—,10,,User recovers half its max HP.,—
-578,Recycle,Normal,,—,—,10,,User's used hold item is restored.,—
-579,Reflect,Psychic,,—,—,20,TM18,Halves damage from Physical attacks for 5 turns.,—
-580,Reflect Type,Normal,,—,—,15,,User becomes the target's type.,—
-581,Refresh,Normal,,—,—,20,,"Cures paralysis, poison, and burns.",—
-582,Relic Song,Normal,,75,100,10,,May put the target to sleep.,10
-583,Rest,Psychic,,—,—,10,TM21,"User sleeps for 2 turns, but user is fully healed.",—
-584,Retaliate,Normal,,70,100,5,TM79,Inflicts double damage if a teammate fainted on the last turn.,—
-585,Return,Normal,,—,100,20,,Power increases with higher Friendship.,—
-586,Revelation Dance,Normal,,90,100,15,,Type changes based on Oricorio's form.,—
-587,Revenge,Fighting,,60,100,10,TM42,Power increases if user was hit first.,—
-588,Reversal,Fighting,,—,100,15,,"The lower the user's HP, the higher the power.",—
-589,Rising Voltage,Electric,,70,100,20,,Power doubles on Electric Terrain.,—
-590,Roar,Normal,,—,—,20,,"In battles, the opponent switches. In the wild, the Pokémon runs.",—
-591,Roar of Time,Dragon,,150,90,5,,User must recharge next turn.,—
-592,Rock Blast,Rock,,25,90,10,TM54,Hits 2-5 times in one turn.,—
-593,Rock Climb,Normal,,90,85,20,,May confuse opponent.,20
-594,Rock Polish,Rock,,—,—,20,,Sharply raises user's Speed.,—
-595,Rock Slide,Rock,,75,90,10,TM22,May cause flinching.,30
-596,Rock Smash,Fighting,,40,100,15,,May lower opponent's Defense.,50
-597,Rock Throw,Rock,,50,90,15,,,—
-598,Rock Tomb,Rock,,60,95,15,TM48,Lowers opponent's Speed.,100
-599,Rock Wrecker,Rock,,150,90,5,,User must recharge next turn.,—
-600,Role Play,Psychic,,—,—,10,,User copies the opponent's Ability.,—
-601,Rolling Kick,Fighting,,60,85,15,,May cause flinching.,30
-602,Rollout,Rock,,30,90,20,,Doubles in power each turn for 5 turns.,—
-603,Roost,Flying,,—,—,10,,User recovers half of its max HP and loses the Flying type temporarily.,—
-604,Rototiller,Ground,,—,—,10,,Raises Attack and Special Attack of Grass-types.,100
-605,Round,Normal,,60,100,15,TM76,Power increases if teammates use it in the same turn.,—
-606,Sacred Fire,Fire,,100,95,5,,May burn opponent.,50
-607,Sacred Sword,Fighting,,90,100,15,,Ignores opponent's stat changes.,—
-608,Safeguard,Normal,,—,—,25,TM19,The user's party is protected from status conditions.,—
-609,Sand Attack,Ground,,—,100,15,,Lowers opponent's Accuracy.,—
-610,Sand Tomb,Ground,,35,85,15,TM49,"Traps opponent, damaging them for 4-5 turns.",100
-611,Sandstorm,Rock,,—,—,10,TM32,Creates a sandstorm for 5 turns.,—
-612,Sappy Seed,Grass,,90,100,15,,Drains HP from opponent each turn.,100
-613,Savage Spin-Out,Bug,—,—,—,1,,Bug type Z-Move.,—
-614,Scald,Water,,80,100,15,,May burn opponent.,30
-615,Scale Shot,Dragon,,25,90,20,,Hits 2-5 times in one turn. Boosts user's Speed but lowers its Defense.,—
-616,Scary Face,Normal,,—,100,10,TM26,Sharply lowers opponent's Speed.,—
-617,Scorching Sands,Ground,,70,100,10,,May burn the target.,—
-618,Scratch,Normal,,40,100,35,,,—
-619,Screech,Normal,,—,85,40,TM16,Sharply lowers opponent's Defense.,—
-620,Searing Shot,Fire,,100,100,5,,May burn opponent.,30
-621,Searing Sunraze Smash,Steel,,200,—,1,,Solgaleo-exclusive Z-Move.,—
-622,Secret Power,Normal,,70,100,20,,Effects of the attack vary with the location.,30
-623,Secret Sword,Fighting,,85,100,10,,"Inflicts damage based on the target's Defense, not Special Defense.",—
-624,Seed Bomb,Grass,,80,100,15,,,—
-625,Seed Flare,Grass,,120,85,5,,May lower opponent's Special Defense.,40
-626,Seismic Toss,Fighting,,—,100,20,,Inflicts damage equal to user's level.,—
-627,Self-Destruct,Normal,,200,100,5,TM20,User faints.,—
-628,Shadow Ball,Ghost,,80,100,15,,May lower opponent's Special Defense.,20
-629,Shadow Bone,Ghost,,85,100,10,,May lower opponent's Defense.,20
-630,Shadow Claw,Ghost,,70,100,15,TM65,High critical hit ratio.,—
-631,Shadow Force,Ghost,,120,100,5,,"Disappears on first turn, attacks on second. Can strike through Protect/Detect.",—
-632,Shadow Punch,Ghost,,60,∞,20,,Ignores Accuracy and Evasiveness.,—
-633,Shadow Sneak,Ghost,,40,100,30,,User attacks first.,—
-634,Sharpen,Normal,,—,—,30,,Raises user's Attack.,—
-635,Shattered Psyche,Psychic,—,—,—,1,,Psychic type Z-Move.,—
-636,Sheer Cold,Ice,,—,30,5,,"One-Hit-KO, if it hits.",—
-637,Shell Side Arm,Poison,,—,—,—,,"May poison opponent. Inflicts either Special or Physical damage, whichever is better.",—
-638,Shell Smash,Normal,,—,—,15,,"Sharply raises user's Attack, Special Attack and Speed but lowers Defense and Special Defense.",—
-639,Shell Trap,Fire,,150,100,5,,Deals more damage to opponent if hit by a Physical move.,—
-640,Shift Gear,Steel,,—,—,10,,Raises user's Attack and sharply raises Speed.,—
-641,Shock Wave,Electric,,60,∞,20,,Ignores Accuracy and Evasiveness.,—
-642,Shore Up,Ground,,—,—,10,,The user regains up to half of its max HP. It restores more HP in a sandstorm.,—
-643,Signal Beam,Bug,,75,100,15,,May confuse opponent.,10
-644,Silver Wind,Bug,,60,100,5,,May raise all stats of user at once.,10
-645,Simple Beam,Normal,,—,100,15,,Changes target's ability to Simple.,—
-646,Sing,Normal,,—,55,15,,Puts opponent to sleep.,—
-647,Sinister Arrow Raid,Ghost,,180,—,1,,Decidueye-exclusive Z-Move.,—
-648,Sizzly Slide,Fire,,90,100,15,,Burns the opponent.,100
-649,Sketch,Normal,,—,—,1,,Permanently copies the opponent's last move.,—
-650,Skill Swap,Psychic,,—,—,10,,The user swaps Abilities with the opponent.,—
-651,Skitter Smack,Bug,,70,90,10,,Lowers opponent's Sp. Attack.,—
-652,Skull Bash,Normal,,130,100,10,,"Raises Defense on first turn, attacks on second.",100
-653,Sky Attack,Flying,,140,90,5,,"Charges on first turn, attacks on second. May cause flinching. High critical hit ratio.",30
-654,Sky Drop,Flying,,60,100,10,,"Takes opponent into the air on first turn, drops them on second turn.",—
-655,Sky Uppercut,Fighting,,85,90,15,,"Hits the opponent, even during Fly.",—
-656,Slack Off,Normal,,—,—,10,,User recovers half its max HP.,—
-657,Slam,Normal,,80,75,20,,,—
-658,Slash,Normal,,70,100,20,,High critical hit ratio.,—
-659,Sleep Powder,Grass,,—,75,15,,Puts opponent to sleep.,—
-660,Sleep Talk,Normal,,—,—,10,,User performs one of its own moves while sleeping.,—
-661,Sludge,Poison,,65,100,20,,May poison opponent.,30
-662,Sludge Bomb,Poison,,90,100,10,,May poison opponent.,30
-663,Sludge Wave,Poison,,95,100,10,,May poison opponent.,10
-664,Smack Down,Rock,,50,100,15,,Makes Flying-type Pokémon vulnerable to Ground moves.,100
-665,Smart Strike,Steel,,70,—,10,TM96,The user stabs the target with a sharp horn. This attack never misses.,—
-666,Smelling Salts,Normal,,70,100,10,,"Power doubles if opponent is paralyzed, but cures it.",—
-667,Smog,Poison,,30,70,20,,May poison opponent.,40
-668,Smokescreen,Normal,,—,100,20,,Lowers opponent's Accuracy.,—
-669,Snap Trap,Grass,,35,100,15,,"Traps opponent, damaging them for 4-5 turns.",100
-670,Snarl,Dark,,55,95,15,TM85,Lowers opponent's Special Attack.,100
-671,Snatch,Dark,,—,—,10,,Steals the effects of the opponent's next move.,—
-672,Snipe Shot,Water,,80,100,15,,Ignores moves and abilities that draw in moves. High critical hit ratio.,—
-673,Snore,Normal,,50,100,15,TM24,Can only be used if asleep. May cause flinching.,30
-674,Soak,Water,,—,100,20,,Changes the target's type to water.,—
-675,Soft-Boiled,Normal,,—,—,10,,User recovers half its max HP.,—
-676,Solar Beam,Grass,,120,100,10,TM11,"Charges on first turn, attacks on second.",—
-677,Solar Blade,Grass,,125,100,10,TM12,"Charges on first turn, attacks on second.",—
-678,Sonic Boom,Normal,,—,90,20,,Always inflicts 20 HP.,—
-679,Soul-Stealing 7-Star Strike,Ghost,,195,—,1,,Marshadow-exclusive Z-Move.,—
-680,Spacial Rend,Dragon,,100,95,5,,High critical hit ratio.,—
-681,Spark,Electric,,65,100,20,,May paralyze opponent.,30
-682,Sparkling Aria,Water,,90,100,10,,Heals the burns of its target.,—
-683,Sparkly Swirl,Fairy,,90,100,15,,Cures all status problems in the party Pokémon.,—
-684,Spectral Thief,Ghost,,90,100,10,,"The user hides in the target's shadow, steals the target's stat boosts, and then attacks.",—
-685,Speed Swap,Psychic,,—,—,10,TM62,The user exchanges Speed stats with the target.,—
-686,Spider Web,Bug,,—,—,10,,Opponent cannot escape/switch.,—
-687,Spike Cannon,Normal,,20,100,15,,Hits 2-5 times in one turn.,—
-688,Spikes,Ground,,—,—,20,,Hurts opponents when they switch into battle.,—
-689,Spiky Shield,Grass,,—,—,10,,Protects the user and inflicts damage on contact.,—
-690,Spirit Break,Fairy,,75,100,15,,Lowers opponent's Special Attack.,100
-691,Spirit Shackle,Ghost,,80,100,10,,Prevents the opponent from switching out.,—
-692,Spit Up,Normal,,—,100,10,,Power depends on how many times the user performed Stockpile.,—
-693,Spite,Ghost,,—,100,10,,The opponent's last move loses 2-5 PP.,—
-694,Splash,Normal,,—,—,40,,Doesn't do ANYTHING.,—
-695,Splintered Stormshards,Rock,,190,—,1,,Lycanroc-exclusive Z-Move.,—
-696,Splishy Splash,Water,,90,100,15,,May paralyze opponent.,30
-697,Spore,Grass,,—,100,15,,Puts opponent to sleep.,—
-698,Spotlight,Normal,,—,—,15,,The user shines a spotlight on the target so that only the target will be attacked during the turn.,—
-699,Stealth Rock,Rock,,—,—,20,,Damages opponent switching into battle.,—
-700,Steam Eruption,Water,,110,95,5,,May burn opponent.,30
-701,Steamroller,Bug,,65,100,20,,May cause flinching.,30
-702,Steel Beam,Steel,,140,95,5,,User loses 50% of its HP.,—
-703,Steel Roller,Steel,,130,100,5,,Fails if no Terrain in effect.,—
-704,Steel Wing,Steel,,70,90,25,TM30,May raise user's Defense.,10
-705,Sticky Web,Bug,,—,—,20,,Lowers opponent's Speed when switching into battle.,—
-706,Stockpile,Normal,,—,—,20,,Stores energy for use with Spit Up and Swallow.,—
-707,Stoked Sparksurfer,Electric,,175,—,1,,Alolan Raichu-exclusive Electric type Z-Move.,100
-708,Stomp,Normal,,65,100,20,,May cause flinching.,30
-709,Stomping Tantrum,Ground,,75,100,10,TM98,"Driven by frustration, the user attacks the target. If the user's previous move has failed, the power of this move doubles.",—
-710,Stone Edge,Rock,,100,80,5,,High critical hit ratio.,—
-711,Stored Power,Psychic,,20,100,10,,Power increases when user's stats have been raised.,—
-712,Storm Throw,Fighting,,60,100,10,,Always results in a critical hit.,100
-713,Strange Steam,Fairy,,90,95,10,,May confuse opponent.,20
-714,Strength,Normal,,80,100,15,,,—
-715,Strength Sap,Grass,,—,100,10,,The user restores its HP by the same amount as the target's Attack stat. It also lowers the target's Attack stat.,100
-716,String Shot,Bug,,—,95,40,,Sharply lowers opponent's Speed.,—
-717,Struggle,Normal,,50,—,—,,Only usable when all PP are gone. Hurts the user.,—
-718,Struggle Bug,Bug,,50,100,20,,Lowers opponent's Special Attack.,100
-719,Stuff Cheeks,Normal,,—,—,10,,"The user eats its held Berry, then sharply raises its Defense stat.",100
-720,Stun Spore,Grass,,—,75,30,,Paralyzes opponent.,—
-721,Submission,Fighting,,80,80,20,,User receives recoil damage.,—
-722,Substitute,Normal,,—,—,10,,Uses HP to creates a decoy that takes hits.,—
-723,Subzero Slammer,Ice,—,—,—,1,,Ice type Z-Move.,—
-724,Sucker Punch,Dark,,70,100,5,,"User attacks first, but only works if opponent is readying an attack.",—
-725,Sunny Day,Fire,,—,—,5,TM34,Makes it sunny for 5 turns.,—
-726,Sunsteel Strike,Steel,,100,100,5,,Ignores the target's ability.,—
-727,Super Fang,Normal,,—,90,10,,Always takes off half of the opponent's HP.,—
-728,Superpower,Fighting,,120,100,5,,Lowers user's Attack and Defense.,100
-729,Supersonic,Normal,,—,55,20,,Confuses opponent.,—
-730,Supersonic Skystrike,Flying,—,—,—,1,,Flying type Z-Move.,—
-731,Surf,Water,,90,100,15,,Hits all adjacent Pokémon.,—
-732,Surging Strikes,Water,—,—,—,—,,Always results in a critical hit and ignores stat changes.,—
-733,Swagger,Normal,,—,85,15,,"Opponent becomes confused, but its Attack is sharply raised.",—
-734,Swallow,Normal,,—,—,10,,"The more times the user has performed Stockpile, the more HP is recovered.",—
-735,Sweet Kiss,Fairy,,—,75,10,,Confuses opponent.,—
-736,Sweet Scent,Normal,,—,100,20,,Lowers opponent's Evasiveness.,—
-737,Swift,Normal,,60,∞,20,TM40,Ignores Accuracy and Evasiveness.,—
-738,Switcheroo,Dark,,—,100,10,,Swaps held items with the opponent.,—
-739,Swords Dance,Normal,,—,—,20,,Sharply raises user's Attack.,—
-740,Synchronoise,Psychic,,120,100,10,,Hits any Pokémon that shares a type with the user.,—
-741,Synthesis,Grass,,—,—,5,,User recovers HP. Amount varies with the weather.,—
-742,Tackle,Normal,,40,100,35,,,—
-743,Tail Glow,Bug,,—,—,20,,Drastically raises user's Special Attack.,—
-744,Tail Slap,Normal,,25,85,10,TM84,Hits 2-5 times in one turn.,—
-745,Tail Whip,Normal,,—,100,30,,Lowers opponent's Defense.,—
-746,Tailwind,Flying,,—,—,15,,Doubles Speed for 4 turns.,—
-747,Take Down,Normal,,90,85,20,,User receives recoil damage.,—
-748,Tar Shot,Rock,,—,100,15,,Lowers the opponent's Speed and makes them weaker to Fire-type moves.,100
-749,Taunt,Dark,,—,100,20,,Opponent can only use moves that attack.,—
-750,Tearful Look,Normal,,—,—,20,,The user gets teary eyed to make the target lose its combative spirit. This lowers the target's Attack and Sp. Atk stats.,100
-751,Teatime,Normal,,—,—,10,,Forces all Pokémon on the field to eat their berries.,—
-752,Techno Blast,Normal,,120,100,5,,Type depends on the Drive being held.,—
-753,Tectonic Rage,Ground,—,—,—,1,,Ground type Z-Move.,—
-754,Teeter Dance,Normal,,—,100,20,,Confuses all Pokémon.,—
-755,Telekinesis,Psychic,,—,—,15,,"Ignores opponent's Evasiveness for three turns, add Ground immunity.",—
-756,Teleport,Psychic,,—,—,20,,Allows user to flee wild battles; also warps player to last PokéCenter.,—
-757,Terrain Pulse,Normal,,50,100,10,,Type and power change depending on the Terrain in effect.,—
-758,Thief,Dark,,60,100,25,TM23,Also steals opponent's held item.,—
-759,Thousand Arrows,Ground,,90,100,10,,Makes Flying-type Pokémon vulnerable to Ground moves.,—
-760,Thousand Waves,Ground,,90,100,10,,Opponent cannot flee or switch.,—
-761,Thrash,Normal,,120,100,10,,User attacks for 2-3 turns but then becomes confused.,—
-762,Throat Chop,Dark,,80,100,15,,Prevents use of sound moves for two turns.,100
-763,Thunder,Electric,,110,70,10,,May paralyze opponent.,30
-764,Thunder Fang,Electric,,65,95,15,TM66,May cause flinching and/or paralyze opponent.,10
-765,Thunder Punch,Electric,,75,100,15,TM05,May paralyze opponent.,10
-766,Thunder Shock,Electric,,40,100,30,,May paralyze opponent.,10
-767,Thunder Wave,Electric,,—,90,20,TM14,Paralyzes opponent.,—
-768,Thunderbolt,Electric,,90,100,15,,May paralyze opponent.,10
-769,Tickle,Normal,,—,100,20,,Lowers opponent's Attack and Defense.,—
-770,Topsy-Turvy,Dark,,—,—,20,,Reverses stat changes of opponent.,—
-771,Torment,Dark,,—,100,15,,Opponent cannot use the same move in a row.,—
-772,Toxic,Poison,,—,90,10,,Badly poisons opponent.,—
-773,Toxic Spikes,Poison,,—,—,20,,Poisons opponents when they switch into battle.,—
-774,Toxic Thread,Poison,,—,100,20,,Lowers target's Speed.,100
-775,Transform,Normal,,—,—,10,,User takes on the form and attacks of the opponent.,—
-776,Tri Attack,Normal,,80,100,10,,"May paralyze, burn or freeze opponent.",20
-777,Trick,Psychic,,—,100,10,,Swaps held items with the opponent.,—
-778,Trick Room,Psychic,,—,—,5,TM70,Slower Pokémon move first in the turn for 5 turns.,—
-779,Trick-or-Treat,Ghost,,—,100,20,,Adds Ghost type to opponent.,—
-780,Triple Axel,Ice,,20,90,10,,Attacks thrice with more power each time.,—
-781,Triple Kick,Fighting,,10,90,10,,Hits thrice in one turn at increasing power.,—
-782,Trop Kick,Grass,,70,100,15,,Lowers opponent's Attack.,100
-783,Trump Card,Normal,,—,∞,5,,"The lower the PP, the higher the power.",—
-784,Twineedle,Bug,,25,100,20,,Hits twice in one turn. May poison opponent.,20
-785,Twinkle Tackle,Fairy,—,—,—,1,,Fairy type Z-Move.,—
-786,Twister,Dragon,,40,100,20,,May cause flinching. Hits Pokémon using Fly/Bounce with double power.,20
-787,U-turn,Bug,,70,100,20,TM56,User switches out immediately after attacking.,—
-788,Uproar,Normal,,90,100,10,,User attacks for 3 turns and prevents sleep.,—
-789,V-create,Fire,,180,95,5,,"Lowers user's Defense, Special Defense and Speed.",100
-790,Vacuum Wave,Fighting,,40,100,30,,User attacks first.,—
-791,Veevee Volley,Normal,,—,∞,20,,Power increases when player's bond is stronger.,—
-792,Venom Drench,Poison,,—,100,20,,Lowers poisoned opponent's Special Attack and Speed.,100
-793,Venoshock,Poison,,65,100,10,TM74,Inflicts double damage if the target is poisoned.,—
-794,Vine Whip,Grass,,45,100,25,,,—
-795,Vise Grip,Normal,,55,100,30,,,—
-796,Vital Throw,Fighting,,70,∞,10,,"User attacks last, but ignores Accuracy and Evasiveness.",—
-797,Volt Switch,Electric,,70,100,20,TM80,User must switch out after attacking.,—
-798,Volt Tackle,Electric,,120,100,15,,User receives recoil damage. May paralyze opponent.,10
-799,Wake-Up Slap,Fighting,,70,100,10,,"Power doubles if opponent is asleep, but wakes it up.",—
-800,Water Gun,Water,,40,100,25,,,—
-801,Water Pledge,Water,,80,100,10,,Added effects appear if preceded by Fire Pledge or succeeded by Grass Pledge.,—
-802,Water Pulse,Water,,60,100,20,,May confuse opponent.,20
-803,Water Shuriken,Water,,15,100,20,,Hits 2-5 times in one turn.,—
-804,Water Sport,Water,,—,—,15,,Weakens the power of Fire-type moves.,—
-805,Water Spout,Water,,150,100,5,,"The higher the user's HP, the higher the damage caused.",—
-806,Waterfall,Water,,80,100,15,,May cause flinching.,20
-807,Weather Ball,Normal,,50,100,10,TM46,Move's power and type changes with the weather.,—
-808,Whirlpool,Water,,35,85,15,TM36,"Traps opponent, damaging them for 4-5 turns.",100
-809,Whirlwind,Normal,,—,—,20,,"In battles, the opponent switches. In the wild, the Pokémon runs.",—
-810,Wicked Blow,Dark,—,—,—,—,,Always results in a critical hit and ignores stat changes.,—
-811,Wide Guard,Rock,,—,—,10,,Protects the user's team from multi-target attacks.,—
-812,Wild Charge,Electric,,90,100,15,,User receives recoil damage.,—
-813,Will-O-Wisp,Fire,,—,85,15,TM38,Burns opponent.,—
-814,Wing Attack,Flying,,60,100,35,,,—
-815,Wish,Normal,,—,—,10,,The user recovers HP in the following turn.,—
-816,Withdraw,Water,,—,—,40,,Raises user's Defense.,—
-817,Wonder Room,Psychic,,—,—,10,TM71,Swaps every Pokémon's Defense and Special Defense for 5 turns.,—
-818,Wood Hammer,Grass,,120,100,15,,User receives recoil damage.,—
-819,Work Up,Normal,,—,—,30,,Raises user's Attack and Special Attack.,—
-820,Worry Seed,Grass,,—,100,10,,Changes the opponent's Ability to Insomnia.,—
-821,Wrap,Normal,,15,90,20,,"Traps opponent, damaging them for 4-5 turns.",100
-822,Wring Out,Normal,,—,100,5,,"The higher the opponent's HP, the higher the damage.",—
-823,X-Scissor,Bug,,80,100,15,,,—
-824,Yawn,Normal,,—,—,10,,Puts opponent to sleep in the next turn.,—
-825,Zap Cannon,Electric,,120,50,5,,Paralyzes opponent.,100
-826,Zen Headbutt,Psychic,,80,90,15,,May cause flinching.,20
-827,Zing Zap,Electric,,80,100,10,,May cause flinching.,30
-828,Zippy Zap,Electric,,50,100,15,,Always results in a critical hit.,100
+0,#,Name,Type,Category,Contest,PP,Power,Accuracy,Gen
+1,1,Pound,Normal,Physical,Tough,35,40,100%,I
+2,2,Karate Chop,Fighting,Physical,Tough,25,50,100%,I
+3,3,Double Slap,Normal,Physical,Cute,10,15,85%,I
+4,4,Comet Punch,Normal,Physical,Tough,15,18,85%,I
+5,5,Mega Punch,Normal,Physical,Tough,20,80,85%,I
+6,6,Pay Day,Normal,Physical,Clever,20,40,100%,I
+7,7,Fire Punch,Fire,Physical,Tough,15,75,100%,I
+8,8,Ice Punch,Ice,Physical,Beautiful,15,75,100%,I
+9,9,Thunder Punch,Electric,Physical,Cool,15,75,100%,I
+10,10,Scratch,Normal,Physical,Tough,35,40,100%,I
+11,11,Vise Grip,Normal,Physical,Tough,30,55,100%,I
+12,12,Guillotine,Normal,Physical,Cool,5,—,30%,I
+13,13,Razor Wind,Normal,Special,Cool,10,80,100%,I
+14,14,Swords Dance,Normal,Status,Beautiful,20,—,—,I
+15,15,Cut,Normal,Physical,Cool,30,50,95%,I
+16,16,Gust,Flying,Special,Clever,35,40,100%,I
+17,17,Wing Attack,Flying,Physical,Cool,35,60,100%,I
+18,18,Whirlwind,Normal,Status,Clever,20,—,—,I
+19,19,Fly,Flying,Physical,Clever,15,90,95%,I
+20,20,Bind,Normal,Physical,Tough,20,15,85%,I
+21,21,Slam,Normal,Physical,Tough,20,80,75%,I
+22,22,Vine Whip,Grass,Physical,Cool,25,45,100%,I
+23,23,Stomp,Normal,Physical,Tough,20,65,100%,I
+24,24,Double Kick,Fighting,Physical,Cool,30,30,100%,I
+25,25,Mega Kick,Normal,Physical,Cool,5,120,75%,I
+26,26,Jump Kick,Fighting,Physical,Cool,10,100,95%,I
+27,27,Rolling Kick,Fighting,Physical,Cool,15,60,85%,I
+28,28,Sand Attack,Ground,Status,Cute,15,—,100%,I
+29,29,Headbutt,Normal,Physical,Tough,15,70,100%,I
+30,30,Horn Attack,Normal,Physical,Cool,25,65,100%,I
+31,31,Fury Attack,Normal,Physical,Cool,20,15,85%,I
+32,32,Horn Drill,Normal,Physical,Cool,5,—,30%,I
+33,33,Tackle,Normal,Physical,Tough,35,40,100%,I
+34,34,Body Slam,Normal,Physical,Tough,15,85,100%,I
+35,35,Wrap,Normal,Physical,Tough,20,15,90%,I
+36,36,Take Down,Normal,Physical,Tough,20,90,85%,I
+37,37,Thrash,Normal,Physical,Tough,10,120,100%,I
+38,38,Double-Edge,Normal,Physical,Tough,15,120,100%,I
+39,39,Tail Whip,Normal,Status,Cute,30,—,100%,I
+40,40,Poison Sting,Poison,Physical,Clever,35,15,100%,I
+41,41,Twineedle,Bug,Physical,Cool,20,25,100%,I
+42,42,Pin Missile,Bug,Physical,Cool,20,25,95%,I
+43,43,Leer,Normal,Status,Cool,30,—,100%,I
+44,44,Bite,Dark,Physical,Tough,25,60,100%,I
+45,45,Growl,Normal,Status,Cute,40,—,100%,I
+46,46,Roar,Normal,Status,Cool,20,—,—,I
+47,47,Sing,Normal,Status,Cute,15,—,55%,I
+48,48,Supersonic,Normal,Status,Clever,20,—,55%,I
+49,49,Sonic Boom,Normal,Special,Cool,20,—,90%,I
+50,50,Disable,Normal,Status,Clever,20,—,100%,I
+51,51,Acid,Poison,Special,Clever,30,40,100%,I
+52,52,Ember,Fire,Special,Cute,25,40,100%,I
+53,53,Flamethrower,Fire,Special,Beautiful,15,90,100%,I
+54,54,Mist,Ice,Status,Beautiful,30,—,—,I
+55,55,Water Gun,Water,Special,Cute,25,40,100%,I
+56,56,Hydro Pump,Water,Special,Beautiful,5,110,80%,I
+57,57,Surf,Water,Special,Beautiful,15,90,100%,I
+58,58,Ice Beam,Ice,Special,Beautiful,10,90,100%,I
+59,59,Blizzard,Ice,Special,Beautiful,5,110,70%,I
+60,60,Psybeam,Psychic,Special,Beautiful,20,65,100%,I
+61,61,Bubble Beam,Water,Special,Beautiful,20,65,100%,I
+62,62,Aurora Beam,Ice,Special,Beautiful,20,65,100%,I
+63,63,Hyper Beam,Normal,Special,Cool,5,150,90%,I
+64,64,Peck,Flying,Physical,Cool,35,35,100%,I
+65,65,Drill Peck,Flying,Physical,Cool,20,80,100%,I
+66,66,Submission,Fighting,Physical,Cool,20,80,80%,I
+67,67,Low Kick,Fighting,Physical,Tough,20,—,100%,I
+68,68,Counter,Fighting,Physical,Tough,20,—,100%,I
+69,69,Seismic Toss,Fighting,Physical,Tough,20,—,100%,I
+70,70,Strength,Normal,Physical,Tough,15,80,100%,I
+71,71,Absorb,Grass,Special,Clever,25,20,100%,I
+72,72,Mega Drain,Grass,Special,Clever,15,40,100%,I
+73,73,Leech Seed,Grass,Status,Clever,10,—,90%,I
+74,74,Growth,Normal,Status,Beautiful,20,—,—,I
+75,75,Razor Leaf,Grass,Physical,Cool,25,55,95%,I
+76,76,Solar Beam,Grass,Special,Cool,10,120,100%,I
+77,77,Poison Powder,Poison,Status,Clever,35,—,75%,I
+78,78,Stun Spore,Grass,Status,Clever,30,—,75%,I
+79,79,Sleep Powder,Grass,Status,Clever,15,—,75%,I
+80,80,Petal Dance,Grass,Special,Beautiful,10,120,100%,I
+81,81,String Shot,Bug,Status,Clever,40,—,95%,I
+82,82,Dragon Rage,Dragon,Special,Cool,10,—,100%,I
+83,83,Fire Spin,Fire,Special,Beautiful,15,35,85%,I
+84,84,Thunder Shock,Electric,Special,Cool,30,40,100%,I
+85,85,Thunderbolt,Electric,Special,Cool,15,90,100%,I
+86,86,Thunder Wave,Electric,Status,Cool,20,—,90%,I
+87,87,Thunder,Electric,Special,Cool,10,110,70%,I
+88,88,Rock Throw,Rock,Physical,Tough,15,50,90%,I
+89,89,Earthquake,Ground,Physical,Tough,10,100,100%,I
+90,90,Fissure,Ground,Physical,Tough,5,—,30%,I
+91,91,Dig,Ground,Physical,Tough,10,80,100%,I
+92,92,Toxic,Poison,Status,Clever,10,—,90%,I
+93,93,Confusion,Psychic,Special,Clever,25,50,100%,I
+94,94,Psychic,Psychic,Special,Clever,10,90,100%,I
+95,95,Hypnosis,Psychic,Status,Clever,20,—,60%,I
+96,96,Meditate,Psychic,Status,Beautiful,40,—,—,I
+97,97,Agility,Psychic,Status,Cool,30,—,—,I
+98,98,Quick Attack,Normal,Physical,Cool,30,40,100%,I
+99,99,Rage,Normal,Physical,Tough,20,20,100%,I
+100,100,Teleport,Psychic,Status,Cool,20,—,—,I
+101,101,Night Shade,Ghost,Special,Clever,15,—,100%,I
+102,102,Mimic,Normal,Status,Cute,10,—,—,I
+103,103,Screech,Normal,Status,Clever,40,—,85%,I
+104,104,Double Team,Normal,Status,Cool,15,—,—,I
+105,105,Recover,Normal,Status,Clever,10,—,—,I
+106,106,Harden,Normal,Status,Tough,30,—,—,I
+107,107,Minimize,Normal,Status,Cute,10,—,—,I
+108,108,Smokescreen,Normal,Status,Clever,20,—,100%,I
+109,109,Confuse Ray,Ghost,Status,Clever,10,—,100%,I
+110,110,Withdraw,Water,Status,Cute,40,—,—,I
+111,111,Defense Curl,Normal,Status,Cute,40,—,—,I
+112,112,Barrier,Psychic,Status,Cool,20,—,—,I
+113,113,Light Screen,Psychic,Status,Beautiful,30,—,—,I
+114,114,Haze,Ice,Status,Beautiful,30,—,—,I
+115,115,Reflect,Psychic,Status,Clever,20,—,—,I
+116,116,Focus Energy,Normal,Status,Cool,30,—,—,I
+117,117,Bide,Normal,Physical,Tough,10,—,—,I
+118,118,Metronome,Normal,Status,Cute,10,—,—,I
+119,119,Mirror Move,Flying,Status,Clever,20,—,—,I
+120,120,Self-Destruct,Normal,Physical,Beautiful,5,200,100%,I
+121,121,Egg Bomb,Normal,Physical,Cute,10,100,75%,I
+122,122,Lick,Ghost,Physical,Cute,30,30,100%,I
+123,123,Smog,Poison,Special,Tough,20,30,70%,I
+124,124,Sludge,Poison,Special,Tough,20,65,100%,I
+125,125,Bone Club,Ground,Physical,Tough,20,65,85%,I
+126,126,Fire Blast,Fire,Special,Beautiful,5,110,85%,I
+127,127,Waterfall,Water,Physical,Tough,15,80,100%,I
+128,128,Clamp,Water,Physical,Tough,15,35,85%,I
+129,129,Swift,Normal,Special,Cool,20,60,—,I
+130,130,Skull Bash,Normal,Physical,Tough,10,130,100%,I
+131,131,Spike Cannon,Normal,Physical,Cool,15,20,100%,I
+132,132,Constrict,Normal,Physical,Tough,35,10,100%,I
+133,133,Amnesia,Psychic,Status,Cute,20,—,—,I
+134,134,Kinesis,Psychic,Status,Clever,15,—,80%,I
+135,135,Soft-Boiled,Normal,Status,Cute,10,—,—,I
+136,136,High Jump Kick,Fighting,Physical,Cool,10,130,90%,I
+137,137,Glare,Normal,Status,Tough,30,—,100%,I
+138,138,Dream Eater,Psychic,Special,Clever,15,100,100%,I
+139,139,Poison Gas,Poison,Status,Clever,40,—,90%,I
+140,140,Barrage,Normal,Physical,Cute,20,15,85%,I
+141,141,Leech Life,Bug,Physical,Clever,10,80,100%,I
+142,142,Lovely Kiss,Normal,Status,Beautiful,10,—,75%,I
+143,143,Sky Attack,Flying,Physical,Cool,5,140,90%,I
+144,144,Transform,Normal,Status,Clever,10,—,—,I
+145,145,Bubble,Water,Special,Cute,30,40,100%,I
+146,146,Dizzy Punch,Normal,Physical,Cute,10,70,100%,I
+147,147,Spore,Grass,Status,Beautiful,15,—,100%,I
+148,148,Flash,Normal,Status,Beautiful,20,—,100%,I
+149,149,Psywave,Psychic,Special,Clever,15,—,100%,I
+150,150,Splash,Normal,Status,Cute,40,—,—,I
+151,151,Acid Armor,Poison,Status,Tough,20,—,—,I
+152,152,Crabhammer,Water,Physical,Tough,10,100,90%,I
+153,153,Explosion,Normal,Physical,Beautiful,5,250,100%,I
+154,154,Fury Swipes,Normal,Physical,Tough,15,18,80%,I
+155,155,Bonemerang,Ground,Physical,Tough,10,50,90%,I
+156,156,Rest,Psychic,Status,Cute,10,—,—,I
+157,157,Rock Slide,Rock,Physical,Tough,10,75,90%,I
+158,158,Hyper Fang,Normal,Physical,Cool,15,80,90%,I
+159,159,Sharpen,Normal,Status,Cute,30,—,—,I
+160,160,Conversion,Normal,Status,Beautiful,30,—,—,I
+161,161,Tri Attack,Normal,Special,Beautiful,10,80,100%,I
+162,162,Super Fang,Normal,Physical,Tough,10,—,90%,I
+163,163,Slash,Normal,Physical,Cool,20,70,100%,I
+164,164,Substitute,Normal,Status,Cute,10,—,—,I
+165,165,Struggle,Normal,Physical,Tough,1,50,—,I
+166,166,Sketch,Normal,Status,Clever,1,—,—,II
+167,167,Triple Kick,Fighting,Physical,Cool,10,10,90%,II
+168,168,Thief,Dark,Physical,Tough,25,60,100%,II
+169,169,Spider Web,Bug,Status,Clever,10,—,—,II
+170,170,Mind Reader,Normal,Status,Clever,5,—,—,II
+171,171,Nightmare,Ghost,Status,Clever,15,—,100%,II
+172,172,Flame Wheel,Fire,Physical,Beautiful,25,60,100%,II
+173,173,Snore,Normal,Special,Cute,15,50,100%,II
+174,174,Curse,Ghost,Status,Tough,10,—,—,II
+175,175,Flail,Normal,Physical,Cute,15,—,100%,II
+176,176,Conversion 2,Normal,Status,Beautiful,30,—,—,II
+177,177,Aeroblast,Flying,Special,Cool,5,100,95%,II
+178,178,Cotton Spore,Grass,Status,Beautiful,40,—,100%,II
+179,179,Reversal,Fighting,Physical,Cool,15,—,100%,II
+180,180,Spite,Ghost,Status,Tough,10,—,100%,II
+181,181,Powder Snow,Ice,Special,Beautiful,25,40,100%,II
+182,182,Protect,Normal,Status,Cute,10,—,—,II
+183,183,Mach Punch,Fighting,Physical,Cool,30,40,100%,II
+184,184,Scary Face,Normal,Status,Tough,10,—,100%,II
+185,185,Feint Attack,Dark,Physical,Clever,20,60,—,II
+186,186,Sweet Kiss,Fairy,Status,Cute,10,—,75%,II
+187,187,Belly Drum,Normal,Status,Cute,10,—,—,II
+188,188,Sludge Bomb,Poison,Special,Tough,10,90,100%,II
+189,189,Mud-Slap,Ground,Special,Cute,10,20,100%,II
+190,190,Octazooka,Water,Special,Tough,10,65,85%,II
+191,191,Spikes,Ground,Status,Clever,20,—,—,II
+192,192,Zap Cannon,Electric,Special,Cool,5,120,50%,II
+193,193,Foresight,Normal,Status,Clever,40,—,—,II
+194,194,Destiny Bond,Ghost,Status,Clever,5,—,—,II
+195,195,Perish Song,Normal,Status,Beautiful,5,—,—,II
+196,196,Icy Wind,Ice,Special,Beautiful,15,55,95%,II
+197,197,Detect,Fighting,Status,Cool,5,—,—,II
+198,198,Bone Rush,Ground,Physical,Tough,10,25,90%,II
+199,199,Lock-On,Normal,Status,Clever,5,—,—,II
+200,200,Outrage,Dragon,Physical,Cool,10,120,100%,II
+201,201,Sandstorm,Rock,Status,Tough,10,—,—,II
+202,202,Giga Drain,Grass,Special,Clever,10,75,100%,II
+203,203,Endure,Normal,Status,Tough,10,—,—,II
+204,204,Charm,Fairy,Status,Cute,20,—,100%,II
+205,205,Rollout,Rock,Physical,Cute,20,30,90%,II
+206,206,False Swipe,Normal,Physical,Cool,40,40,100%,II
+207,207,Swagger,Normal,Status,Cute,15,—,85%,II
+208,208,Milk Drink,Normal,Status,Cute,10,—,—,II
+209,209,Spark,Electric,Physical,Cool,20,65,100%,II
+210,210,Fury Cutter,Bug,Physical,Cool,20,40,95%,II
+211,211,Steel Wing,Steel,Physical,Cool,25,70,90%,II
+212,212,Mean Look,Normal,Status,Beautiful,5,—,—,II
+213,213,Attract,Normal,Status,Cute,15,—,100%,II
+214,214,Sleep Talk,Normal,Status,Cute,10,—,—,II
+215,215,Heal Bell,Normal,Status,Beautiful,5,—,—,II
+216,216,Return,Normal,Physical,Cute,20,—,100%,II
+217,217,Present,Normal,Physical,Cute,15,—,90%,II
+218,218,Frustration,Normal,Physical,Cute,20,—,100%,II
+219,219,Safeguard,Normal,Status,Beautiful,25,—,—,II
+220,220,Pain Split,Normal,Status,Clever,20,—,—,II
+221,221,Sacred Fire,Fire,Physical,Beautiful,5,100,95%,II
+222,222,Magnitude,Ground,Physical,Tough,30,—,100%,II
+223,223,Dynamic Punch,Fighting,Physical,Cool,5,100,50%,II
+224,224,Megahorn,Bug,Physical,Cool,10,120,85%,II
+225,225,Dragon Breath,Dragon,Special,Cool,20,60,100%,II
+226,226,Baton Pass,Normal,Status,Cute,40,—,—,II
+227,227,Encore,Normal,Status,Cute,5,—,100%,II
+228,228,Pursuit,Dark,Physical,Clever,20,40,100%,II
+229,229,Rapid Spin,Normal,Physical,Cool,40,50,100%,II
+230,230,Sweet Scent,Normal,Status,Cute,20,—,100%,II
+231,231,Iron Tail,Steel,Physical,Cool,15,100,75%,II
+232,232,Metal Claw,Steel,Physical,Cool,35,50,95%,II
+233,233,Vital Throw,Fighting,Physical,Cool,10,70,—,II
+234,234,Morning Sun,Normal,Status,Beautiful,5,—,—,II
+235,235,Synthesis,Grass,Status,Clever,5,—,—,II
+236,236,Moonlight,Fairy,Status,Beautiful,5,—,—,II
+237,237,Hidden Power,Normal,Special,Clever,15,60,100%,II
+238,238,Cross Chop,Fighting,Physical,Cool,5,100,80%,II
+239,239,Twister,Dragon,Special,Cool,20,40,100%,II
+240,240,Rain Dance,Water,Status,Beautiful,5,—,—,II
+241,241,Sunny Day,Fire,Status,Beautiful,5,—,—,II
+242,242,Crunch,Dark,Physical,Tough,15,80,100%,II
+243,243,Mirror Coat,Psychic,Special,Beautiful,20,—,100%,II
+244,244,Psych Up,Normal,Status,Clever,10,—,—,II
+245,245,Extreme Speed,Normal,Physical,Cool,5,80,100%,II
+246,246,Ancient Power,Rock,Special,Tough,5,60,100%,II
+247,247,Shadow Ball,Ghost,Special,Clever,15,80,100%,II
+248,248,Future Sight,Psychic,Special,Clever,10,120,100%,II
+249,249,Rock Smash,Fighting,Physical,Tough,15,40,100%,II
+250,250,Whirlpool,Water,Special,Beautiful,15,35,85%,II
+251,251,Beat Up,Dark,Physical,Clever,10,—,100%,II
+252,252,Fake Out,Normal,Physical,Cute,10,40,100%,III
+253,253,Uproar,Normal,Special,Cute,10,90,100%,III
+254,254,Stockpile,Normal,Status,Tough,20,—,—,III
+255,255,Spit Up,Normal,Special,Tough,10,—,100%,III
+256,256,Swallow,Normal,Status,Tough,10,—,—,III
+257,257,Heat Wave,Fire,Special,Beautiful,10,95,90%,III
+258,258,Hail,Ice,Status,Beautiful,10,—,—,III
+259,259,Torment,Dark,Status,Tough,15,—,100%,III
+260,260,Flatter,Dark,Status,Clever,15,—,100%,III
+261,261,Will-O-Wisp,Fire,Status,Beautiful,15,—,85%,III
+262,262,Memento,Dark,Status,Tough,10,—,100%,III
+263,263,Facade,Normal,Physical,Cute,20,70,100%,III
+264,264,Focus Punch,Fighting,Physical,Tough,20,150,100%,III
+265,265,Smelling Salts,Normal,Physical,Tough,10,70,100%,III
+266,266,Follow Me,Normal,Status,Cute,20,—,—,III
+267,267,Nature Power,Normal,Status,Beautiful,20,—,—,III
+268,268,Charge,Electric,Status,Clever,20,—,—,III
+269,269,Taunt,Dark,Status,Clever,20,—,100%,III
+270,270,Helping Hand,Normal,Status,Clever,20,—,—,III
+271,271,Trick,Psychic,Status,Clever,10,—,100%,III
+272,272,Role Play,Psychic,Status,Cute,10,—,—,III
+273,273,Wish,Normal,Status,Cute,10,—,—,III
+274,274,Assist,Normal,Status,Cute,20,—,—,III
+275,275,Ingrain,Grass,Status,Clever,20,—,—,III
+276,276,Superpower,Fighting,Physical,Tough,5,120,100%,III
+277,277,Magic Coat,Psychic,Status,Beautiful,15,—,—,III
+278,278,Recycle,Normal,Status,Clever,10,—,—,III
+279,279,Revenge,Fighting,Physical,Tough,10,60,100%,III
+280,280,Brick Break,Fighting,Physical,Cool,15,75,100%,III
+281,281,Yawn,Normal,Status,Cute,10,—,—,III
+282,282,Knock Off,Dark,Physical,Clever,20,65,100%,III
+283,283,Endeavor,Normal,Physical,Tough,5,—,100%,III
+284,284,Eruption,Fire,Special,Beautiful,5,150,100%,III
+285,285,Skill Swap,Psychic,Status,Clever,10,—,—,III
+286,286,Imprison,Psychic,Status,Clever,10,—,—,III
+287,287,Refresh,Normal,Status,Cute,20,—,—,III
+288,288,Grudge,Ghost,Status,Tough,5,—,—,III
+289,289,Snatch,Dark,Status,Clever,10,—,—,III
+290,290,Secret Power,Normal,Physical,Clever,20,70,100%,III
+291,291,Dive,Water,Physical,Beautiful,10,80,100%,III
+292,292,Arm Thrust,Fighting,Physical,Tough,20,15,100%,III
+293,293,Camouflage,Normal,Status,Clever,20,—,—,III
+294,294,Tail Glow,Bug,Status,Beautiful,20,—,—,III
+295,295,Luster Purge,Psychic,Special,Clever,5,70,100%,III
+296,296,Mist Ball,Psychic,Special,Clever,5,70,100%,III
+297,297,Feather Dance,Flying,Status,Beautiful,15,—,100%,III
+298,298,Teeter Dance,Normal,Status,Cute,20,—,100%,III
+299,299,Blaze Kick,Fire,Physical,Cool,10,85,90%,III
+300,300,Mud Sport,Ground,Status,Cute,15,—,—,III
+301,301,Ice Ball,Ice,Physical,Beautiful,20,30,90%,III
+302,302,Needle Arm,Grass,Physical,Clever,15,60,100%,III
+303,303,Slack Off,Normal,Status,Cute,10,—,—,III
+304,304,Hyper Voice,Normal,Special,Cool,10,90,100%,III
+305,305,Poison Fang,Poison,Physical,Clever,15,50,100%,III
+306,306,Crush Claw,Normal,Physical,Cool,10,75,95%,III
+307,307,Blast Burn,Fire,Special,Beautiful,5,150,90%,III
+308,308,Hydro Cannon,Water,Special,Beautiful,5,150,90%,III
+309,309,Meteor Mash,Steel,Physical,Cool,10,90,90%,III
+310,310,Astonish,Ghost,Physical,Cute,15,30,100%,III
+311,311,Weather Ball,Normal,Special,Beautiful,10,50,100%,III
+312,312,Aromatherapy,Grass,Status,Clever,5,—,—,III
+313,313,Fake Tears,Dark,Status,Cute,20,—,100%,III
+314,314,Air Cutter,Flying,Special,Cool,25,60,95%,III
+315,315,Overheat,Fire,Special,Beautiful,5,130,90%,III
+316,316,Odor Sleuth,Normal,Status,Clever,40,—,—,III
+317,317,Rock Tomb,Rock,Physical,Clever,15,60,95%,III
+318,318,Silver Wind,Bug,Special,Beautiful,5,60,100%,III
+319,319,Metal Sound,Steel,Status,Clever,40,—,85%,III
+320,320,Grass Whistle,Grass,Status,Clever,15,—,55%,III
+321,321,Tickle,Normal,Status,Cute,20,—,100%,III
+322,322,Cosmic Power,Psychic,Status,Beautiful,20,—,—,III
+323,323,Water Spout,Water,Special,Beautiful,5,150,100%,III
+324,324,Signal Beam,Bug,Special,Beautiful,15,75,100%,III
+325,325,Shadow Punch,Ghost,Physical,Clever,20,60,—,III
+326,326,Extrasensory,Psychic,Special,Cool,20,80,100%,III
+327,327,Sky Uppercut,Fighting,Physical,Cool,15,85,90%,III
+328,328,Sand Tomb,Ground,Physical,Clever,15,35,85%,III
+329,329,Sheer Cold,Ice,Special,Beautiful,5,—,30%,III
+330,330,Muddy Water,Water,Special,Tough,10,90,85%,III
+331,331,Bullet Seed,Grass,Physical,Cool,30,25,100%,III
+332,332,Aerial Ace,Flying,Physical,Cool,20,60,—,III
+333,333,Icicle Spear,Ice,Physical,Beautiful,30,25,100%,III
+334,334,Iron Defense,Steel,Status,Tough,15,—,—,III
+335,335,Block,Normal,Status,Cute,5,—,—,III
+336,336,Howl,Normal,Status,Cool,40,—,—,III
+337,337,Dragon Claw,Dragon,Physical,Cool,15,80,100%,III
+338,338,Frenzy Plant,Grass,Special,Cool,5,150,90%,III
+339,339,Bulk Up,Fighting,Status,Cool,20,—,—,III
+340,340,Bounce,Flying,Physical,Cute,5,85,85%,III
+341,341,Mud Shot,Ground,Special,Tough,15,55,95%,III
+342,342,Poison Tail,Poison,Physical,Clever,25,50,100%,III
+343,343,Covet,Normal,Physical,Cute,25,60,100%,III
+344,344,Volt Tackle,Electric,Physical,Cool,15,120,100%,III
+345,345,Magical Leaf,Grass,Special,Beautiful,20,60,—,III
+346,346,Water Sport,Water,Status,Cute,15,—,—,III
+347,347,Calm Mind,Psychic,Status,Clever,20,—,—,III
+348,348,Leaf Blade,Grass,Physical,Cool,15,90,100%,III
+349,349,Dragon Dance,Dragon,Status,Cool,20,—,—,III
+350,350,Rock Blast,Rock,Physical,Tough,10,25,90%,III
+351,351,Shock Wave,Electric,Special,Cool,20,60,—,III
+352,352,Water Pulse,Water,Special,Beautiful,20,60,100%,III
+353,353,Doom Desire,Steel,Special,Beautiful,5,140,100%,III
+354,354,Psycho Boost,Psychic,Special,Clever,5,140,90%,III
+355,355,Roost,Flying,Status,Clever,10,—,—,IV
+356,356,Gravity,Psychic,Status,Clever,5,—,—,IV
+357,357,Miracle Eye,Psychic,Status,Clever,40,—,—,IV
+358,358,Wake-Up Slap,Fighting,Physical,Tough,10,70,100%,IV
+359,359,Hammer Arm,Fighting,Physical,Tough,10,100,90%,IV
+360,360,Gyro Ball,Steel,Physical,Cool,5,—,100%,IV
+361,361,Healing Wish,Psychic,Status,Beautiful,10,—,—,IV
+362,362,Brine,Water,Special,Tough,10,65,100%,IV
+363,363,Natural Gift,Normal,Physical,Clever,15,—,100%,IV
+364,364,Feint,Normal,Physical,Clever,10,30,100%,IV
+365,365,Pluck,Flying,Physical,Cute,20,60,100%,IV
+366,366,Tailwind,Flying,Status,Cool,15,—,—,IV
+367,367,Acupressure,Normal,Status,Tough,30,—,—,IV
+368,368,Metal Burst,Steel,Physical,Cool,10,—,100%,IV
+369,369,U-turn,Bug,Physical,Cute,20,70,100%,IV
+370,370,Close Combat,Fighting,Physical,Tough,5,120,100%,IV
+371,371,Payback,Dark,Physical,Tough,10,50,100%,IV
+372,372,Assurance,Dark,Physical,Clever,10,60,100%,IV
+373,373,Embargo,Dark,Status,Clever,15,—,100%,IV
+374,374,Fling,Dark,Physical,Cute,10,—,100%,IV
+375,375,Psycho Shift,Psychic,Status,Clever,10,—,100%,IV
+376,376,Trump Card,Normal,Special,Cool,5,—,—,IV
+377,377,Heal Block,Psychic,Status,Clever,15,—,100%,IV
+378,378,Wring Out,Normal,Special,Tough,5,—,100%,IV
+379,379,Power Trick,Psychic,Status,Clever,10,—,—,IV
+380,380,Gastro Acid,Poison,Status,Tough,10,—,100%,IV
+381,381,Lucky Chant,Normal,Status,Cute,30,—,—,IV
+382,382,Me First,Normal,Status,Clever,20,—,—,IV
+383,383,Copycat,Normal,Status,Cute,20,—,—,IV
+384,384,Power Swap,Psychic,Status,Clever,10,—,—,IV
+385,385,Guard Swap,Psychic,Status,Clever,10,—,—,IV
+386,386,Punishment,Dark,Physical,Cool,5,—,100%,IV
+387,387,Last Resort,Normal,Physical,Cute,5,140,100%,IV
+388,388,Worry Seed,Grass,Status,Clever,10,—,100%,IV
+389,389,Sucker Punch,Dark,Physical,Clever,5,70,100%,IV
+390,390,Toxic Spikes,Poison,Status,Clever,20,—,—,IV
+391,391,Heart Swap,Psychic,Status,Clever,10,—,—,IV
+392,392,Aqua Ring,Water,Status,Beautiful,20,—,—,IV
+393,393,Magnet Rise,Electric,Status,Clever,10,—,—,IV
+394,394,Flare Blitz,Fire,Physical,Cool,15,120,100%,IV
+395,395,Force Palm,Fighting,Physical,Cool,10,60,100%,IV
+396,396,Aura Sphere,Fighting,Special,Beautiful,20,80,—,IV
+397,397,Rock Polish,Rock,Status,Tough,20,—,—,IV
+398,398,Poison Jab,Poison,Physical,Tough,20,80,100%,IV
+399,399,Dark Pulse,Dark,Special,Cool,15,80,100%,IV
+400,400,Night Slash,Dark,Physical,Cool,15,70,100%,IV
+401,401,Aqua Tail,Water,Physical,Beautiful,10,90,90%,IV
+402,402,Seed Bomb,Grass,Physical,Tough,15,80,100%,IV
+403,403,Air Slash,Flying,Special,Cool,15,75,95%,IV
+404,404,X-Scissor,Bug,Physical,Cool,15,80,100%,IV
+405,405,Bug Buzz,Bug,Special,Beautiful,10,90,100%,IV
+406,406,Dragon Pulse,Dragon,Special,Beautiful,10,85,100%,IV
+407,407,Dragon Rush,Dragon,Physical,Tough,10,100,75%,IV
+408,408,Power Gem,Rock,Special,Beautiful,20,80,100%,IV
+409,409,Drain Punch,Fighting,Physical,Tough,10,75,100%,IV
+410,410,Vacuum Wave,Fighting,Special,Cool,30,40,100%,IV
+411,411,Focus Blast,Fighting,Special,Cool,5,120,70%,IV
+412,412,Energy Ball,Grass,Special,Beautiful,10,90,100%,IV
+413,413,Brave Bird,Flying,Physical,Cool,15,120,100%,IV
+414,414,Earth Power,Ground,Special,Beautiful,10,90,100%,IV
+415,415,Switcheroo,Dark,Status,Clever,10,—,100%,IV
+416,416,Giga Impact,Normal,Physical,Tough,5,150,90%,IV
+417,417,Nasty Plot,Dark,Status,Clever,20,—,—,IV
+418,418,Bullet Punch,Steel,Physical,Tough,30,40,100%,IV
+419,419,Avalanche,Ice,Physical,Beautiful,10,60,100%,IV
+420,420,Ice Shard,Ice,Physical,Beautiful,30,40,100%,IV
+421,421,Shadow Claw,Ghost,Physical,Cool,15,70,100%,IV
+422,422,Thunder Fang,Electric,Physical,Cool,15,65,95%,IV
+423,423,Ice Fang,Ice,Physical,Cool,15,65,95%,IV
+424,424,Fire Fang,Fire,Physical,Cool,15,65,95%,IV
+425,425,Shadow Sneak,Ghost,Physical,Clever,30,40,100%,IV
+426,426,Mud Bomb,Ground,Special,Cute,10,65,85%,IV
+427,427,Psycho Cut,Psychic,Physical,Cool,20,70,100%,IV
+428,428,Zen Headbutt,Psychic,Physical,Clever,15,80,90%,IV
+429,429,Mirror Shot,Steel,Special,Beautiful,10,65,85%,IV
+430,430,Flash Cannon,Steel,Special,Beautiful,10,80,100%,IV
+431,431,Rock Climb,Normal,Physical,Tough,20,90,85%,IV
+432,432,Defog,Flying,Status,Cool,15,—,—,IV
+433,433,Trick Room,Psychic,Status,Clever,5,—,—,IV
+434,434,Draco Meteor,Dragon,Special,Beautiful,5,130,90%,IV
+435,435,Discharge,Electric,Special,Beautiful,15,80,100%,IV
+436,436,Lava Plume,Fire,Special,Tough,15,80,100%,IV
+437,437,Leaf Storm,Grass,Special,Beautiful,5,130,90%,IV
+438,438,Power Whip,Grass,Physical,Tough,10,120,85%,IV
+439,439,Rock Wrecker,Rock,Physical,Tough,5,150,90%,IV
+440,440,Cross Poison,Poison,Physical,Cool,20,70,100%,IV
+441,441,Gunk Shot,Poison,Physical,Tough,5,120,80%,IV
+442,442,Iron Head,Steel,Physical,Tough,15,80,100%,IV
+443,443,Magnet Bomb,Steel,Physical,Cool,20,60,—,IV
+444,444,Stone Edge,Rock,Physical,Tough,5,100,80%,IV
+445,445,Captivate,Normal,Status,Cute,20,—,100%,IV
+446,446,Stealth Rock,Rock,Status,Cool,20,—,—,IV
+447,447,Grass Knot,Grass,Special,Cute,20,—,100%,IV
+448,448,Chatter,Flying,Special,Cute,20,65,100%,IV
+449,449,Judgment,Normal,Special,Beautiful,10,100,100%,IV
+450,450,Bug Bite,Bug,Physical,Cute,20,60,100%,IV
+451,451,Charge Beam,Electric,Special,Beautiful,10,50,90%,IV
+452,452,Wood Hammer,Grass,Physical,Tough,15,120,100%,IV
+453,453,Aqua Jet,Water,Physical,Cool,20,40,100%,IV
+454,454,Attack Order,Bug,Physical,Clever,15,90,100%,IV
+455,455,Defend Order,Bug,Status,Clever,10,—,—,IV
+456,456,Heal Order,Bug,Status,Clever,10,—,—,IV
+457,457,Head Smash,Rock,Physical,Tough,5,150,80%,IV
+458,458,Double Hit,Normal,Physical,Cool,10,35,90%,IV
+459,459,Roar of Time,Dragon,Special,Beautiful,5,150,90%,IV
+460,460,Spacial Rend,Dragon,Special,Beautiful,5,100,95%,IV
+461,461,Lunar Dance,Psychic,Status,Beautiful,10,—,—,IV
+462,462,Crush Grip,Normal,Physical,Tough,5,—,100%,IV
+463,463,Magma Storm,Fire,Special,Tough,5,100,75%,IV
+464,464,Dark Void,Dark,Status,Clever,10,—,50%,IV
+465,465,Seed Flare,Grass,Special,Beautiful,5,120,85%,IV
+466,466,Ominous Wind,Ghost,Special,Beautiful,5,60,100%,IV
+467,467,Shadow Force,Ghost,Physical,Cool,5,120,100%,IV
+468,468,Hone Claws,Dark,Status,Cute,15,—,—,V
+469,469,Wide Guard,Rock,Status,Tough,10,—,—,V
+470,470,Guard Split,Psychic,Status,Clever,10,—,—,V
+471,471,Power Split,Psychic,Status,Clever,10,—,—,V
+472,472,Wonder Room,Psychic,Status,Clever,10,—,—,V
+473,473,Psyshock,Psychic,Special,Beautiful,10,80,100%,V
+474,474,Venoshock,Poison,Special,Beautiful,10,65,100%,V
+475,475,Autotomize,Steel,Status,Beautiful,15,—,—,V
+476,476,Rage Powder,Bug,Status,Clever,20,—,—,V
+477,477,Telekinesis,Psychic,Status,Clever,15,—,—,V
+478,478,Magic Room,Psychic,Status,Clever,10,—,—,V
+479,479,Smack Down,Rock,Physical,Tough,15,50,100%,V
+480,480,Storm Throw,Fighting,Physical,Cool,10,60,100%,V
+481,481,Flame Burst,Fire,Special,Beautiful,15,70,100%,V
+482,482,Sludge Wave,Poison,Special,Tough,10,95,100%,V
+483,483,Quiver Dance,Bug,Status,Beautiful,20,—,—,V
+484,484,Heavy Slam,Steel,Physical,Tough,10,—,100%,V
+485,485,Synchronoise,Psychic,Special,Clever,10,120,100%,V
+486,486,Electro Ball,Electric,Special,Cool,10,—,100%,V
+487,487,Soak,Water,Status,Cute,20,—,100%,V
+488,488,Flame Charge,Fire,Physical,Cool,20,50,100%,V
+489,489,Coil,Poison,Status,Tough,20,—,—,V
+490,490,Low Sweep,Fighting,Physical,Clever,20,65,100%,V
+491,491,Acid Spray,Poison,Special,Beautiful,20,40,100%,V
+492,492,Foul Play,Dark,Physical,Clever,15,95,100%,V
+493,493,Simple Beam,Normal,Status,Cute,15,—,100%,V
+494,494,Entrainment,Normal,Status,Cute,15,—,100%,V
+495,495,After You,Normal,Status,Cute,15,—,—,V
+496,496,Round,Normal,Special,Beautiful,15,60,100%,V
+497,497,Echoed Voice,Normal,Special,Beautiful,15,40,100%,V
+498,498,Chip Away,Normal,Physical,Tough,20,70,100%,V
+499,499,Clear Smog,Poison,Special,Beautiful,15,50,—,V
+500,500,Stored Power,Psychic,Special,Clever,10,20,100%,V
+501,501,Quick Guard,Fighting,Status,Cool,15,—,—,V
+502,502,Ally Switch,Psychic,Status,Clever,15,—,—,V
+503,503,Scald,Water,Special,Tough,15,80,100%,V
+504,504,Shell Smash,Normal,Status,Tough,15,—,—,V
+505,505,Heal Pulse,Psychic,Status,Beautiful,10,—,—,V
+506,506,Hex,Ghost,Special,Clever,10,65,100%,V
+507,507,Sky Drop,Flying,Physical,Tough,10,60,100%,V
+508,508,Shift Gear,Steel,Status,Clever,10,—,—,V
+509,509,Circle Throw,Fighting,Physical,Cool,10,60,90%,V
+510,510,Incinerate,Fire,Special,Tough,15,60,100%,V
+511,511,Quash,Dark,Status,Clever,15,—,100%,V
+512,512,Acrobatics,Flying,Physical,Cool,15,55,100%,V
+513,513,Reflect Type,Normal,Status,Clever,15,—,—,V
+514,514,Retaliate,Normal,Physical,Cool,5,70,100%,V
+515,515,Final Gambit,Fighting,Special,Tough,5,—,100%,V
+516,516,Bestow,Normal,Status,Cute,15,—,—,V
+517,517,Inferno,Fire,Special,Beautiful,5,100,50%,V
+518,518,Water Pledge,Water,Special,Beautiful,10,80,100%,V
+519,519,Fire Pledge,Fire,Special,Beautiful,10,80,100%,V
+520,520,Grass Pledge,Grass,Special,Beautiful,10,80,100%,V
+521,521,Volt Switch,Electric,Special,Cool,20,70,100%,V
+522,522,Struggle Bug,Bug,Special,Cute,20,50,100%,V
+523,523,Bulldoze,Ground,Physical,Tough,20,60,100%,V
+524,524,Frost Breath,Ice,Special,Beautiful,10,60,90%,V
+525,525,Dragon Tail,Dragon,Physical,Tough,10,60,90%,V
+526,526,Work Up,Normal,Status,Tough,30,—,—,V
+527,527,Electroweb,Electric,Special,Beautiful,15,55,95%,V
+528,528,Wild Charge,Electric,Physical,Tough,15,90,100%,V
+529,529,Drill Run,Ground,Physical,Tough,10,80,95%,V
+530,530,Dual Chop,Dragon,Physical,Tough,15,40,90%,V
+531,531,Heart Stamp,Psychic,Physical,Cute,25,60,100%,V
+532,532,Horn Leech,Grass,Physical,Tough,10,75,100%,V
+533,533,Sacred Sword,Fighting,Physical,Cool,15,90,100%,V
+534,534,Razor Shell,Water,Physical,Cool,10,75,95%,V
+535,535,Heat Crash,Fire,Physical,Tough,10,—,100%,V
+536,536,Leaf Tornado,Grass,Special,Cool,10,65,90%,V
+537,537,Steamroller,Bug,Physical,Tough,20,65,100%,V
+538,538,Cotton Guard,Grass,Status,Cute,10,—,—,V
+539,539,Night Daze,Dark,Special,Cool,10,85,95%,V
+540,540,Psystrike,Psychic,Special,Cool,10,100,100%,V
+541,541,Tail Slap,Normal,Physical,Cute,10,25,85%,V
+542,542,Hurricane,Flying,Special,Tough,10,110,70%,V
+543,543,Head Charge,Normal,Physical,Tough,15,120,100%,V
+544,544,Gear Grind,Steel,Physical,Clever,15,50,85%,V
+545,545,Searing Shot,Fire,Special,Cool,5,100,100%,V
+546,546,Techno Blast,Normal,Special,Cool,5,120,100%,V
+547,547,Relic Song,Normal,Special,Beautiful,10,75,100%,V
+548,548,Secret Sword,Fighting,Special,Beautiful,10,85,100%,V
+549,549,Glaciate,Ice,Special,Beautiful,10,65,95%,V
+550,550,Bolt Strike,Electric,Physical,Beautiful,5,130,85%,V
+551,551,Blue Flare,Fire,Special,Beautiful,5,130,85%,V
+552,552,Fiery Dance,Fire,Special,Beautiful,10,80,100%,V
+553,553,Freeze Shock,Ice,Physical,Beautiful,5,140,90%,V
+554,554,Ice Burn,Ice,Special,Beautiful,5,140,90%,V
+555,555,Snarl,Dark,Special,Tough,15,55,95%,V
+556,556,Icicle Crash,Ice,Physical,Beautiful,10,85,90%,V
+557,557,V-create,Fire,Physical,Cool,5,180,95%,V
+558,558,Fusion Flare,Fire,Special,Beautiful,5,100,100%,V
+559,559,Fusion Bolt,Electric,Physical,Cool,5,100,100%,V
+560,560,Flying Press,Fighting,Physical,Tough,10,100,95%,VI
+561,561,Mat Block,Fighting,Status,Cool,10,—,—,VI
+562,562,Belch,Poison,Special,Tough,10,120,90%,VI
+563,563,Rototiller,Ground,Status,Tough,10,—,—,VI
+564,564,Sticky Web,Bug,Status,Tough,20,—,—,VI
+565,565,Fell Stinger,Bug,Physical,Cool,25,50,100%,VI
+566,566,Phantom Force,Ghost,Physical,Cool,10,90,100%,VI
+567,567,Trick-or-Treat,Ghost,Status,Cute,20,—,100%,VI
+568,568,Noble Roar,Normal,Status,Tough,30,—,100%,VI
+569,569,Ion Deluge,Electric,Status,Beautiful,25,—,—,VI
+570,570,Parabolic Charge,Electric,Special,Clever,20,65,100%,VI
+571,571,Forest's Curse,Grass,Status,Clever,20,—,100%,VI
+572,572,Petal Blizzard,Grass,Physical,Beautiful,15,90,100%,VI
+573,573,Freeze-Dry,Ice,Special,Beautiful,20,70,100%,VI
+574,574,Disarming Voice,Fairy,Special,Cute,15,40,—,VI
+575,575,Parting Shot,Dark,Status,Cool,20,—,100%,VI
+576,576,Topsy-Turvy,Dark,Status,Clever,20,—,—,VI
+577,577,Draining Kiss,Fairy,Special,Cute,10,50,100%,VI
+578,578,Crafty Shield,Fairy,Status,Clever,10,—,—,VI
+579,579,Flower Shield,Fairy,Status,Beautiful,10,—,—,VI
+580,580,Grassy Terrain,Grass,Status,Beautiful,10,—,—,VI
+581,581,Misty Terrain,Fairy,Status,Beautiful,10,—,—,VI
+582,582,Electrify,Electric,Status,Clever,20,—,—,VI
+583,583,Play Rough,Fairy,Physical,Cute,10,90,90%,VI
+584,584,Fairy Wind,Fairy,Special,Beautiful,30,40,100%,VI
+585,585,Moonblast,Fairy,Special,Beautiful,15,95,100%,VI
+586,586,Boomburst,Normal,Special,Tough,10,140,100%,VI
+587,587,Fairy Lock,Fairy,Status,Clever,10,—,—,VI
+588,588,King's Shield,Steel,Status,Cool,10,—,—,VI
+589,589,Play Nice,Normal,Status,Cute,20,—,—,VI
+590,590,Confide,Normal,Status,Cute,20,—,—,VI
+591,591,Diamond Storm,Rock,Physical,Beautiful,5,100,95%,VI
+592,592,Steam Eruption,Water,Special,Beautiful,5,110,95%,VI
+593,593,Hyperspace Hole,Psychic,Special,Clever,5,80,—,VI
+594,594,Water Shuriken,Water,Special,Cool,20,15,100%,VI
+595,595,Mystical Fire,Fire,Special,Beautiful,10,75,100%,VI
+596,596,Spiky Shield,Grass,Status,Tough,10,—,—,VI
+597,597,Aromatic Mist,Fairy,Status,Beautiful,20,—,—,VI
+598,598,Eerie Impulse,Electric,Status,Clever,15,—,100%,VI
+599,599,Venom Drench,Poison,Status,Clever,20,—,100%,VI
+600,600,Powder,Bug,Status,Clever,20,—,100%,VI
+601,601,Geomancy,Fairy,Status,Beautiful,10,—,—,VI
+602,602,Magnetic Flux,Electric,Status,Clever,20,—,—,VI
+603,603,Happy Hour,Normal,Status,Cute,30,—,—,VI
+604,604,Electric Terrain,Electric,Status,Clever,10,—,—,VI
+605,605,Dazzling Gleam,Fairy,Special,Beautiful,10,80,100%,VI
+606,606,Celebrate,Normal,Status,Cute,40,—,—,VI
+607,607,Hold Hands,Normal,Status,Cute,40,—,—,VI
+608,608,Baby-Doll Eyes,Fairy,Status,Cute,30,—,100%,VI
+609,609,Nuzzle,Electric,Physical,Cute,20,20,100%,VI
+610,610,Hold Back,Normal,Physical,Cool,40,40,100%,VI
+611,611,Infestation,Bug,Special,Cute,20,20,100%,VI
+612,612,Power-Up Punch,Fighting,Physical,Tough,20,40,100%,VI
+613,613,Oblivion Wing,Flying,Special,Cool,10,80,100%,VI
+614,614,Thousand Arrows,Ground,Physical,Beautiful,10,90,100%,VI
+615,615,Thousand Waves,Ground,Physical,Tough,10,90,100%,VI
+616,616,Land's Wrath,Ground,Physical,Beautiful,10,90,100%,VI
+617,617,Light of Ruin,Fairy,Special,Beautiful,5,140,90%,VI
+618,618,Origin Pulse,Water,Special,Beautiful,10,110,85%,VI
+619,619,Precipice Blades,Ground,Physical,Cool,10,120,85%,VI
+620,620,Dragon Ascent,Flying,Physical,Beautiful,5,120,100%,VI
+621,621,Hyperspace Fury,Dark,Physical,Tough,5,100,—,VI
+622,622,Breakneck Blitz,Normal,Physical,???,1,—,—,VII
+624,624,All-Out Pummeling,Fighting,Physical,???,1,—,—,VII
+626,626,Supersonic Skystrike,Flying,Physical,???,1,—,—,VII
+628,628,Acid Downpour,Poison,Physical,???,1,—,—,VII
+631,631,Tectonic Rage,Ground,Special,???,1,—,—,VII
+633,633,Continental Crush,Rock,Special,???,1,—,—,VII
+635,635,Savage Spin-Out,Bug,Special,???,1,—,—,VII
+636,636,Never-Ending Nightmare,Ghost,Physical,???,1,—,—,VII
+639,639,Corkscrew Crash,Steel,Special,???,1,—,—,VII
+640,640,Inferno Overdrive,Fire,Physical,???,1,—,—,VII
+641,641,Inferno Overdrive,Fire,Special,???,1,—,—,VII
+642,642,Hydro Vortex,Water,Physical,???,1,—,—,VII
+643,643,Hydro Vortex,Water,Special,???,1,—,—,VII
+644,644,Bloom Doom,Grass,Physical,???,1,—,—,VII
+645,645,Bloom Doom,Grass,Special,???,1,—,—,VII
+647,647,Gigavolt Havoc,Electric,Special,???,1,—,—,VII
+649,649,Shattered Psyche,Psychic,Special,???,1,—,—,VII
+651,651,Subzero Slammer,Ice,Special,???,1,—,—,VII
+653,653,Devastating Drake,Dragon,Special,???,1,—,—,VII
+654,654,Black Hole Eclipse,Dark,Physical,???,1,—,—,VII
+657,657,Twinkle Tackle,Fairy,Special,???,1,—,—,VII
+658,658,Catastropika,Electric,Physical,???,1,210,—,VII
+659,659,Shore Up,Ground,Status,???,10,—,—,VII
+660,660,First Impression,Bug,Physical,???,10,90,100%,VII
+661,661,Baneful Bunker,Poison,Status,???,10,—,—,VII
+662,662,Spirit Shackle,Ghost,Physical,???,10,80,100%,VII
+663,663,Darkest Lariat,Dark,Physical,???,10,85,100%,VII
+664,664,Sparkling Aria,Water,Special,???,10,90,100%,VII
+665,665,Ice Hammer,Ice,Physical,???,10,100,90%,VII
+666,666,Floral Healing,Fairy,Status,???,10,—,—,VII
+667,667,High Horsepower,Ground,Physical,???,10,95,95%,VII
+668,668,Strength Sap,Grass,Status,???,10,—,100%,VII
+669,669,Solar Blade,Grass,Physical,???,10,125,100%,VII
+670,670,Leafage,Grass,Physical,???,40,40,100%,VII
+671,671,Spotlight,Normal,Status,???,15,—,—,VII
+672,672,Toxic Thread,Poison,Status,???,20,—,100%,VII
+673,673,Laser Focus,Normal,Status,???,30,—,—,VII
+674,674,Gear Up,Steel,Status,???,20,—,—,VII
+675,675,Throat Chop,Dark,Physical,???,15,80,100%,VII
+676,676,Pollen Puff,Bug,Special,???,15,90,100%,VII
+677,677,Anchor Shot,Steel,Physical,???,20,80,100%,VII
+678,678,Psychic Terrain,Psychic,Status,???,10,—,—,VII
+679,679,Lunge,Bug,Physical,???,15,80,100%,VII
+680,680,Fire Lash,Fire,Physical,???,15,80,100%,VII
+681,681,Power Trip,Dark,Physical,???,10,20,100%,VII
+682,682,Burn Up,Fire,Special,???,5,130,100%,VII
+683,683,Speed Swap,Psychic,Status,???,10,—,—,VII
+684,684,Smart Strike,Steel,Physical,???,10,70,—,VII
+685,685,Purify,Poison,Status,???,20,—,—,VII
+686,686,Revelation Dance,Normal,Special,???,15,90,100%,VII
+687,687,Core Enforcer,Dragon,Special,???,10,100,100%,VII
+688,688,Trop Kick,Grass,Physical,???,15,70,100%,VII
+689,689,Instruct,Psychic,Status,???,15,—,—,VII
+690,690,Beak Blast,Flying,Physical,???,15,100,100%,VII
+691,691,Clanging Scales,Dragon,Special,???,5,110,100%,VII
+692,692,Dragon Hammer,Dragon,Physical,???,15,90,100%,VII
+693,693,Brutal Swing,Dark,Physical,???,20,60,100%,VII
+694,694,Aurora Veil,Ice,Status,???,20,—,—,VII
+695,695,Sinister Arrow Raid,Ghost,Physical,???,1,180,—,VII
+696,696,Malicious Moonsault,Dark,Physical,???,1,180,—,VII
+697,697,Oceanic Operetta,Water,Special,???,1,195,—,VII
+698,698,Guardian of Alola,Fairy,Special,???,1,—,—,VII
+699,699,Soul-Stealing 7-Star Strike,Ghost,Physical,???,1,195,—,VII
+700,700,Stoked Sparksurfer,Electric,Special,???,1,175,—,VII
+701,701,Pulverizing Pancake,Normal,Physical,???,1,210,—,VII
+702,702,Extreme Evoboost,Normal,Status,???,1,—,—,VII
+703,703,Genesis Supernova,Psychic,Special,???,1,185,—,VII
+704,704,Shell Trap,Fire,Special,???,5,150,100%,VII
+705,705,Fleur Cannon,Fairy,Special,???,5,130,90%,VII
+706,706,Psychic Fangs,Psychic,Physical,???,10,85,100%,VII
+707,707,Stomping Tantrum,Ground,Physical,???,10,75,100%,VII
+708,708,Shadow Bone,Ghost,Physical,???,10,85,100%,VII
+709,709,Accelerock,Rock,Physical,???,20,40,100%,VII
+710,710,Liquidation,Water,Physical,???,10,85,100%,VII
+711,711,Prismatic Laser,Psychic,Special,???,10,160,100%,VII
+712,712,Spectral Thief,Ghost,Physical,???,10,90,100%,VII
+713,713,Sunsteel Strike,Steel,Physical,???,5,100,100%,VII
+714,714,Moongeist Beam,Ghost,Special,???,5,100,100%,VII
+715,715,Tearful Look,Normal,Status,???,20,—,—,VII
+716,716,Zing Zap,Electric,Physical,???,10,80,100%,VII
+717,717,Nature's Madness,Fairy,Special,???,10,—,90%,VII
+718,718,Multi-Attack,Normal,Physical,???,10,120,100%,VII
+719,719,"10,000,000 Volt Thunderbolt",Electric,Special,???,1,195,—,VII
+720,720,Mind Blown,Fire,Special,???,5,150,100%,VII
+721,721,Plasma Fists,Electric,Physical,???,15,100,100%,VII
+722,722,Photon Geyser,Psychic,Special,???,5,100,100%,VII
+723,723,Light That Burns the Sky,Psychic,Special,???,1,200,—,VII
+724,724,Searing Sunraze Smash,Steel,Physical,???,1,200,—,VII
+725,725,Menacing Moonraze Maelstrom,Ghost,Special,???,1,200,—,VII
+726,726,Let's Snuggle Forever,Fairy,Physical,???,1,190,—,VII
+727,727,Splintered Stormshards,Rock,Physical,???,1,190,—,VII
+728,728,Clangorous Soulblaze,Dragon,Special,???,1,185,—,VII
+729,729,Zippy Zap,Electric,Physical,???,15,50,100%,VII
+730,730,Splishy Splash,Water,Special,???,15,90,100%,VII
+731,731,Floaty Fall,Flying,Physical,???,15,90,95%,VII
+732,732,Pika Papow,Electric,Special,???,20,—,—,VII
+733,733,Bouncy Bubble,Water,Special,???,15,90,100%,VII
+734,734,Buzzy Buzz,Electric,Special,???,15,90,100%,VII
+735,735,Sizzly Slide,Fire,Physical,???,15,90,100%,VII
+736,736,Glitzy Glow,Psychic,Special,???,15,90,100%,VII
+737,737,Baddy Bad,Dark,Special,???,15,90,100%,VII
+738,738,Sappy Seed,Grass,Physical,???,15,90,100%,VII
+739,739,Freezy Frost,Ice,Special,???,15,90,100%,VII
+740,740,Sparkly Swirl,Fairy,Special,???,15,90,100%,VII
+741,741,Veevee Volley,Normal,Physical,???,20,—,—,VII
+742,742,Double Iron Bash,Steel,Physical,???,5,60,100%,VII
+743,743,Max Guard,Normal,Status,???,10,—,—,VIII
+744,744,Dynamax Cannon,Dragon,Special,???,5,100,100%,VIII
+745,745,Snipe Shot,Water,Special,???,15,80,100%,VIII
+746,746,Jaw Lock,Dark,Physical,???,10,80,100%,VIII
+747,747,Stuff Cheeks,Normal,Status,???,10,—,—,VIII
+748,748,No Retreat,Fighting,Status,???,5,—,—,VIII
+749,749,Tar Shot,Rock,Status,???,15,—,100%,VIII
+750,750,Magic Powder,Psychic,Status,???,20,—,100%,VIII
+751,751,Dragon Darts,Dragon,Physical,???,10,50,100%,VIII
+752,752,Teatime,Normal,Status,???,10,—,—,VIII
+753,753,Octolock,Fighting,Status,???,15,—,100%,VIII
+754,754,Bolt Beak,Electric,Physical,???,10,85,100%,VIII
+755,755,Fishious Rend,Water,Physical,???,10,85,100%,VIII
+756,756,Court Change,Normal,Status,???,10,—,100%,VIII
+757,757,Max Flare,Fire,???,???,10,—,—,VIII
+758,758,Max Flutterby,Bug,???,???,10,—,—,VIII
+759,759,Max Lightning,Electric,???,???,10,—,—,VIII
+760,760,Max Strike,Normal,???,???,10,—,—,VIII
+761,761,Max Knuckle,Fighting,???,???,10,—,—,VIII
+762,762,Max Phantasm,Ghost,???,???,10,—,—,VIII
+763,763,Max Hailstorm,Ice,???,???,10,—,—,VIII
+764,764,Max Ooze,Poison,???,???,10,—,—,VIII
+765,765,Max Geyser,Water,???,???,10,—,—,VIII
+766,766,Max Airstream,Flying,???,???,10,—,—,VIII
+767,767,Max Starfall,Fairy,???,???,10,—,—,VIII
+768,768,Max Wyrmwind,Dragon,???,???,10,—,—,VIII
+769,769,Max Mindstorm,Psychic,???,???,10,—,—,VIII
+770,770,Max Rockfall,Rock,???,???,10,—,—,VIII
+771,771,Max Quake,Ground,???,???,10,—,—,VIII
+772,772,Max Darkness,Dark,???,???,10,—,—,VIII
+773,773,Max Overgrowth,Grass,???,???,10,—,—,VIII
+774,774,Max Steelspike,Steel,???,???,10,—,—,VIII
+775,775,Clangorous Soul,Dragon,Status,???,5,—,100%,VIII
+776,776,Body Press,Fighting,Physical,???,10,80,100%,VIII
+777,777,Decorate,Fairy,Status,???,15,—,—,VIII
+778,778,Drum Beating,Grass,Physical,???,10,80,100%,VIII
+779,779,Snap Trap,Grass,Physical,???,15,35,100%,VIII
+780,780,Pyro Ball,Fire,Physical,???,5,120,90%,VIII
+781,781,Behemoth Blade,Steel,Physical,???,5,100,100%,VIII
+783,783,Aura Wheel,Electric,Physical,???,10,110,100%,VIII
+784,784,Breaking Swipe,Dragon,Physical,???,15,60,100%,VIII
+785,785,Branch Poke,Grass,Physical,???,40,40,100%,VIII
+786,786,Overdrive,Electric,Special,???,10,80,100%,VIII
+787,787,Apple Acid,Grass,Special,???,10,80,100%,VIII
+788,788,Grav Apple,Grass,Physical,???,10,80,100%,VIII
+789,789,Spirit Break,Fairy,Physical,???,15,75,100%,VIII
+790,790,Strange Steam,Fairy,Special,???,10,90,95%,VIII
+791,791,Life Dew,Water,Status,???,10,—,—,VIII
+792,792,Obstruct,Dark,Status,???,10,—,100%,VIII
+793,793,False Surrender,Dark,Physical,???,10,80,—,VIII
+794,794,Meteor Assault,Fighting,Physical,???,5,150,100%,VIII
+795,795,Eternabeam,Dragon,Special,???,5,160,90%,VIII
+796,796,Steel Beam,Steel,Special,???,5,140,95%,VIII
+797,797,Expanding Force,Psychic,Special,???,10,80,100%,VIII
+798,798,Steel Roller,Steel,Physical,???,5,130,100%,VIII
+799,799,Scale Shot,Dragon,Physical,???,20,25,90%,VIII
+800,800,Meteor Beam,Rock,Special,???,10,120,90%,VIII
+801,801,Shell Side Arm,Poison,Special,???,10,90,100%,VIII
+802,802,Misty Explosion,Fairy,Special,???,10,100,100%,VIII
+803,803,Grassy Glide,Grass,Physical,???,20,70,100%,VIII
+804,804,Rising Voltage,Electric,Special,???,20,70,100%,VIII
+805,805,Terrain Pulse,Normal,Special,???,10,50,100%,VIII
+806,806,Skitter Smack,Bug,Physical,???,10,70,90%,VIII
+807,807,Burning Jealousy,Fire,Special,???,5,70,100%,VIII
+808,808,Lash Out,Dark,Physical,???,5,75,100%,VIII
+809,809,Poltergeist,Ghost,Physical,???,5,110,90%,VIII
+810,810,Corrosive Gas,Poison,Status,???,40,—,100%,VIII
+811,811,Coaching,Fighting,Status,???,10,—,—,VIII
+812,812,Flip Turn,Water,Physical,???,20,60,100%,VIII
+813,813,Triple Axel,Ice,Physical,???,10,20,90%,VIII
+814,814,Dual Wingbeat,Flying,Physical,???,10,40,90%,VIII
+815,815,Scorching Sands,Ground,Special,???,10,70,100%,VIII
+816,816,Jungle Healing,Grass,Status,???,10,—,—,VIII
+817,817,Wicked Blow,Dark,Physical,???,5,80,100%,VIII
+818,818,Surging Strikes,Water,Physical,???,5,25,100%,VIII
