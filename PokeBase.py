@@ -16,11 +16,11 @@ def DispPokemon():
 			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
 			type = input("Enter type (First letter capitalized ex: Fire): ")
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND (T.Type1 = '%s' OR T.Type2 = '%s')" % (type, type)
+			print(query)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("PokedexID	Name	Generation	Tier	Evolves From	Type")
-			for row in rows:	
-				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
+			print(rows)
+   			
 			
 		elif ch == 2:
 			print("Valid Tiers are are : OU\tRU\tNU\tUBER")
@@ -28,30 +28,24 @@ def DispPokemon():
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.Tier = '%s'" % (tier)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("PokedexID	Name	Generation	Tier	Evolves From	Type")
-			for row in rows:	
-				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
-
+			print(rows)
+   
 		elif ch == 3:
 			print("Valid Generations are are : (1, 2, 3, 4, 5, 6, 7, 8)")
 			generation = int(input("Enter Generation: "))
-			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.Generation = '%d'" % (generation)
+			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.Generation = %d" % (generation)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("PokedexID	Name	Generation	Tier	Evolves From	Type")
-			for row in rows:	
-				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
-	
+			print(rows)
+
 		elif ch == 4:
 			TBS = int(input("Enter minimum total base stats: "))
-			query = query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2, S.HP+S.Atk+S.Def+S.SpA+S.SpD+S.Spe AS TBS FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T, STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND S.HP+S.Atk+S.Def+S.SpA+S.SpD+S.Spe >= '%d'" % (TBS)
+			query = query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2, S.HP+S.Atk+S.Def+S.SpA+S.SpD+S.Spe AS TBS FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T, STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND S.HP+S.Atk+S.Def+S.SpA+S.SpD+S.Spe >= %d" % (TBS)
 			
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("PokedexID	Name	Generation	Tier	Evolves From	Type		TBS")
-			for row in rows:
-				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['T.type1'], row['T.Type2'], row['TBS'])
-    
+			print(rows)
+
 		elif ch == 5:
 			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
 			type = input("Enter type (First letter capitalized ex: Fire): ")
@@ -60,10 +54,8 @@ def DispPokemon():
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2, S.%s FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T, STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND T.Type1 = '%s' OR T.Type2 = '%s' ORDER BY S.%s" % (stat, type, type, stat)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("PokedexID	Name	Generation	Tier	Evolves From	Type		", stat)
-			for row in rows:
-				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['T.type1'], row['T.Type2'], row[stat])
-
+			print(rows)
+   
 		else:
 			print("Invalid option")
 	except:
@@ -84,18 +76,15 @@ def SearchPokemon():
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND N.Name = '%s'" % (name)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("PokedexID	Name	Generation	Tier	Evolves From	Type")
-			for row in rows:	
-				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
+			print(rows)
+
 
 		elif ch == 2:
 			PokedexID = int(input("Enter PokedexID of pokemon : "))
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = '%d'" % (PokedexID)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("PokedexID	Name	Generation	Tier	Evolves From	Type")
-			for row in rows:	
-				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
+			print(rows)
 
 		else:
 			print("Invalid option")
@@ -117,9 +106,7 @@ def SearchMoves():
 			query = "SELECT M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power, M.Type FROM MOVES AS M, POKEMOVES AS PM, POKENAME AS P WHERE P.Name = '%s' AND P.PokedexID = PM.PokedexID AND PM.Move = M.Name" % (pokemon)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("Move		Description						Accuracy	Category	PP	Power	Type")
-			for row in rows:	
-				print(row['M.Name'], row['M.Desription'], row['M.Accuracy'], row['M.Category'], row['M.PP'], row['M.Power'], row['M.Type'])
+			print(rows)
 
 		elif ch == 2:
 			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
@@ -127,9 +114,8 @@ def SearchMoves():
 			query = "SELECT M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power FROM MOVES AS M WHERE M.Type = '%s'" % (type)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("Move		Description						Accuracy	Category	PP	Power")
-			for row in rows:	
-				print(row['M.Name'], row['M.Desription'], row['M.Accuracy'], row['M.Category'], row['M.PP'], row['M.Power'])
+			print(rows)
+
 		else:
 			print("Invalid option")
 	except:
@@ -184,9 +170,8 @@ def DispChampion():
 		query = "SELECT  P.Name, P.PokedexID, C.Move1, C.Move2, C.Move3, C.Move4 FROM CHAMPION AS C, POKENAME AS P WHERE C.PokedexID = P.PokedexID"
 		cur.execute(query)
 		rows = cur.fetchall()
-		print("Pokemon	PokedexID			Moves")
-		for row in rows:
-			print(row['P.Name'], row['P.PokedexID'], row['C.Move1'], row['C.Move2'], row['C.Move3'], row['C.Move4'])
+		print(rows)
+
 	except:
 		print("Failed to retrieve champion builds")
 	getch = input("Press ENTER to return")
@@ -202,6 +187,7 @@ def AddChampion():
 		query = "INSERT INTO CHAMPION(PokedexID, Move1, Move2, Move3, Move4) VALUES (%d, '%s', '%s', '%s')" % (PokedexID, Move1, Move2, Move3, Move4)
 		cur.execute(query)
 		print("Insertion successful")
+		cur.commit()
 	except:
 		print("Insertion failed")
 
@@ -226,6 +212,7 @@ def EditChampion():
 			move4 = input("Enter move1 : ")
 			query = "UPDATE CHAMPION SET Move1 = '%s', Move2 = '%s', Move3 = '%s', Move4 = '%s' WHERE PokedexID = %s" % (move1, move2, move3, move4, PokedexID)
 			print("Successfully edited")
+			cur.commit()
 		else:
 			print("No champion build exists for this PokedexID")
 
@@ -238,19 +225,23 @@ def RemoveChampion():
 	try:
 		PokedexID = int(input("Enter the PokedexID of the Pokemon : "))
 		query = "DELETE FROM CHAMPION WHERE PokedexID = %d" % (PokedexID)
+		cur.execute(query)
 		print("Successfully deleted")
+		cur.commit()
+
 	except:
 		print("Failed to delete champion build")
 	getch = input("Press ENTER to return")
 
 
 def DispLegendary():
-	query = "SELECT P.PokedexID, P.Name, L.Lore FROM POKENAME AS P, LEGENDARY AS L WHERE P.PokedexID = L.PokedexID"
-	cur.execute(query)
-	rows = cur.fetchall()
-	print("PokedexID	Name	Lore")
-	for row in rows:
-		print(row['P.PokedexID'], row['P.Name'], row['L.Lore'])
+	try:
+		query = "SELECT P.PokedexID, P.Name, L.Lore FROM POKENAME AS P, LEGENDARY AS L WHERE P.PokedexID = L.PokedexID"
+		cur.execute(query)
+		rows = cur.fetchall()
+		print(rows)
+	except:
+		print("Failed to display pokemon")
 	getch = input("Press ENTER to return")
 
 
