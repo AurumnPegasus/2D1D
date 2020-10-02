@@ -73,82 +73,123 @@ def DispPokemon():
 
 
 def SearchPokemon():
-	tmp = sp.call('clear', shell=True)
-	print("Select search condition : ")
-	print("1. Name")
-	print("2. PokedexID")
-	ch = int(input("Enter your choice : "))
-	if ch == 1:
-		name = input("Enter name of pokemon : ")
-		query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND N.Name = '%s'" % (name)
-		cur.execute(query)
-		rows = cur.fetchall()
-		print("PokedexID	Name	Generation	Tier	Evolves From	Type")
-		for row in rows:	
-			print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
+	try:
+		tmp = sp.call('clear', shell=True)
+		print("Select search condition : ")
+		print("1. Name")
+		print("2. PokedexID")
+		ch = int(input("Enter your choice : "))
+		if ch == 1:
+			name = input("Enter name of pokemon : ")
+			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND N.Name = '%s'" % (name)
+			cur.execute(query)
+			rows = cur.fetchall()
+			print("PokedexID	Name	Generation	Tier	Evolves From	Type")
+			for row in rows:	
+				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
 
-	elif ch == 2:
-		PokedexID = int(input("Enter PokedexID of pokemon : "))
-		query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = '%d'" % (PokedexID)
-		cur.execute(query)
-		rows = cur.fetchall()
-		print("PokedexID	Name	Generation	Tier	Evolves From	Type")
-		for row in rows:	
-			print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
+		elif ch == 2:
+			PokedexID = int(input("Enter PokedexID of pokemon : "))
+			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = '%d'" % (PokedexID)
+			cur.execute(query)
+			rows = cur.fetchall()
+			print("PokedexID	Name	Generation	Tier	Evolves From	Type")
+			for row in rows:	
+				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
 
-	else:
-		print("Invalid option")
+		else:
+			print("Invalid option")
+	except:
+		print("Failed to show pokemon")
 
 	getch = input("Press ENTER to return")
 
 
 def SearchMoves():
-	tmp = sp.call('clear', shell=True)
-	print("Select search condition :")
-	print("1. Pokemon")
-	print("2. Type")
-	ch = int(input("Enter your choice :"))
-	if ch == 1:
-		pokemon = input("Enter the name of the pokemon : ")
-		query = "SELECT M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power, M.Type FROM MOVES AS M, POKEMOVES AS PM, POKENAME AS P WHERE P.Name = '%s' AND P.PokedexID = PM.PokedexID AND PM.Move = M.Name" % (pokemon)
-		cur.execute(query)
-		rows = cur.fetchall()
-		print("Move		Description						Accuracy	Category	PP	Power	Type")
-		for row in rows:	
-			print(row['M.Name'], row['M.Desription'], row['M.Accuracy'], row['M.Category'], row['M.PP'], row['M.Power'], row['M.Type'])
+	try:	
+		tmp = sp.call('clear', shell=True)
+		print("Select search condition :")
+		print("1. Pokemon")
+		print("2. Type")
+		ch = int(input("Enter your choice :"))
+		if ch == 1:
+			pokemon = input("Enter the name of the pokemon : ")
+			query = "SELECT M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power, M.Type FROM MOVES AS M, POKEMOVES AS PM, POKENAME AS P WHERE P.Name = '%s' AND P.PokedexID = PM.PokedexID AND PM.Move = M.Name" % (pokemon)
+			cur.execute(query)
+			rows = cur.fetchall()
+			print("Move		Description						Accuracy	Category	PP	Power	Type")
+			for row in rows:	
+				print(row['M.Name'], row['M.Desription'], row['M.Accuracy'], row['M.Category'], row['M.PP'], row['M.Power'], row['M.Type'])
 
-	elif ch == 2:
-		print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
-		type = input("Enter type (First letter capitalized ex: Fire): ")
-		query = "SELECT M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power FROM MOVES AS M WHERE M.Type = '%s'" % (type)
-		cur.execute(query)
-		rows = cur.fetchall()
-		print("Move		Description						Accuracy	Category	PP	Power")
-		for row in rows:	
-			print(row['M.Name'], row['M.Desription'], row['M.Accuracy'], row['M.Category'], row['M.PP'], row['M.Power'])
-	else:
-		print("Invalid option")
+		elif ch == 2:
+			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
+			type = input("Enter type (First letter capitalized ex: Fire): ")
+			query = "SELECT M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power FROM MOVES AS M WHERE M.Type = '%s'" % (type)
+			cur.execute(query)
+			rows = cur.fetchall()
+			print("Move		Description						Accuracy	Category	PP	Power")
+			for row in rows:	
+				print(row['M.Name'], row['M.Desription'], row['M.Accuracy'], row['M.Category'], row['M.PP'], row['M.Power'])
+		else:
+			print("Invalid option")
+	except:
+		print("Failed to display moves")
 
 	getch = input("Press ENTER to return")
 
-"""
+
 # Returns the weaknesses, resistances and immunities of the type/pokemon
 def CheckEffect():
-	tmp = sp.call('clear', shell=True)
-	print("Select search condition : ")
-	print("1. Type")
-	print("2. Pokemon name")
-	ch = int(input("Enter your choice :"))
-	if ch == 1:
-	elif ch == 2:
-	else:
-		print("Invalid option")
-
+	try:
+		tmp = sp.call('clear', shell=True)
+		print("Select search condition : ")
+		print("1. Type")
+		print("2. Pokemon name")
+		ch = int(input("Enter your choice : "))
+		if ch == 1:
+			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
+			type = input("Enter type (First letter capitalized ex: Fire): ")
+			query = "SELECT Immunity FROM IMMUNITIES WHERE Name = '%s'" % (type)
+			cur.execute(query)
+			rows = cur.fetchall()
+			print("Immunities")
+			for row in rows:	
+				print(row['Immunity'])
+			print()
+			query = "SELECT Weakness FROM WEAKNESSES WHERE Name = '%s'" % (type)
+			cur.execute(query)
+			rows = cur.fetchall()
+			print("Weaknesses")
+			for row in rows:	
+				print(row['Weakness'])
+			print()
+			query = "SELECT Resistance FROM RESISTANCES WHERE Name = '%s'" % (type)
+			cur.execute(query)
+			rows = cur.fetchall()
+			print("Resistances")
+			for row in rows:	
+				print(row['Resistance'])
+			print()
+		elif ch == 2:
+			pass
+		else:
+			print("Invalid option")
+	except:
+		print("Failed to check effect")
 	getch = input("Press ENTER to return")
 
 def DispChampion():
+	try:
+		query = "SELECT  P.Name, P.PokedexID, C.Move1, C.Move2, C.Move3, C.Move4 FROM CHAMPION AS C, POKENAME AS P WHERE C.PokedexID = P.PokedexID"
+		cur.execute(query)
+		rows = cur.fetchall()
+		print("Pokemon	PokedexID			Moves")
+		for row in rows:
+			print(row['P.Name'], row['P.PokedexID'], row['C.Move1'], row['C.Move2'], row['C.Move3'], row['C.Move4'])
+	except:
+		print("Failed to retrieve champion builds")
 	getch = input("Press ENTER to return")
-
+"""
 def AddChampion():
 	getch = input("Press ENTER to return")
 
@@ -218,10 +259,10 @@ while(1):
 					SearchPokemon()
 				elif ch == 3:
 					SearchMoves()
-                #elif ch == 4:
-                #	CheckEffect()
-                #elif ch == 5:
-                #    DispChampion()
+				elif ch == 4:
+					CheckEffect()
+				elif ch == 5:
+					DispChampion()
                 #elif ch == 6:
                 #	AddChampion()
             	#elif ch == 7:
