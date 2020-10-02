@@ -178,6 +178,7 @@ def CheckEffect():
 		print("Failed to check effect")
 	getch = input("Press ENTER to return")
 
+
 def DispChampion():
 	try:
 		query = "SELECT  P.Name, P.PokedexID, C.Move1, C.Move2, C.Move3, C.Move4 FROM CHAMPION AS C, POKENAME AS P WHERE C.PokedexID = P.PokedexID"
@@ -189,16 +190,59 @@ def DispChampion():
 	except:
 		print("Failed to retrieve champion builds")
 	getch = input("Press ENTER to return")
-"""
+
+
 def AddChampion():
+	try:
+		PokedexID = int(input("Enter the PokedexID of the Pokemon : "))
+		Move1 = input("Enter the first move  : ")
+		Move2 = input("Enter the second move : ")
+		Move3 = input("Enter the third move  : ")
+		Move4 = input("Enter the fohrth move : ")
+		query = "INSERT INTO CHAMPION(PokedexID, Move1, Move2, Move3, Move4) VALUES (%d, '%s', '%s', '%s')" % (PokedexID, Move1, Move2, Move3, Move4)
+		cur.execute(query)
+		print("Insertion successful")
+	except:
+		print("Insertion failed")
+
 	getch = input("Press ENTER to return")
+
 
 def EditChampion():
+	try:
+		PokedexID = int(input("Enter the PokedexID of the Pokemon : "))
+		query = "SELECT * FROM CHAMPION WHERE PokedexID = %d" % (PokedexID)
+		cur.execute(query)
+		rows = cur.fetchall()
+		if len(rows):
+			print("Current data: ")
+			print("PokedexID	Move1	Move2	Move3	Move4")
+			for row in rows:
+				print(row['PokedexID'], row['Move1'], row['Move2'], row['Move3'], row['Move4'])
+			print("Enter new data:")
+			move1 = input("Enter move1 : ")
+			move2 = input("Enter move1 : ")
+			move3 = input("Enter move1 : ")
+			move4 = input("Enter move1 : ")
+			query = "UPDATE CHAMPION SET Move1 = '%s', Move2 = '%s', Move3 = '%s', Move4 = '%s' WHERE PokedexID = %s" % (move1, move2, move3, move4, PokedexID)
+			print("Successfully edited")
+		else:
+			print("No champion build exists for this PokedexID")
+
+	except: 
+		print("Failed to edit champion build")
 	getch = input("Press ENTER to return")
 
+
 def RemoveChampion():
+	try:
+		PokedexID = int(input("Enter the PokedexID of the Pokemon : "))
+		query = "DELETE FROM CHAMPION WHERE PokedexID = %d" % (PokedexID)
+		print("Successfully deleted")
+	except:
+		print("Failed to delete champion build")
 	getch = input("Press ENTER to return")
-"""
+
 
 def DispLegendary():
 	query = "SELECT P.PokedexID, P.Name, L.Lore FROM POKENAME AS P, LEGENDARY AS L WHERE P.PokedexID = L.PokedexID"
@@ -263,17 +307,18 @@ while(1):
 					CheckEffect()
 				elif ch == 5:
 					DispChampion()
-                #elif ch == 6:
-                #	AddChampion()
-            	#elif ch == 7:
-                #	EditChampion()
-                #elif ch == 8:
-                #	RemoveChampion()
+				elif ch == 6:
+					AddChampion()
+				elif ch == 7:
+					EditChampion()
+				elif ch == 8:
+					RemoveChampion()
 				elif ch == 9:
 					DispLegendary()
 				elif ch == 10:
 					break
 				else:
+					print("Invalid option")
 					tmp = input("Enter any key to CONTINUE>")
 				
 	except:

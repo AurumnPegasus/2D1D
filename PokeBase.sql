@@ -18,9 +18,6 @@
 --
 -- Table structure for table `ABILITY`
 --
-DROP DATABASE IF EXISTS `POKEBASE`;
-CREATE SCHEMA `POKEBASE`;
-USE `POKEBASE`;
 
 DROP TABLE IF EXISTS `ABILITY`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -61,11 +58,20 @@ CREATE TABLE `CHAMPION` (
   KEY `PokedexID_2` (`PokedexID`,`Move2`),
   KEY `PokedexID_3` (`PokedexID`,`Move3`),
   KEY `PokedexID_4` (`PokedexID`,`Move4`),
+  KEY `Move1` (`Move1`),
+  KEY `Move2` (`Move2`),
+  KEY `Move3` (`Move3`),
+  KEY `Move4` (`Move4`),
   CONSTRAINT `CHAMPION_ibfk_1` FOREIGN KEY (`PokedexID`) REFERENCES `POKEMON` (`PokedexID`),
+  CONSTRAINT `CHAMPION_ibfk_10` FOREIGN KEY (`PokedexID`) REFERENCES `POKEMON` (`PokedexID`),
   CONSTRAINT `CHAMPION_ibfk_2` FOREIGN KEY (`PokedexID`, `Move1`) REFERENCES `POKEMOVES` (`PokedexID`, `Move`),
   CONSTRAINT `CHAMPION_ibfk_3` FOREIGN KEY (`PokedexID`, `Move2`) REFERENCES `POKEMOVES` (`PokedexID`, `Move`),
   CONSTRAINT `CHAMPION_ibfk_4` FOREIGN KEY (`PokedexID`, `Move3`) REFERENCES `POKEMOVES` (`PokedexID`, `Move`),
-  CONSTRAINT `CHAMPION_ibfk_5` FOREIGN KEY (`PokedexID`, `Move4`) REFERENCES `POKEMOVES` (`PokedexID`, `Move`)
+  CONSTRAINT `CHAMPION_ibfk_5` FOREIGN KEY (`PokedexID`, `Move4`) REFERENCES `POKEMOVES` (`PokedexID`, `Move`),
+  CONSTRAINT `CHAMPION_ibfk_6` FOREIGN KEY (`Move1`) REFERENCES `MOVES` (`Name`),
+  CONSTRAINT `CHAMPION_ibfk_7` FOREIGN KEY (`Move2`) REFERENCES `MOVES` (`Name`),
+  CONSTRAINT `CHAMPION_ibfk_8` FOREIGN KEY (`Move3`) REFERENCES `MOVES` (`Name`),
+  CONSTRAINT `CHAMPION_ibfk_9` FOREIGN KEY (`Move4`) REFERENCES `MOVES` (`Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -89,7 +95,10 @@ CREATE TABLE `IMMUNITIES` (
   `Name` varchar(20) NOT NULL,
   `Immunity` varchar(20) NOT NULL,
   PRIMARY KEY (`Name`,`Immunity`),
-  CONSTRAINT `IMMUNITIES_ibfk_1` FOREIGN KEY (`Name`) REFERENCES `TYPE` (`Name`)
+  KEY `Immunity` (`Immunity`),
+  CONSTRAINT `IMMUNITIES_ibfk_1` FOREIGN KEY (`Name`) REFERENCES `TYPE` (`Name`),
+  CONSTRAINT `IMMUNITIES_ibfk_2` FOREIGN KEY (`Name`) REFERENCES `TYPE` (`Name`),
+  CONSTRAINT `IMMUNITIES_ibfk_3` FOREIGN KEY (`Immunity`) REFERENCES `TYPE` (`Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -99,7 +108,7 @@ CREATE TABLE `IMMUNITIES` (
 
 LOCK TABLES `IMMUNITIES` WRITE;
 /*!40000 ALTER TABLE `IMMUNITIES` DISABLE KEYS */;
-INSERT INTO `IMMUNITIES` VALUES ('Dark','Psychic'),('Fairy','Dragon'),('Flying','Ground'),('Ghost','Fighting'),('Ghost','Normal'),('Ground','Electric'),('Normal','Ghost'),('Steel','Poison');
+INSERT INTO `IMMUNITIES` VALUES ('Fairy','Dragon'),('Ground','Electric'),('Ghost','Fighting'),('Normal','Ghost'),('Flying','Ground'),('Ghost','Normal'),('Steel','Poison'),('Dark','Psychic');
 /*!40000 ALTER TABLE `IMMUNITIES` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -275,7 +284,10 @@ CREATE TABLE `RESISTANCES` (
   `Name` varchar(20) NOT NULL,
   `Resistance` varchar(20) NOT NULL,
   PRIMARY KEY (`Name`,`Resistance`),
-  CONSTRAINT `RESISTANCES_ibfk_1` FOREIGN KEY (`Name`) REFERENCES `TYPE` (`Name`)
+  KEY `Resistance` (`Resistance`),
+  CONSTRAINT `RESISTANCES_ibfk_1` FOREIGN KEY (`Name`) REFERENCES `TYPE` (`Name`),
+  CONSTRAINT `RESISTANCES_ibfk_2` FOREIGN KEY (`Name`) REFERENCES `TYPE` (`Name`),
+  CONSTRAINT `RESISTANCES_ibfk_3` FOREIGN KEY (`Resistance`) REFERENCES `TYPE` (`Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -285,7 +297,7 @@ CREATE TABLE `RESISTANCES` (
 
 LOCK TABLES `RESISTANCES` WRITE;
 /*!40000 ALTER TABLE `RESISTANCES` DISABLE KEYS */;
-INSERT INTO `RESISTANCES` VALUES ('Bug','Fighting'),('Bug','Grass'),('Bug','Ground'),('Dark','Dark'),('Dark','Ghost'),('Dragon','Electric'),('Dragon','Fire'),('Dragon','Grass'),('Dragon','Water'),('Electric','Electric'),('Electric','Flying'),('Electric','Steel'),('Fairy','Bug'),('Fairy','Dark'),('Fairy','Fighting'),('Fighting','Bug'),('Fighting','Dark'),('Fighting','Rock'),('Fire','Bug'),('Fire','Fairy'),('Fire','Fire'),('Fire','Grass'),('Fire','Ice'),('Fire','Steel'),('Flying','Bug'),('Flying','Fighting'),('Flying','Grass'),('Ghost','Bug'),('Ghost','Poison'),('Grass','Electric'),('Grass','Grass'),('Grass','Ground'),('Grass','Water'),('Ground','Poison'),('Ground','Rock'),('Ice','Ice'),('Poison','Bug'),('Poison','Fairy'),('Poison','Fighting'),('Poison','Grass'),('Poison','Poison'),('Psychic','Fighting'),('Psychic','Psychic'),('Rock','Fire'),('Rock','Flying'),('Rock','Normal'),('Rock','Poison'),('Steel','Bug'),('Steel','Dragon'),('Steel','Fairy'),('Steel','Flying'),('Steel','Grass'),('Steel','Ice'),('Steel','Normal'),('Steel','Psychic'),('Steel','Rock'),('Steel','Steel'),('Water','Fire'),('Water','Ice'),('Water','Steel'),('Water','Water');
+INSERT INTO `RESISTANCES` VALUES ('Fairy','Bug'),('Fighting','Bug'),('Fire','Bug'),('Flying','Bug'),('Ghost','Bug'),('Poison','Bug'),('Steel','Bug'),('Dark','Dark'),('Fairy','Dark'),('Fighting','Dark'),('Steel','Dragon'),('Dragon','Electric'),('Electric','Electric'),('Grass','Electric'),('Fire','Fairy'),('Poison','Fairy'),('Steel','Fairy'),('Bug','Fighting'),('Fairy','Fighting'),('Flying','Fighting'),('Poison','Fighting'),('Psychic','Fighting'),('Dragon','Fire'),('Fire','Fire'),('Rock','Fire'),('Water','Fire'),('Electric','Flying'),('Rock','Flying'),('Steel','Flying'),('Dark','Ghost'),('Bug','Grass'),('Dragon','Grass'),('Fire','Grass'),('Flying','Grass'),('Grass','Grass'),('Poison','Grass'),('Steel','Grass'),('Bug','Ground'),('Grass','Ground'),('Fire','Ice'),('Ice','Ice'),('Steel','Ice'),('Water','Ice'),('Rock','Normal'),('Steel','Normal'),('Ghost','Poison'),('Ground','Poison'),('Poison','Poison'),('Rock','Poison'),('Psychic','Psychic'),('Steel','Psychic'),('Fighting','Rock'),('Ground','Rock'),('Steel','Rock'),('Electric','Steel'),('Fire','Steel'),('Steel','Steel'),('Water','Steel'),('Dragon','Water'),('Grass','Water'),('Water','Water');
 /*!40000 ALTER TABLE `RESISTANCES` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -352,7 +364,10 @@ CREATE TABLE `WEAKNESSES` (
   `Name` varchar(20) NOT NULL,
   `Weakness` varchar(20) NOT NULL,
   PRIMARY KEY (`Name`,`Weakness`),
-  CONSTRAINT `WEAKNESSES_ibfk_1` FOREIGN KEY (`Name`) REFERENCES `TYPE` (`Name`)
+  KEY `Weakness` (`Weakness`),
+  CONSTRAINT `WEAKNESSES_ibfk_1` FOREIGN KEY (`Name`) REFERENCES `TYPE` (`Name`),
+  CONSTRAINT `WEAKNESSES_ibfk_2` FOREIGN KEY (`Name`) REFERENCES `TYPE` (`Name`),
+  CONSTRAINT `WEAKNESSES_ibfk_3` FOREIGN KEY (`Weakness`) REFERENCES `TYPE` (`Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -362,7 +377,7 @@ CREATE TABLE `WEAKNESSES` (
 
 LOCK TABLES `WEAKNESSES` WRITE;
 /*!40000 ALTER TABLE `WEAKNESSES` DISABLE KEYS */;
-INSERT INTO `WEAKNESSES` VALUES ('Bug','Fire'),('Bug','Flying'),('Bug','Rock'),('Dark','Bug'),('Dark','Fairy'),('Dark','Fighting'),('Dragon','Dragon'),('Dragon','Fairy'),('Dragon','Ice'),('Electric','Ground'),('Fairy','Poison'),('Fairy','Steel'),('Fighting','Fairy'),('Fighting','Flying'),('Fighting','Psychic'),('Fire','Ground'),('Fire','Rock'),('Fire','Water'),('Flying','Electric'),('Flying','Ice'),('Flying','Rock'),('Ghost','Dark'),('Ghost','Ghost'),('Grass','Bug'),('Grass','Fire'),('Grass','Flying'),('Grass','Ice'),('Grass','Poison'),('Ground','Grass'),('Ground','Ice'),('Ground','Water'),('Ice','Fighting'),('Ice','Fire'),('Ice','Rock'),('Ice','Steel'),('Normal','Fighting'),('Poison','Ground'),('Poison','Psychic'),('Psychic','Bug'),('Psychic','Dark'),('Psychic','Ghost'),('Rock','Fighting'),('Rock','Grass'),('Rock','Ground'),('Rock','Steel'),('Rock','Water'),('Steel','Fighting'),('Steel','Fire'),('Steel','Ground'),('Water','Electric'),('Water','Grass');
+INSERT INTO `WEAKNESSES` VALUES ('Dark','Bug'),('Grass','Bug'),('Psychic','Bug'),('Ghost','Dark'),('Psychic','Dark'),('Dragon','Dragon'),('Flying','Electric'),('Water','Electric'),('Dark','Fairy'),('Dragon','Fairy'),('Fighting','Fairy'),('Dark','Fighting'),('Ice','Fighting'),('Normal','Fighting'),('Rock','Fighting'),('Steel','Fighting'),('Bug','Fire'),('Grass','Fire'),('Ice','Fire'),('Steel','Fire'),('Bug','Flying'),('Fighting','Flying'),('Grass','Flying'),('Ghost','Ghost'),('Psychic','Ghost'),('Ground','Grass'),('Rock','Grass'),('Water','Grass'),('Electric','Ground'),('Fire','Ground'),('Poison','Ground'),('Rock','Ground'),('Steel','Ground'),('Dragon','Ice'),('Flying','Ice'),('Grass','Ice'),('Ground','Ice'),('Fairy','Poison'),('Grass','Poison'),('Fighting','Psychic'),('Poison','Psychic'),('Bug','Rock'),('Fire','Rock'),('Flying','Rock'),('Ice','Rock'),('Fairy','Steel'),('Ice','Steel'),('Rock','Steel'),('Fire','Water'),('Ground','Water'),('Rock','Water');
 /*!40000 ALTER TABLE `WEAKNESSES` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -375,4 +390,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-30 21:03:28
+-- Dump completed on 2020-10-02 15:23:18
