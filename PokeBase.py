@@ -44,7 +44,8 @@ def DispPokemon():
 	
 		elif ch == 4:
 			TBS = int(input("Enter minimum total base stats: "))
-			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 S.HP+S.Atk+S.Def+S.SpA+S.Spd+S.Spe AS TBS FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND TBS >= '%d'" % (TBS)
+			query = query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2, S.HP+S.Atk+S.Def+S.SpA+S.SpD+S.Spe AS TBS FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T, STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND S.HP+S.Atk+S.Def+S.SpA+S.SpD+S.Spe >= '%d'" % (TBS)
+			
 			cur.execute(query)
 			rows = cur.fetchall()
 			print("PokedexID	Name	Generation	Tier	Evolves From	Type		TBS")
@@ -56,7 +57,9 @@ def DispPokemon():
 			type = input("Enter type (First letter capitalized ex: Fire): ")
 			print("Valid stats are :\nHP\tAtk\tDef\nSpA\tSpD\tSpe")
 			stat = input("Enter stat (First letter capitalized ex: Atk): ")
-			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 T.%s AS TBS FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND (T.Type1 = %s OR T.Type2 = %s) ORDER BY %s" % (stat, type, type, stat)
+			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2, S.%s FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T, STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND T.Type1 = '%s' OR T.Type2 = '%s' ORDER BY S.%s" % (stat, type, type, stat)
+			cur.execute(query)
+			rows = cur.fetchall()
 			print("PokedexID	Name	Generation	Tier	Evolves From	Type		", stat)
 			for row in rows:
 				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['T.type1'], row['T.Type2'], row[stat])
@@ -68,7 +71,7 @@ def DispPokemon():
 	getch = input("Press ENTER to return")
 
 
-"""
+
 def SearchPokemon():
 	tmp = sp.call('clear', shell=True)
 	print("Select search condition : ")
@@ -76,13 +79,29 @@ def SearchPokemon():
 	print("2. PokedexID")
 	ch = int(input("Enter your choice : "))
 	if ch == 1:
+		name = input("Enter name of pokemon : ")
+		query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND N.Name = '%s'" % (name)
+		cur.execute(query)
+		rows = cur.fetchall()
+		print("PokedexID	Name	Generation	Tier	Evolves From	Type")
+		for row in rows:	
+			print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
+
 	elif ch == 2:
+		PokedexID = int(input("Enter PokedexID of pokemon : "))
+		query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = '%d'" % (PokedexID)
+		cur.execute(query)
+		rows = cur.fetchall()
+		print("PokedexID	Name	Generation	Tier	Evolves From	Type")
+		for row in rows:	
+			print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
+
 	else:
 		print("Invalid option")
 
 	getch = input("Press ENTER to return")
 
-
+"""
 def SearchMoves():
 	tmp = sp.call('clear', shell=True)
 	print("Select search condition :")
@@ -179,8 +198,8 @@ while(1):
 				tmp = sp.call('clear', shell=True)
 				if ch == 1:
 					DispPokemon()
-                #elif ch == 2:
-                #	SearchPokemon()
+				elif ch == 2:
+					SearchPokemon()
                 #elif ch == 3:
                	# 	SearchMoves()
                 #elif ch == 4:
