@@ -101,7 +101,7 @@ def SearchPokemon():
 
 	getch = input("Press ENTER to return")
 
-"""
+
 def SearchMoves():
 	tmp = sp.call('clear', shell=True)
 	print("Select search condition :")
@@ -109,13 +109,29 @@ def SearchMoves():
 	print("2. Type")
 	ch = int(input("Enter your choice :"))
 	if ch == 1:
+		pokemon = input("Enter the name of the pokemon : ")
+		query = "SELECT M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power, M.Type FROM MOVES AS M, POKEMOVES AS PM, POKENAME AS P WHERE P.Name = '%s' AND P.PokedexID = PM.PokedexID AND PM.Move = M.Name" % (pokemon)
+		cur.execute(query)
+		rows = cur.fetchall()
+		print("Move		Description						Accuracy	Category	PP	Power	Type")
+		for row in rows:	
+			print(row['M.Name'], row['M.Desription'], row['M.Accuracy'], row['M.Category'], row['M.PP'], row['M.Power'], row['M.Type'])
+
 	elif ch == 2:
+		print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
+		type = input("Enter type (First letter capitalized ex: Fire): ")
+		query = "SELECT M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power FROM MOVES AS M WHERE M.Type = '%s'" % (type)
+		cur.execute(query)
+		rows = cur.fetchall()
+		print("Move		Description						Accuracy	Category	PP	Power")
+		for row in rows:	
+			print(row['M.Name'], row['M.Desription'], row['M.Accuracy'], row['M.Category'], row['M.PP'], row['M.Power'])
 	else:
 		print("Invalid option")
 
 	getch = input("Press ENTER to return")
 
-
+"""
 # Returns the weaknesses, resistances and immunities of the type/pokemon
 def CheckEffect():
 	tmp = sp.call('clear', shell=True)
@@ -200,8 +216,8 @@ while(1):
 					DispPokemon()
 				elif ch == 2:
 					SearchPokemon()
-                #elif ch == 3:
-               	# 	SearchMoves()
+				elif ch == 3:
+					SearchMoves()
                 #elif ch == 4:
                 #	CheckEffect()
                 #elif ch == 5:
