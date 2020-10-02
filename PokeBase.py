@@ -41,10 +41,26 @@ def DispPokemon():
 			print("PokedexID	Name	Generation	Tier	Evolves From	Type")
 			for row in rows:	
 				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['P.EvolvesFrom'], row['T.Type1'], row['T.Type2'])
+	
 		elif ch == 4:
-			print()
+			TBS = int(input("Enter minimum total base stats: "))
+			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 S.HP+S.Atk+S.Def+S.SpA+S.Spd+S.Spe AS TBS FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND TBS >= '%d'" % (TBS)
+			cur.execute(query)
+			rows = cur.fetchall()
+			print("PokedexID	Name	Generation	Tier	Evolves From	Type		TBS")
+			for row in rows:
+				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['T.type1'], row['T.Type2'], row['TBS'])
+    
 		elif ch == 5:
-			print()
+			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
+			type = input("Enter type (First letter capitalized ex: Fire): ")
+			print("Valid stats are :\nHP\tAtk\tDef\nSpA\tSpD\tSpe")
+			stat = input("Enter stat (First letter capitalized ex: Atk): ")
+			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 T.%s AS TBS FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND (T.Type1 = %s OR T.Type2 = %s) ORDER BY %s" % (stat, type, type, stat)
+			print("PokedexID	Name	Generation	Tier	Evolves From	Type		", stat)
+			for row in rows:
+				print(row['P.PokedexID'], row['N.Name'], row['P.Generation'], row['P.Tier'], row['T.type1'], row['T.Type2'], row[stat])
+
 		else:
 			print("Invalid option")
 	except:
