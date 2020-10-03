@@ -14,7 +14,7 @@ def DispPokemon():
 		print("5. Single stat and type")
 		ch = int(input("Enter your choice : "))
 		if ch == 1:
-			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
+			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFire\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
 			type = input("Enter type (First letter capitalized ex: Fire): ")
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND (T.Type1 = '%s' OR T.Type2 = '%s')" % (type, type)
 			cur.execute(query)
@@ -261,7 +261,10 @@ def DispLegendary():
 		cur.execute(query)
 		rows = cur.fetchall()
 		if rows:
-			printlist(rows)
+			for row in rows:
+				t = PrettyTable([row['PokedexID'],row['Name']])
+				print(t)
+				print(row['Lore'],"\n\n")				
 	except:
 		print("Failed to display pokemon")
 	getch = input("Press ENTER to return")
