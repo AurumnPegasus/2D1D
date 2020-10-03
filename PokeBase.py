@@ -1,6 +1,7 @@
 import subprocess as sp
 import pymysql
 import pymysql.cursors
+from prettytable import PrettyTable
 
 def DispPokemon():
 	try:
@@ -16,10 +17,9 @@ def DispPokemon():
 			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
 			type = input("Enter type (First letter capitalized ex: Fire): ")
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND (T.Type1 = '%s' OR T.Type2 = '%s')" % (type, type)
-			print(query)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
+			printlist(rows)
    			
 			
 		elif ch == 2:
@@ -28,7 +28,7 @@ def DispPokemon():
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.Tier = '%s'" % (tier)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
+			printlist(rows)
    
 		elif ch == 3:
 			print("Valid Generations are are : (1, 2, 3, 4, 5, 6, 7, 8)")
@@ -36,15 +36,14 @@ def DispPokemon():
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.Generation = %d" % (generation)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
+			printlist(rows)
 
 		elif ch == 4:
 			TBS = int(input("Enter minimum total base stats: "))
 			query = query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2, S.HP+S.Atk+S.Def+S.SpA+S.SpD+S.Spe AS TBS FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T, STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND S.HP+S.Atk+S.Def+S.SpA+S.SpD+S.Spe >= %d" % (TBS)
-			
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
+			printlist(rows)
 
 		elif ch == 5:
 			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
@@ -54,7 +53,7 @@ def DispPokemon():
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2, S.%s FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T, STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND (T.Type1 = '%s' OR T.Type2 = '%s') ORDER BY S.%s DESC" % (stat, type, type, stat)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
+			printlist(rows)
    
 		else:
 			print("Invalid option")
@@ -74,10 +73,9 @@ def SearchPokemon():
 		if ch == 1:
 			name = input("Enter name of pokemon : ")
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND N.Name = '%s'" % (name)
-			#print(query)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
+			printlist(rows)
 
 
 		elif ch == 2:
@@ -85,7 +83,7 @@ def SearchPokemon():
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = '%d'" % (PokedexID)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
+			printlist(rows)
 
 		else:
 			print("Invalid option")
@@ -107,7 +105,7 @@ def SearchMoves():
 			query = "SELECT M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power, M.Type FROM MOVES AS M, POKEMOVES AS PM, POKENAME AS P WHERE P.Name = '%s' AND P.PokedexID = PM.PokedexID AND PM.Move = M.Name" % (pokemon)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
+			printlist(rows)
 
 		elif ch == 2:
 			print("Valid types are :\nNormal\t\tFighting\tBug\nDark\t\tDragon\t\tElectric\nFairy\t\tFiret\t\tFlying\nGhost\t\tGrass\t\tGround\nIce\t\tPoison\t\tPsychic\nRock\t\tSteel\t\tWater\n")
@@ -115,7 +113,7 @@ def SearchMoves():
 			query = "SELECT M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power FROM MOVES AS M WHERE M.Type = '%s'" % (type)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
+			printlist(rows)
 
 		else:
 			print("Invalid option")
@@ -139,24 +137,21 @@ def CheckEffect():
 			query = "SELECT Immunity FROM IMMUNITIES WHERE Name = '%s'" % (type)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("Immunities")
-			for row in rows:	
-				print(row['Immunity'])
-			print()
+			if rows:
+				printlist(rows)
+				print()
 			query = "SELECT Weakness FROM WEAKNESSES WHERE Name = '%s'" % (type)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("Weaknesses")
-			for row in rows:	
-				print(row['Weakness'])
-			print()
+			if rows:
+				printlist(rows)
+				print()
 			query = "SELECT Resistance FROM RESISTANCES WHERE Name = '%s'" % (type)
 			cur.execute(query)
 			rows = cur.fetchall()
-			print("Resistances")
-			for row in rows:	
-				print(row['Resistance'])
-			print()
+			if rows:
+				printlist(rows)
+				print()
 		elif ch == 2:
 			query = "DROP VIEW IF EXISTS IM, WE, RE"
 			cur.execute(query)
@@ -167,20 +162,21 @@ def CheckEffect():
 			cur.execute(query)
 			query = "CREATE VIEW WE AS SELECT W.Weakness AS Weakness FROM WEAKNESSES AS W, POKENAME AS N, POKETYPE AS T WHERE N.PokedexID = T.PokedexID AND (T.Type1 = W.Name OR T.Type2 = W.Name) AND N.Name = '%s'" % (pokemon)
 			cur.execute(query)
-			print("Immunities")
 			query = "SELECT * FROM IM"
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
-			
+			if rows:
+				printlist(rows)			
 			query = "SELECT * FROM RE WHERE Resistance NOT IN (SELECT * FROM IM UNION SELECT * FROM WE) GROUP BY Resistance"
 			cur.execute(query)
 			rows = cur.fetchall()
-			print(rows)
+			if rows:
+				printlist(rows)
 			query = "SELECT * FROM WE WHERE Weakness NOT IN (SELECT * FROM IM UNION SELECT * FROM RE) GROUP BY Weakness"
 			cur.execute(query)
-			rows = cur.fetchall()
-			print(rows)
+			if rows:
+				rows = cur.fetchall()
+			printlist(rows)
 		else:
 			print("Invalid option")
 	except:
@@ -193,7 +189,8 @@ def DispChampion():
 		query = "SELECT  P.Name, P.PokedexID, C.Move1, C.Move2, C.Move3, C.Move4 FROM CHAMPION AS C, POKENAME AS P WHERE C.PokedexID = P.PokedexID"
 		cur.execute(query)
 		rows = cur.fetchall()
-		print(rows)
+		if rows:
+			printlist(rows)
 
 	except:
 		print("Failed to retrieve champion builds")
@@ -206,9 +203,8 @@ def AddChampion():
 		Move1 = input("Enter the first move  : ")
 		Move2 = input("Enter the second move : ")
 		Move3 = input("Enter the third move  : ")
-		Move4 = input("Enter the fohrth move : ")
+		Move4 = input("Enter the fourth move : ")
 		query = "INSERT INTO CHAMPION(PokedexID, Move1, Move2, Move3, Move4) VALUES (%d, '%s', '%s', '%s', '%s')" % (PokedexID, Move1, Move2, Move3, Move4)
-		print(query)
 		cur.execute(query)
 		con.commit()
 		print("Insertion successful")
@@ -231,9 +227,9 @@ def EditChampion():
 				print(row['PokedexID'], row['Move1'], row['Move2'], row['Move3'], row['Move4'])
 			print("Enter new data:")
 			move1 = input("Enter move1 : ")
-			move2 = input("Enter move1 : ")
-			move3 = input("Enter move1 : ")
-			move4 = input("Enter move1 : ")
+			move2 = input("Enter move2 : ")
+			move3 = input("Enter move3 : ")
+			move4 = input("Enter move4 : ")
 			query = "UPDATE CHAMPION SET Move1 = '%s', Move2 = '%s', Move3 = '%s', Move4 = '%s' WHERE PokedexID = %s" % (move1, move2, move3, move4, PokedexID)
 			cur.execute(query)
 			print("Successfully edited")
@@ -264,10 +260,33 @@ def DispLegendary():
 		query = "SELECT P.PokedexID, P.Name, L.Lore FROM POKENAME AS P, LEGENDARY AS L WHERE P.PokedexID = L.PokedexID"
 		cur.execute(query)
 		rows = cur.fetchall()
-		print(rows)
+		if rows:
+			printlist(rows)
 	except:
 		print("Failed to display pokemon")
 	getch = input("Press ENTER to return")
+
+# Print Function
+
+def printlist(rows):
+	try:
+		if not rows:
+			print("\nRecord doesn't exist.\n")
+			return
+		print()
+		temp = []
+		headlist = []
+		for head in rows[0]:
+			headlist.append(head)
+		t = PrettyTable(headlist)
+		for row in rows:
+			for value in row:
+				temp.append(row[value])
+			t.add_row(temp)
+			temp.clear()
+		print(t)
+	except:
+		print("Error displaying result")
 
 
 # Main loop
