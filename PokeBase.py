@@ -51,7 +51,7 @@ def DispPokemon():
 			type = input("Enter type (First letter capitalized ex: Fire): ")
 			print("Valid stats are :\nHP\tAtk\tDef\nSpA\tSpD\tSpe")
 			stat = input("Enter stat (First letter capitalized ex: Atk): ")
-			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2, S.%s FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T, STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND T.Type1 = '%s' OR T.Type2 = '%s' ORDER BY S.%s" % (stat, type, type, stat)
+			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2, S.%s FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T, STATS AS S WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND P.PokedexID = S.PokedexID AND (T.Type1 = '%s' OR T.Type2 = '%s') ORDER BY S.%s DESC" % (stat, type, type, stat)
 			cur.execute(query)
 			rows = cur.fetchall()
 			print(rows)
@@ -74,6 +74,7 @@ def SearchPokemon():
 		if ch == 1:
 			name = input("Enter name of pokemon : ")
 			query = "SELECT P.PokedexID, N.Name, P.Generation, P.Tier, P.EvolvesFrom, T.Type1, T.Type2 FROM POKEMON AS P, POKENAME AS N, POKETYPE AS T WHERE P.PokedexID = N.PokedexID AND P.PokedexID = T.PokedexID AND N.Name = '%s'" % (name)
+			#print(query)
 			cur.execute(query)
 			rows = cur.fetchall()
 			print(rows)
