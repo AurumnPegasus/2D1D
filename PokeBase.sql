@@ -18,9 +18,6 @@
 --
 -- Table structure for table `ABILITY`
 --
-DROP SCHEMA IF EXISTS `POKEBASE`;
-CREATE SCHEMA `POKEBASE`;
-USE `POKEBASE`;
 
 DROP TABLE IF EXISTS `ABILITY`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -76,8 +73,21 @@ CREATE TABLE `CHAMPION` (
 
 LOCK TABLES `CHAMPION` WRITE;
 /*!40000 ALTER TABLE `CHAMPION` DISABLE KEYS */;
+INSERT INTO `CHAMPION` VALUES (6,'Fly','Acrobatics','Ember','Flamethrower');
 /*!40000 ALTER TABLE `CHAMPION` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Temporary table structure for view `IM`
+--
+
+DROP TABLE IF EXISTS `IM`;
+/*!50001 DROP VIEW IF EXISTS `IM`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE VIEW `IM` AS SELECT 
+ 1 AS `Immunity`*/;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Table structure for table `IMMUNITIES`
@@ -271,6 +281,18 @@ INSERT INTO `POKETYPE` VALUES (1,'Grass','Poison'),(2,'Grass','Poison'),(3,'Gras
 UNLOCK TABLES;
 
 --
+-- Temporary table structure for view `RE`
+--
+
+DROP TABLE IF EXISTS `RE`;
+/*!50001 DROP VIEW IF EXISTS `RE`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE VIEW `RE` AS SELECT 
+ 1 AS `Resistance`*/;
+SET character_set_client = @saved_cs_client;
+
+--
 -- Table structure for table `RESISTANCES`
 --
 
@@ -349,6 +371,18 @@ INSERT INTO `TYPE` VALUES ('Bug'),('Dark'),('Dragon'),('Electric'),('Fairy'),('F
 UNLOCK TABLES;
 
 --
+-- Temporary table structure for view `WE`
+--
+
+DROP TABLE IF EXISTS `WE`;
+/*!50001 DROP VIEW IF EXISTS `WE`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE VIEW `WE` AS SELECT 
+ 1 AS `Weakness`*/;
+SET character_set_client = @saved_cs_client;
+
+--
 -- Table structure for table `WEAKNESSES`
 --
 
@@ -372,6 +406,60 @@ LOCK TABLES `WEAKNESSES` WRITE;
 INSERT INTO `WEAKNESSES` VALUES ('Bug','Fire'),('Bug','Flying'),('Bug','Rock'),('Dark','Bug'),('Dark','Fairy'),('Dark','Fighting'),('Dragon','Dragon'),('Dragon','Fairy'),('Dragon','Ice'),('Electric','Ground'),('Fairy','Poison'),('Fairy','Steel'),('Fighting','Fairy'),('Fighting','Flying'),('Fighting','Psychic'),('Fire','Ground'),('Fire','Rock'),('Fire','Water'),('Flying','Electric'),('Flying','Ice'),('Flying','Rock'),('Ghost','Dark'),('Ghost','Ghost'),('Grass','Bug'),('Grass','Fire'),('Grass','Flying'),('Grass','Ice'),('Grass','Poison'),('Ground','Grass'),('Ground','Ice'),('Ground','Water'),('Ice','Fighting'),('Ice','Fire'),('Ice','Rock'),('Ice','Steel'),('Normal','Fighting'),('Poison','Ground'),('Poison','Psychic'),('Psychic','Bug'),('Psychic','Dark'),('Psychic','Ghost'),('Rock','Fighting'),('Rock','Grass'),('Rock','Ground'),('Rock','Steel'),('Rock','Water'),('Steel','Fighting'),('Steel','Fire'),('Steel','Ground'),('Water','Electric'),('Water','Grass');
 /*!40000 ALTER TABLE `WEAKNESSES` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Final view structure for view `IM`
+--
+
+/*!50001 DROP VIEW IF EXISTS `IM`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`Aakash`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `IM` AS select `I`.`Immunity` AS `Immunity` from ((`IMMUNITIES` `I` join `POKENAME` `N`) join `POKETYPE` `T`) where ((`N`.`PokedexID` = `T`.`PokedexID`) and ((`T`.`Type1` = `I`.`Name`) or (`T`.`Type2` = `I`.`Name`)) and (`N`.`Name` = 'Charizard')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `RE`
+--
+
+/*!50001 DROP VIEW IF EXISTS `RE`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`Aakash`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `RE` AS select `R`.`Resistance` AS `Resistance` from ((`RESISTANCES` `R` join `POKENAME` `N`) join `POKETYPE` `T`) where ((`N`.`PokedexID` = `T`.`PokedexID`) and ((`T`.`Type1` = `R`.`Name`) or (`T`.`Type2` = `R`.`Name`)) and (`N`.`Name` = 'Charizard')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `WE`
+--
+
+/*!50001 DROP VIEW IF EXISTS `WE`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`Aakash`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `WE` AS select `W`.`Weakness` AS `Weakness` from ((`WEAKNESSES` `W` join `POKENAME` `N`) join `POKETYPE` `T`) where ((`N`.`PokedexID` = `T`.`PokedexID`) and ((`T`.`Type1` = `W`.`Name`) or (`T`.`Type2` = `W`.`Name`)) and (`N`.`Name` = 'Charizard')) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -382,4 +470,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-02 20:48:48
+-- Dump completed on 2020-10-03 11:28:20

@@ -158,7 +158,29 @@ def CheckEffect():
 				print(row['Resistance'])
 			print()
 		elif ch == 2:
-			pass
+			query = "DROP VIEW IF EXISTS IM, WE, RE"
+			cur.execute(query)
+			pokemon = input("Enter the name of the pokemon : ")
+			query = "CREATE VIEW IM AS SELECT I.Immunity AS Immunity FROM IMMUNITIES AS I, POKENAME AS N, POKETYPE AS T WHERE N.PokedexID = T.PokedexID AND (T.Type1 = I.Name OR T.Type2 = I.Name) AND N.Name = '%s'" % (pokemon)
+			cur.execute(query)
+			query = "CREATE VIEW RE AS SELECT R.Resistance AS Resistance FROM RESISTANCES AS R, POKENAME AS N, POKETYPE AS T WHERE N.PokedexID = T.PokedexID AND (T.Type1 = R.Name OR T.Type2 = R.Name) AND N.Name = '%s'" % (pokemon)
+			cur.execute(query)
+			query = "CREATE VIEW WE AS SELECT W.Weakness AS Weakness FROM WEAKNESSES AS W, POKENAME AS N, POKETYPE AS T WHERE N.PokedexID = T.PokedexID AND (T.Type1 = W.Name OR T.Type2 = W.Name) AND N.Name = '%s'" % (pokemon)
+			cur.execute(query)
+			print("Immunities")
+			query = "SELECT * FROM IM"
+			cur.execute(query)
+			rows = cur.fetchall()
+			print(rows)
+			
+			query = "SELECT * FROM RE WHERE Resistance NOT IN (SELECT * FROM IM UNION SELECT * FROM WE) GROUP BY Resistance"
+			cur.execute(query)
+			rows = cur.fetchall()
+			print(rows)
+			query = "SELECT * FROM WE WHERE Weakness NOT IN (SELECT * FROM IM UNION SELECT * FROM RE) GROUP BY Weakness"
+			cur.execute(query)
+			rows = cur.fetchall()
+			print(rows)
 		else:
 			print("Invalid option")
 	except:
@@ -185,10 +207,11 @@ def AddChampion():
 		Move2 = input("Enter the second move : ")
 		Move3 = input("Enter the third move  : ")
 		Move4 = input("Enter the fohrth move : ")
-		query = "INSERT INTO CHAMPION(PokedexID, Move1, Move2, Move3, Move4) VALUES (%d, '%s', '%s', '%s')" % (PokedexID, Move1, Move2, Move3, Move4)
+		query = "INSERT INTO CHAMPION(PokedexID, Move1, Move2, Move3, Move4) VALUES (%d, '%s', '%s', '%s', '%s')" % (PokedexID, Move1, Move2, Move3, Move4)
+		print(query)
 		cur.execute(query)
+		con.commit()
 		print("Insertion successful")
-		cur.commit()
 	except:
 		print("Insertion failed")
 
@@ -212,8 +235,9 @@ def EditChampion():
 			move3 = input("Enter move1 : ")
 			move4 = input("Enter move1 : ")
 			query = "UPDATE CHAMPION SET Move1 = '%s', Move2 = '%s', Move3 = '%s', Move4 = '%s' WHERE PokedexID = %s" % (move1, move2, move3, move4, PokedexID)
+			cur.execute(query)
 			print("Successfully edited")
-			cur.commit()
+			con.commit()
 		else:
 			print("No champion build exists for this PokedexID")
 
@@ -228,7 +252,7 @@ def RemoveChampion():
 		query = "DELETE FROM CHAMPION WHERE PokedexID = %d" % (PokedexID)
 		cur.execute(query)
 		print("Successfully deleted")
-		cur.commit()
+		con.commit()
 
 	except:
 		print("Failed to delete champion build")
