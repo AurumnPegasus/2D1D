@@ -75,7 +75,7 @@ CREATE TABLE `CHAMPION` (
 
 LOCK TABLES `CHAMPION` WRITE;
 /*!40000 ALTER TABLE `CHAMPION` DISABLE KEYS */;
-INSERT INTO `CHAMPION` VALUES (6,'Fly','Acrobatics','Ember','Flamethrower');
+INSERT INTO `CHAMPION` VALUES (6,'Fly','Acrobatics','Ember','Flamethrower'),(493,'Defense Curl','Endeavor','Extreme Speed','False Swipe'),(658,'Fishious Rend','Brine','Crunch','Feint Attack'),(384,'Dragon Ascent','Air Slash','Aerial Ace','Devastating Drake'),(785,'Electro Ball','Draining Kiss','Crafty Shield','Charge'),(382,'Aqua Jet','Bouncy Bubble','Clamp','Flip Turn'),(150,'Agility','Dream Eater','Extrasensory','Future Sight');
 /*!40000 ALTER TABLE `CHAMPION` ENABLE KEYS */;
 UNLOCK TABLES;
 
