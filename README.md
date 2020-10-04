@@ -68,3 +68,5 @@ If you feel like the champion build for a particular pokemon is in need of an up
 Although it is not advisable to delete a champion build (we love all pokemon equally!), we still provide you the functionality.
 #### Display legendary pokemon
 Read the lore of these magnificent beings and make your fellow pokemon trainers jealous for sure!
+#### Show abilities
+Display either the ability of a certain pokemon, or display all abilities. 
