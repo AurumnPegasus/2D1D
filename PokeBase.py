@@ -257,14 +257,50 @@ def RemoveChampion():
 
 def DispLegendary():
 	try:
-		query = "SELECT P.PokedexID, P.Name, L.Lore FROM POKENAME AS P, LEGENDARY AS L WHERE P.PokedexID = L.PokedexID"
-		cur.execute(query)
-		rows = cur.fetchall()
-		if rows:
-			for row in rows:
-				t = PrettyTable([row['PokedexID'],row['Name']])
-				print(t)
-				print(row['Lore'],"\n\n")				
+		tmp = sp.call('clear', shell=True)
+		print("Select search condition : ")
+		print("1. Name")
+		print("2. PokedexID")
+		print("3. Display All")
+		ch = int(input("Enter your choice : "))
+		if ch == 1:
+			name = input("Enter name of pokemon : ")
+			query = "SELECT P.PokedexID, N.Name, L.Lore FROM POKEMON AS P, POKENAME AS N, LEGENDARY AS L WHERE P.PokedexID = N.PokedexID AND P.PokedexID = L.PokedexID AND N.Name = '%s'" % (name)
+			cur.execute(query)
+			rows = cur.fetchall()
+			if rows:
+				for row in rows:
+					t = PrettyTable([row['PokedexID'],row['Name']])
+					print(t)
+					print(row['Lore'],"\n\n")
+			else:
+				print("Selected legendary doesn't exist.")
+
+		elif ch == 2:
+			PokedexID = int(input("Enter PokedexID of pokemon : "))
+			query = "SELECT P.PokedexID, N.Name, L.Lore FROM POKEMON AS P, POKENAME AS N, LEGENDARY AS L WHERE P.PokedexID = N.PokedexID AND P.PokedexID = L.PokedexID AND P.PokedexID = '%d'" % (PokedexID)
+			cur.execute(query)
+			rows = cur.fetchall()
+			if rows:
+				for row in rows:
+					t = PrettyTable([row['PokedexID'],row['Name']])
+					print(t)
+					print(row['Lore'],"\n\n")
+			else:
+				print("Selected legendary doesn't exist.")
+
+		elif ch == 3:
+			query = "SELECT P.PokedexID, P.Name, L.Lore FROM POKENAME AS P, LEGENDARY AS L WHERE P.PokedexID = L.PokedexID"
+			cur.execute(query)
+			rows = cur.fetchall()
+			if rows:
+				for row in rows:
+					t = PrettyTable([row['PokedexID'],row['Name']])
+					print(t)
+					print(row['Lore'],"\n\n")
+
+		else:
+			print("Invalid option")				
 	except:
 		print("Failed to display pokemon")
 	getch = input("Press ENTER to return")
