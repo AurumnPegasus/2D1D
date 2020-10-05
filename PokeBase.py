@@ -200,6 +200,16 @@ def DispChampion():
 def AddChampion():
 	try:
 		PokedexID = int(input("Enter the PokedexID of the Pokemon : "))
+		print("\nWould you like to see the Pokemon's moveset?\n1. Yes\n2. No")
+		ch = int(input("Enter your choice : "))
+		if ch == 1:
+			query = "SELECT PN.Name, M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power, M.Type FROM MOVES AS M, POKEMOVES AS PM, POKEMON AS P, POKENAME AS PN WHERE P.PokedexID = '%d' AND AND P.PokedexID = PN.PokedexID AND P.PokedexID = PM.PokedexID AND PM.Move = M.Name" % (PokedexID)
+			cur.execute(query)
+			rows = cur.fetchall()
+			printlist(rows)
+		elif ch != 1 and ch != 2:
+			print("Invalid PokedexID.")
+			return
 		Move1 = input("Enter the first move  : ")
 		Move2 = input("Enter the second move : ")
 		Move3 = input("Enter the third move  : ")
@@ -222,9 +232,17 @@ def EditChampion():
 		rows = cur.fetchall()
 		if len(rows):
 			print("Current data: ")
-			print("PokedexID	Move1	Move2	Move3	Move4")
-			for row in rows:
-				print(row['PokedexID'], row['Move1'], row['Move2'], row['Move3'], row['Move4'])
+			printlist(rows)
+			print("\nWould you like to see the Pokemon's moveset?\n1. Yes\n2. No")
+			ch = int(input("Enter your choice : "))
+			if ch == 1:
+				query = "SELECT PN.Name, M.Name, M.Description, M.Accuracy, M.Category, M.PP, M.Power, M.Type FROM MOVES AS M, POKEMOVES AS PM, POKEMON AS P, POKENAME AS PN WHERE P.PokedexID = '%d' AND P.PokedexID = PN.PokedexID AND P.PokedexID = PM.PokedexID AND PM.Move = M.Name" % (PokedexID)
+				cur.execute(query)
+				rows = cur.fetchall()
+				printlist(rows)
+			elif ch != 1 and ch != 2:
+				print("Invalid PokedexID.")
+				return
 			print("Enter new data:")
 			move1 = input("Enter move1 : ")
 			move2 = input("Enter move2 : ")
