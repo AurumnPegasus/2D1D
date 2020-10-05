@@ -75,21 +75,9 @@ CREATE TABLE `CHAMPION` (
 
 LOCK TABLES `CHAMPION` WRITE;
 /*!40000 ALTER TABLE `CHAMPION` DISABLE KEYS */;
-INSERT INTO `CHAMPION` VALUES (6,'Fly','Acrobatics','Ember','Flamethrower'),(493,'Defense Curl','Endeavor','Extreme Speed','False Swipe'),(658,'Fishious Rend','Brine','Crunch','Feint Attack'),(384,'Dragon Ascent','Air Slash','Aerial Ace','Devastating Drake'),(785,'Electro Ball','Draining Kiss','Crafty Shield','Charge'),(382,'Aqua Jet','Bouncy Bubble','Clamp','Flip Turn'),(150,'Agility','Dream Eater','Extrasensory','Future Sight');
+INSERT INTO `CHAMPION` VALUES (6,'Fly','Acrobatics','Ember','Flamethrower'),(150,'Agility','Dream Eater','Extrasensory','Future Sight'),(382,'Aqua Jet','Bouncy Bubble','Clamp','Flip Turn'),(384,'Dragon Ascent','Air Slash','Aerial Ace','Devastating Drake'),(493,'Defense Curl','Endeavor','Extreme Speed','False Swipe'),(658,'Fishious Rend','Brine','Crunch','Feint Attack'),(785,'Electro Ball','Draining Kiss','Crafty Shield','Charge');
 /*!40000 ALTER TABLE `CHAMPION` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Temporary table structure for view `IM`
---
-
-DROP TABLE IF EXISTS `IM`;
-/*!50001 DROP VIEW IF EXISTS `IM`*/;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
-/*!50001 CREATE VIEW `IM` AS SELECT 
- 1 AS `Immunity`*/;
-SET character_set_client = @saved_cs_client;
 
 --
 -- Table structure for table `IMMUNITIES`
@@ -137,11 +125,7 @@ CREATE TABLE `LEGENDARY` (
 
 LOCK TABLES `LEGENDARY` WRITE;
 /*!40000 ALTER TABLE `LEGENDARY` DISABLE KEYS */;
-INSERT INTO `LEGENDARY` VALUES (144,'One of the three legendary birds, this ones type being Ice.'), (145,'One of the three legendary birds, this ones type being Electric.
-'), (146,'One of the three legendary birds, this ones type being Electric.'), (150,'Its DNA is almost the same as Mew’s. However, its size and disposition are vastly different.'), (151,'When viewed through a microscope, this Pokémon’s short, fine, delicate hair can be seen.
-'), (243,'One of the three legendary beasts, this ones type being electricity.'), (244,'One of the three legendary beasts, this ones type being fire.'), (245,'One of the three legendary beasts, this ones type being water.'), (249,'A legendary pokemon called "The Guardian of the Sea'', Lugia lies sleeping at the bottom of the ocean. When it rouses and flies, the flapping of its wings causes storms that last for forty days. Lugia is the mascot for Pokemon Silver and SoulSilver.'), (250,'The Guardian of the Skies, and is the Mascot for Pokemon Gold and HeartGold. Ho-oh flies about the world on rainbow-clored wings.Those who gaze upon it are blessed with happiness.'), (251,'Celebi has the power to travel through time,but only appears during peaceful periods.In the forest where Celebi disappeared, it left behind an Egg it brought from the future.'), (377,'One of the three legendary golems, this ones type being rock. Regirock is made entirely of boulders. Without a brain or a heart, its a mystery even to modern science. When its body is damaged, it repairs itself with rocks.'), (378,'One of the three legendary golems, this ones type being ice. Regice protects itself in an envelope of cold air held at -328F. Its body was created during the last Ice Age. Not even lava can melt it.
-'), (379,'One of the three legendary golems, this ones type being steel. Tempered by tens of thousands of years of constant tectonic pressure, Registeels body is now harder than any metal. Its body is hollow, and it is unknown if it eats anything.'), (380,'One of the Eon duo, Latias can read the hearts of humans. Because of its high intelligence, it can also understand human speech. The specialized feathers that cover its body refract light.'), (381,'One of the Eon duo, Latios become attached only to those with kind hearts. One Latios can transmit to another an image of what it sees or what it is thinking. It can fly faster than a jet plane.'), (382,'An oceanic beast who has the ability to expand the seas of the world by dropping constant rain. It is the mascot for Pokémon Sapphire. It is said that Kyogre, the pokemon that controls water, made the oceans larger by blanketing the land with heavy downpours and massive waves.'), (383,'A land beast who has the ability to expand the land and create a constant and bright sunlight. It is the mascot for Pokémon Ruby. Ever since its battle against Kyogre, it has been sleeping in the magma deep underground. Groudon has the power to evaporate water through heat and light.'), (384,'A dragon-like beast associated with the sky, who can calm strong weathers. It is the mascot for Pokémon Emerald. Rayquaza lives within the ozone layer, high up above the clouds, so its impossible to see this pokemon from the ground. It lives on airborne particles and moisture. It once stopped Groudon and Kyogres battles.'), (385,'A Pokémon said to appear very rarely. It has the ability to grant a wish to anyone who asks for it. Jirachi is only awake for seven days every thousand years.'), (386,'An alien virus that came from space and can alter its DNA. Deoxys was born when the DNA of a space virus was blasted with a laser. The crystal formation in its chest is actually its brain.'), (480,'One of the three lake guardians, Uxie is known as the"Being of Knowledge". Uxie gave the gift of intelligence in human life. Its rumored to have the power to erase memories.'), (481,'One of the three lake guardians, Mesprit is known as the "Being of Emotions". Mesprit taught the nobility of sorrow, pain, and joy. It sleeps at the bottom of a lake, but at times its soul slips out of its physical body to fly.'), (482,'One of the three lake guardians, Azelf is known as the "Being of Willpower". Azelf lies at the bottom of a lake and keeps the world in balance. It is thought to have been born from the same Egg as Mesprit and Uxie.'), (483,'It is associated with the creation of time and was one of the two Pokémon first created by Arceus, along with Palkia. It is the mascot for Pokémon Diamond. Dialga possesses the power to control time. In the Sinnoh region its regarded as a deity; the legends say that the flow of time began with Dialgas birth.'), (484,'It is said it was the responsible of the creation of the space. It is the mascot for Pokémon Pearl. Palkia possesses the power to control space. In the Sinnoh region it is regarded as a deity. It is thought to live in a parallel spatial dimension. It is said that the flow of space is corrected with each of Palkias breaths.'), (485,'A Pokémon found in Stark Mountain, linked to fire and volcanoes. Heatran lives in volcanic cave. It can crawl about the walls and ceilings using its cross-shaped claws.'), (486,'A giant Pokémon leader of the Generation III Regi trio. One legend states that Regigigas once towed an entire continent. It is very slow when it first starts moving.'), (487,'A Pokémon that lives in a dimension reverse of ours. It is normally found in ancient graveyards. It is the mascot for Pokémon Platinum. This pokemon was banished for its violence. It silently gazes upon the old world from the Distortion World.'), (488,'A Pokémon said to be able to extinguish nightmares. It lies in Full Moon Island, but starts roaming once it is found by someone. Shiny particles are released from its wings like a veil. It is said to represent the crescent moon. Those who sleep holding Cresselias feather are assured of joyful dreams.On nights around the quarter moon, the aurora from its tail extends and undulates beautifully. It can wake up those who have been trapped in Darkrais nightmares.'), (490,'The "prince of the sea". It is notable for being the only legendary Pokémon able to be bred and hatch from an Egg. Born on a cold seafloor, it will swim great distances to return to its birthplace. Water makes up 80% of its body. This pokemon is easily affected by its environment. It is born with a wondrous power that lets it bond with any pokemon.'), (491,'A Pokémon that can cause nightmares in people and Pokémon, and even trap them in their dreams. In some games, it doesnt appear to know that it causes others to have nightmares. Despite being an event Pokémon, it is mentioned in the games outside of events. Appearing on the night of a full moon, Darkrai has the dangerous power to put humans to sleep and make them dream in order to gain energy.'), (492, 'A legendary Pokémon associated with flowers and nature. It lives in a secret garden known as the Flower Paradise, in flower patches, and avoids detection by curling up to look like a flowering plant.'), (493,'The supposed god of all Pokémon, who divided its powers in plates found across the region. Pokémon legend says that Arceus was born from an Egg in middle of nothingness, and then created the entire Pokémon world.'), (638,'One of the legendary musketeers. This legendary Pokémon battled against humans to protect Pokémon. Its personality is calm and composed. It has a body and heart of steel, and its glare is sufficient to make even unruly Pokémon obey it.'), (639,'One of the legendary musketeers. This Pokémon came to the defense of other Pokémon that had lost their homes in a war against humans.'), (640,'One of the legendary musketeers.This Pokémon fought humans in order to protect its friends, and guided lost Pokémon out of the forests.'), (641,'One of the Kami trio. It is a Flying type. It fights with Thundurus.'), (642,'One of the Kami trio. It is a Flying/Electric type. It fights with Tornadus.'), (643,'One of the Tao trio and the mascot for Pokémon Black. It has a great rivalry with Zekrom.'), (644,'One of the Tao trio and the mascot for Pokémon White. It has a great rivalry with Reshiram.'), (645,'One of the Kami trio. It is a Flying/Ground type, and the leader of the Kami trio.'), (646,'One of the Tao trio. Its other forms are the mascot of Pokémon Black Version 2 and Pokemon White Version 2. Kyurem is said to be hollow, and leaks freezing cold energy from its body.'), (649,'An ancient Bug/Steel type Pokémon altered by Team Plasma.The light on its back depends on the drive it is holding. An event Pokémon.'), (716,'A legendary Pokémon who is said to have slept for a thousand years in the form of a tree before its revival. When the horns on its head shine in seven colors, it is said to be sharing everlasting life.'), (717,'A legendary Pokémon who is said to absorb the life of force of all living creatures when its wings and tail feathers spread wide and glow red. When its life comes to an end, it absorbs the life energy of every living thing and turns into a cocoon once more.'),(718,'When the Kalos regions ecosystem falls into disarray, this legendary Pokémon appears and reveals its secret power. It is hypothesized that its monitoring those who destroy the ecosystem from deep in the cave where it lives.') ;
-
+INSERT INTO `LEGENDARY` VALUES (144,'One of the three legendary birds, this ones type being Ice.'),(145,'One of the three legendary birds, this ones type being Electric.\n'),(146,'One of the three legendary birds, this ones type being Electric.'),(150,'Its DNA is almost the same as Mew’s. However, its size and disposition are vastly different.'),(151,'When viewed through a microscope, this Pokémon’s short, fine, delicate hair can be seen.\n'),(243,'One of the three legendary beasts, this ones type being electricity.'),(244,'One of the three legendary beasts, this ones type being fire.'),(245,'One of the three legendary beasts, this ones type being water.'),(249,'A legendary pokemon called \"The Guardian of the Sea\', Lugia lies sleeping at the bottom of the ocean. When it rouses and flies, the flapping of its wings causes storms that last for forty days. Lugia is the mascot for Pokemon Silver and SoulSilver.'),(250,'The Guardian of the Skies, and is the Mascot for Pokemon Gold and HeartGold. Ho-oh flies about the world on rainbow-clored wings.Those who gaze upon it are blessed with happiness.'),(251,'Celebi has the power to travel through time,but only appears during peaceful periods.In the forest where Celebi disappeared, it left behind an Egg it brought from the future.'),(377,'One of the three legendary golems, this ones type being rock. Regirock is made entirely of boulders. Without a brain or a heart, its a mystery even to modern science. When its body is damaged, it repairs itself with rocks.'),(378,'One of the three legendary golems, this ones type being ice. Regice protects itself in an envelope of cold air held at -328F. Its body was created during the last Ice Age. Not even lava can melt it.\n'),(379,'One of the three legendary golems, this ones type being steel. Tempered by tens of thousands of years of constant tectonic pressure, Registeels body is now harder than any metal. Its body is hollow, and it is unknown if it eats anything.'),(380,'One of the Eon duo, Latias can read the hearts of humans. Because of its high intelligence, it can also understand human speech. The specialized feathers that cover its body refract light.'),(381,'One of the Eon duo, Latios become attached only to those with kind hearts. One Latios can transmit to another an image of what it sees or what it is thinking. It can fly faster than a jet plane.'),(382,'An oceanic beast who has the ability to expand the seas of the world by dropping constant rain. It is the mascot for Pokémon Sapphire. It is said that Kyogre, the pokemon that controls water, made the oceans larger by blanketing the land with heavy downpours and massive waves.'),(383,'A land beast who has the ability to expand the land and create a constant and bright sunlight. It is the mascot for Pokémon Ruby. Ever since its battle against Kyogre, it has been sleeping in the magma deep underground. Groudon has the power to evaporate water through heat and light.'),(384,'A dragon-like beast associated with the sky, who can calm strong weathers. It is the mascot for Pokémon Emerald. Rayquaza lives within the ozone layer, high up above the clouds, so its impossible to see this pokemon from the ground. It lives on airborne particles and moisture. It once stopped Groudon and Kyogres battles.'),(385,'A Pokémon said to appear very rarely. It has the ability to grant a wish to anyone who asks for it. Jirachi is only awake for seven days every thousand years.'),(386,'An alien virus that came from space and can alter its DNA. Deoxys was born when the DNA of a space virus was blasted with a laser. The crystal formation in its chest is actually its brain.'),(480,'One of the three lake guardians, Uxie is known as the\"Being of Knowledge\". Uxie gave the gift of intelligence in human life. Its rumored to have the power to erase memories.'),(481,'One of the three lake guardians, Mesprit is known as the \"Being of Emotions\". Mesprit taught the nobility of sorrow, pain, and joy. It sleeps at the bottom of a lake, but at times its soul slips out of its physical body to fly.'),(482,'One of the three lake guardians, Azelf is known as the \"Being of Willpower\". Azelf lies at the bottom of a lake and keeps the world in balance. It is thought to have been born from the same Egg as Mesprit and Uxie.'),(483,'It is associated with the creation of time and was one of the two Pokémon first created by Arceus, along with Palkia. It is the mascot for Pokémon Diamond. Dialga possesses the power to control time. In the Sinnoh region its regarded as a deity; the legends say that the flow of time began with Dialgas birth.'),(484,'It is said it was the responsible of the creation of the space. It is the mascot for Pokémon Pearl. Palkia possesses the power to control space. In the Sinnoh region it is regarded as a deity. It is thought to live in a parallel spatial dimension. It is said that the flow of space is corrected with each of Palkias breaths.'),(485,'A Pokémon found in Stark Mountain, linked to fire and volcanoes. Heatran lives in volcanic cave. It can crawl about the walls and ceilings using its cross-shaped claws.'),(486,'A giant Pokémon leader of the Generation III Regi trio. One legend states that Regigigas once towed an entire continent. It is very slow when it first starts moving.'),(487,'A Pokémon that lives in a dimension reverse of ours. It is normally found in ancient graveyards. It is the mascot for Pokémon Platinum. This pokemon was banished for its violence. It silently gazes upon the old world from the Distortion World.'),(488,'A Pokémon said to be able to extinguish nightmares. It lies in Full Moon Island, but starts roaming once it is found by someone. Shiny particles are released from its wings like a veil. It is said to represent the crescent moon. Those who sleep holding Cresselias feather are assured of joyful dreams.On nights around the quarter moon, the aurora from its tail extends and undulates beautifully. It can wake up those who have been trapped in Darkrais nightmares.'),(490,'The \"prince of the sea\". It is notable for being the only legendary Pokémon able to be bred and hatch from an Egg. Born on a cold seafloor, it will swim great distances to return to its birthplace. Water makes up 80% of its body. This pokemon is easily affected by its environment. It is born with a wondrous power that lets it bond with any pokemon.'),(491,'A Pokémon that can cause nightmares in people and Pokémon, and even trap them in their dreams. In some games, it doesnt appear to know that it causes others to have nightmares. Despite being an event Pokémon, it is mentioned in the games outside of events. Appearing on the night of a full moon, Darkrai has the dangerous power to put humans to sleep and make them dream in order to gain energy.'),(492,'A legendary Pokémon associated with flowers and nature. It lives in a secret garden known as the Flower Paradise, in flower patches, and avoids detection by curling up to look like a flowering plant.'),(493,'The supposed god of all Pokémon, who divided its powers in plates found across the region. Pokémon legend says that Arceus was born from an Egg in middle of nothingness, and then created the entire Pokémon world.'),(638,'One of the legendary musketeers. This legendary Pokémon battled against humans to protect Pokémon. Its personality is calm and composed. It has a body and heart of steel, and its glare is sufficient to make even unruly Pokémon obey it.'),(639,'One of the legendary musketeers. This Pokémon came to the defense of other Pokémon that had lost their homes in a war against humans.'),(640,'One of the legendary musketeers.This Pokémon fought humans in order to protect its friends, and guided lost Pokémon out of the forests.'),(641,'One of the Kami trio. It is a Flying type. It fights with Thundurus.'),(642,'One of the Kami trio. It is a Flying/Electric type. It fights with Tornadus.'),(643,'One of the Tao trio and the mascot for Pokémon Black. It has a great rivalry with Zekrom.'),(644,'One of the Tao trio and the mascot for Pokémon White. It has a great rivalry with Reshiram.'),(645,'One of the Kami trio. It is a Flying/Ground type, and the leader of the Kami trio.'),(646,'One of the Tao trio. Its other forms are the mascot of Pokémon Black Version 2 and Pokemon White Version 2. Kyurem is said to be hollow, and leaks freezing cold energy from its body.'),(649,'An ancient Bug/Steel type Pokémon altered by Team Plasma.The light on its back depends on the drive it is holding. An event Pokémon.'),(716,'A legendary Pokémon who is said to have slept for a thousand years in the form of a tree before its revival. When the horns on its head shine in seven colors, it is said to be sharing everlasting life.'),(717,'A legendary Pokémon who is said to absorb the life of force of all living creatures when its wings and tail feathers spread wide and glow red. When its life comes to an end, it absorbs the life energy of every living thing and turns into a cocoon once more.'),(718,'When the Kalos regions ecosystem falls into disarray, this legendary Pokémon appears and reveals its secret power. It is hypothesized that its monitoring those who destroy the ecosystem from deep in the cave where it lives.');
 /*!40000 ALTER TABLE `LEGENDARY` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -288,18 +272,6 @@ INSERT INTO `POKETYPE` VALUES (1,'Grass','Poison'),(2,'Grass','Poison'),(3,'Gras
 UNLOCK TABLES;
 
 --
--- Temporary table structure for view `RE`
---
-
-DROP TABLE IF EXISTS `RE`;
-/*!50001 DROP VIEW IF EXISTS `RE`*/;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
-/*!50001 CREATE VIEW `RE` AS SELECT 
- 1 AS `Resistance`*/;
-SET character_set_client = @saved_cs_client;
-
---
 -- Table structure for table `RESISTANCES`
 --
 
@@ -378,18 +350,6 @@ INSERT INTO `TYPE` VALUES ('Bug'),('Dark'),('Dragon'),('Electric'),('Fairy'),('F
 UNLOCK TABLES;
 
 --
--- Temporary table structure for view `WE`
---
-
-DROP TABLE IF EXISTS `WE`;
-/*!50001 DROP VIEW IF EXISTS `WE`*/;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
-/*!50001 CREATE VIEW `WE` AS SELECT 
- 1 AS `Weakness`*/;
-SET character_set_client = @saved_cs_client;
-
---
 -- Table structure for table `WEAKNESSES`
 --
 
@@ -413,60 +373,6 @@ LOCK TABLES `WEAKNESSES` WRITE;
 INSERT INTO `WEAKNESSES` VALUES ('Bug','Fire'),('Bug','Flying'),('Bug','Rock'),('Dark','Bug'),('Dark','Fairy'),('Dark','Fighting'),('Dragon','Dragon'),('Dragon','Fairy'),('Dragon','Ice'),('Electric','Ground'),('Fairy','Poison'),('Fairy','Steel'),('Fighting','Fairy'),('Fighting','Flying'),('Fighting','Psychic'),('Fire','Ground'),('Fire','Rock'),('Fire','Water'),('Flying','Electric'),('Flying','Ice'),('Flying','Rock'),('Ghost','Dark'),('Ghost','Ghost'),('Grass','Bug'),('Grass','Fire'),('Grass','Flying'),('Grass','Ice'),('Grass','Poison'),('Ground','Grass'),('Ground','Ice'),('Ground','Water'),('Ice','Fighting'),('Ice','Fire'),('Ice','Rock'),('Ice','Steel'),('Normal','Fighting'),('Poison','Ground'),('Poison','Psychic'),('Psychic','Bug'),('Psychic','Dark'),('Psychic','Ghost'),('Rock','Fighting'),('Rock','Grass'),('Rock','Ground'),('Rock','Steel'),('Rock','Water'),('Steel','Fighting'),('Steel','Fire'),('Steel','Ground'),('Water','Electric'),('Water','Grass');
 /*!40000 ALTER TABLE `WEAKNESSES` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Final view structure for view `IM`
---
-
-/*!50001 DROP VIEW IF EXISTS `IM`*/;
-/*!50001 SET @saved_cs_client          = @@character_set_client */;
-/*!50001 SET @saved_cs_results         = @@character_set_results */;
-/*!50001 SET @saved_col_connection     = @@collation_connection */;
-/*!50001 SET character_set_client      = utf8mb4 */;
-/*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_general_ci */;
-/*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Aakash`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `IM` AS select `I`.`Immunity` AS `Immunity` from ((`IMMUNITIES` `I` join `POKENAME` `N`) join `POKETYPE` `T`) where ((`N`.`PokedexID` = `T`.`PokedexID`) and ((`T`.`Type1` = `I`.`Name`) or (`T`.`Type2` = `I`.`Name`)) and (`N`.`Name` = 'Charizard')) */;
-/*!50001 SET character_set_client      = @saved_cs_client */;
-/*!50001 SET character_set_results     = @saved_cs_results */;
-/*!50001 SET collation_connection      = @saved_col_connection */;
-
---
--- Final view structure for view `RE`
---
-
-/*!50001 DROP VIEW IF EXISTS `RE`*/;
-/*!50001 SET @saved_cs_client          = @@character_set_client */;
-/*!50001 SET @saved_cs_results         = @@character_set_results */;
-/*!50001 SET @saved_col_connection     = @@collation_connection */;
-/*!50001 SET character_set_client      = utf8mb4 */;
-/*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_general_ci */;
-/*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Aakash`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `RE` AS select `R`.`Resistance` AS `Resistance` from ((`RESISTANCES` `R` join `POKENAME` `N`) join `POKETYPE` `T`) where ((`N`.`PokedexID` = `T`.`PokedexID`) and ((`T`.`Type1` = `R`.`Name`) or (`T`.`Type2` = `R`.`Name`)) and (`N`.`Name` = 'Charizard')) */;
-/*!50001 SET character_set_client      = @saved_cs_client */;
-/*!50001 SET character_set_results     = @saved_cs_results */;
-/*!50001 SET collation_connection      = @saved_col_connection */;
-
---
--- Final view structure for view `WE`
---
-
-/*!50001 DROP VIEW IF EXISTS `WE`*/;
-/*!50001 SET @saved_cs_client          = @@character_set_client */;
-/*!50001 SET @saved_cs_results         = @@character_set_results */;
-/*!50001 SET @saved_col_connection     = @@collation_connection */;
-/*!50001 SET character_set_client      = utf8mb4 */;
-/*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_general_ci */;
-/*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Aakash`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `WE` AS select `W`.`Weakness` AS `Weakness` from ((`WEAKNESSES` `W` join `POKENAME` `N`) join `POKETYPE` `T`) where ((`N`.`PokedexID` = `T`.`PokedexID`) and ((`T`.`Type1` = `W`.`Name`) or (`T`.`Type2` = `W`.`Name`)) and (`N`.`Name` = 'Charizard')) */;
-/*!50001 SET character_set_client      = @saved_cs_client */;
-/*!50001 SET character_set_results     = @saved_cs_results */;
-/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -477,4 +383,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-03 11:28:20
+-- Dump completed on 2020-10-05 22:40:51
