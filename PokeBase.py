@@ -245,11 +245,16 @@ def EditChampion():
 def RemoveChampion():
 	try:
 		PokedexID = int(input("Enter the PokedexID of the Pokemon : "))
-		query = "DELETE FROM CHAMPION WHERE PokedexID = %d" % (PokedexID)
+		query = "SELECT PokedexID FROM CHAMPION WHERE PokedexID = %d" % (PokedexID)
 		cur.execute(query)
-		print("Successfully deleted")
-		con.commit()
-
+		rows = cur.fetchall()
+		if rows:
+			query = "DELETE FROM CHAMPION WHERE PokedexID = %d" % (PokedexID)
+			cur.execute(query)
+			print("Successfully deleted")
+			con.commit()
+		else:
+			print("Champion build doesn't exist")
 	except:
 		print("Failed to delete champion build")
 	getch = input("Press ENTER to return")
